@@ -1,5 +1,0 @@
-[0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'templateForReport.blg'
-[66] biber:330> INFO - === Di Jan 19, 2021, 16:39:23
-[132] Utils.pm:411> ERROR - Cannot find 'templateForReport.bcf'!
-[132] Biber.pm:132> INFO - ERRORS: 1
