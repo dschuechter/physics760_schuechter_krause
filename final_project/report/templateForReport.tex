@@ -36,7 +36,10 @@
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-%\usepackage{hyperref}% add hypertext capabilities
+\usepackage{hyperref}% add hypertext capabilities
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
 
@@ -50,7 +53,7 @@
 
 \begin{document}
 
-\title{Bayesian model selection}% Force line breaks with \\
+\title{All about that Bayes\\Exploring \textsc{Monte-Carlo}-integration techniques in Bayesian model selection}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
 
 \author{Jakob Krause}
@@ -78,8 +81,8 @@
 
 %\tableofcontents
 
-\section{\label{sec:level1}First-level heading}
-
+\section{\label{sec:level1}Introduction}
+We mainly write everything that is in \cite{sivia,test}.
 This sample document was adapted from the template for papers
 in APS journals.
 It demonstrates proper use of REV\TeX~4.1 (and
@@ -102,6 +105,27 @@ paragraph has ended. Note that top-level section headings are
 automatically uppercased. If a specific letter or word should appear in
 lowercase instead, you must escape it using \verb+\lowercase{#1}+ as
 in the word ``via'' above.
+\section{Theory}
+
+\subsection{Bayes' Theorem}
+Here we have to write cool stuff and so on about bayes theorem.
+\subsection{Monte-Carlo integration}
+Here we will explain Monte-Carlo sampling, that is \emph{Sequential Monte Carlo} and therein \textsc{Metropolis-Hastings}. its probably better to put these two subsections in separate sections.
+
+\section{Examples}
+
+\subsection{Betabinomial example (coin flip)}
+Let us now consider as a starting example, the flipping of a two-sided coin, i.e. an experiment where we can measure either heads (H) or tails (T) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many real-life problems, such as birth rates, $\dots$, or anything with the option of either success or failure.
+\subsubsection{Analytical approach}
+Assume we throw a coin 20 times. We observe 6 H and 14 T. "Is this a fair coin?" might be a question to ask yourself since the bias in outcome is quite large. Naively expecting a fair coin we could assign a \emph{prior} to the probability of heads $\theta$ as centred around $0.5$, so for example a gaussian with $\mu=0.5,\sigma=0.1$.  
+\subsubsection{Numerical approach}
+
+
+\subsection{Fitting a polynomial of unknown degree}
+\subsubsection{Analytical approach}
+\subsubsection{Numerical approach}
+
+\section{Conclusions}
 
 \subsection{\label{sec:level2}Second-level heading: Formatting}
 
@@ -182,6 +206,8 @@ For the latter, use the optional arguments of the \verb+\cite+ command itself:
 \texttt{[}\emph{pre-cite}\texttt{]}\allowbreak
 \texttt{[}\emph{post-cite}\texttt{]}\allowbreak
 \verb+{+\emph{key-list}\verb+}+.
+
+\bibliography{refs}
 \end{document}
 %
 % ****** End of file templateForReport.tex ******
