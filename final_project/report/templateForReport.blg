@@ -4,44 +4,47 @@ The top-level auxiliary file: templateForReport.aux
 The style file: abbrvnat.bst
 Database file #1: templateForReportNotes.bib
 Database file #2: refs.bib
-You've used 3 entries,
+Warning--to sort, need author or key in PyMC3
+Warning--empty year in PyMC3
+You've used 4 entries,
             2773 wiz_defined-function locations,
-            619 strings with 5165 characters,
-and the built_in function-call counts, 1316 in all, are:
-= -- 118
+            623 strings with 5246 characters,
+and the built_in function-call counts, 1556 in all, are:
+= -- 141
 > -- 61
 < -- 3
-+ -- 21
++ -- 22
 - -- 18
-* -- 110
-:= -- 214
-add.period$ -- 14
-call.type$ -- 3
-change.case$ -- 14
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 61
-empty$ -- 110
+* -- 126
+:= -- 233
+add.period$ -- 16
+call.type$ -- 4
+change.case$ -- 17
+chr.to.int$ -- 4
+cite$ -- 11
+duplicate$ -- 76
+empty$ -- 145
 format.name$ -- 23
-if$ -- 270
+if$ -- 329
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 4
-newline$ -- 28
+newline$ -- 32
 num.names$ -- 12
-pop$ -- 24
+pop$ -- 38
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 14
 quote$ -- 0
-skip$ -- 43
+skip$ -- 57
 stack$ -- 0
-substring$ -- 39
-swap$ -- 6
+substring$ -- 42
+swap$ -- 7
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
-warning$ -- 0
+type$ -- 39
+warning$ -- 2
 while$ -- 11
 width$ -- 0
-write$ -- 56
+write$ -- 65
+(There were 2 warnings)

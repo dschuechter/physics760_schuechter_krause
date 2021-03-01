@@ -39,7 +39,7 @@
 \usepackage{hyperref}% add hypertext capabilities
 \usepackage{natbib}
 \usepackage{xcolor}
-
+\usepackage{amsmath}
 \bibliographystyle{abbrvnat}
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -94,13 +94,30 @@
  {\color{red}
 \textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
 \section{Theory}
-
+\noindent In the following we will give a short introduction into \textsc{Bayes Theory} and the underlying concepts of model selection.
 \subsection{Bayes' Theorem}
-Here we have to write cool stuff and so on about bayes theorem.
+\noindent The fundamental equation of \textsc{Bayesian} statistics -- for a dataset $y$ and parameters $\boldsymbol{\theta}$ -- is given by \textsc{Bayes} Theorem.
+\begin{equation}
+\text{prob}(\boldsymbol{\theta} | y) =	p(\boldsymbol{\theta} | y) = \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)} 
+\end{equation}
+Where $p(\boldsymbol{\theta} | y) $ is the posterior probability for parameters $\boldsymbol{\theta}$ given the data $y$, $p(y|\boldsymbol{\theta})$ is the likelihood that the data fits a model with parameters $\boldsymbol{\theta}$, $p(\boldsymbol{\theta})$ is the prior probability of $\boldsymbol{\theta}$ and $p(y)= \int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$ is the marginal likelihood which acts as a normalization.  In the case of parameter selection, the normalization can often be neglected since it is only a  constant. In the case of the model comparison it is a crucial quantity, as we will disuss in section (\ref{sec:Model_comparison}) \cite[Chap. 2]{sivia}. 
+
+\subsection{Parameter estimation}
+\noindent 
+\subsection{Model comparison}\label{sec:Model_comparison}
+\subsubsection{Bayes Factor}
+\subsubsection{Bayes Complexity}
+
+
+
 \section{Methods}
-Here we write up the used algorithms.
+\noindent We will now describe the functions of the used algorithms for the model selection. Since the implementation of the so called nested sampling is sufficiently dealt with by {\color{red} Gruppe - Bayesian parameter fitting} our implementation uses the \texttt{PyMC3}-Python Library \cite{PyMC3}.
+ 
 \subsection{Monte-Carlo integration}
 Here we will explain Monte-Carlo sampling, that is \emph{Sequential Monte Carlo} and therein \textsc{Metropolis-Hastings}. its probably better to put these two subsections in separate sections.
+
+\subsection{Savage Dickey Density Ration (SDDR)}
+
 
 \section{Examples}
 
@@ -109,7 +126,6 @@ Let us now consider as a starting example, the flipping of a two-sided coin, i.e
 \subsubsection{Analytical approach?}
 Assume we throw a coin 20 times. We observe 6 H and 14 T. "Is this a fair coin?" might be a question to ask yourself since the bias in outcome is quite large. Naively expecting a fair coin we could assign a \emph{prior} to the probability of heads $\theta$ as centred around $0.5$, so for example a gaussian with $\mu=0.5,\sigma=0.1$.  
 \subsubsection{Numerical approach}
-
 
 \subsection{Fitting a polynomial of unknown degree}
 \subsubsection{Analytical approach?}

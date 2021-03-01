@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  1 MAR 2021 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  1 MAR 2021 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,60 +452,64 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./templateForReport.bbl [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/
-updmap/pdftex.map}]
-Underfull \hbox (badness 1137) in paragraph at lines 9--14
+) [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./templateForReport.bbl
+Underfull \hbox (badness 1137) in paragraph at lines 13--18
  []\OT1/cmr/m/n/9 M. Kunz, R. Trotta, and D. R. Parkin-son.  Mea-
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 9--14
+Underfull \hbox (badness 1147) in paragraph at lines 13--18
  \OT1/cmr/m/n/9 sur-ing the ef-fec-tive com-plex-ity of cos-mo-log-i-cal mod-
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 9--14
+Underfull \hbox (badness 3449) in paragraph at lines 13--18
  \OT1/cmr/m/n/9 els.  \OT1/cmr/m/it/9 Phys. Rev. D\OT1/cmr/m/n/9 , 74:023503, J
 ul 2006.  []doi:
  []
 
 ) [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (./templateForReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 Package rerunfilecheck Info: File `templateForReport.out' has not changed.
-(rerunfilecheck)             Checksum: D90C74C921B82AEBB5D61F5AB31538B0;1115.
+(rerunfilecheck)             Checksum: 6109EBB132EF2C30A4AAFF13F1BD7018;1462.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8771 strings out of 480608
- 124704 string characters out of 5903630
- 422663 words of memory out of 5000000
- 24477 multiletter control sequences out of 15000+600000
- 545973 words of font info for 74 fonts, out of 8000000 for 9000
+ 8789 strings out of 480608
+ 124926 string characters out of 5903630
+ 410719 words of memory out of 5000000
+ 24487 multiletter control sequences out of 15000+600000
+ 546141 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,37p,710b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,37p,774b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on templateForReport.pdf (2 pages, 165372 bytes).
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on templateForReport.pdf (2 pages, 206611 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
