@@ -4,49 +4,44 @@ The top-level auxiliary file: templateForReport.aux
 The style file: abbrvnat.bst
 Database file #1: templateForReportNotes.bib
 Database file #2: refs.bib
-Warning--I didn't find a database entry for "test"
-Warning--I didn't find a database entry for "witten2001"
-Warning--I didn't find a database entry for "feyn54"
-Warning--I didn't find a database entry for "epr"
-You've used 1 entry,
+You've used 3 entries,
             2773 wiz_defined-function locations,
-            602 strings with 4704 characters,
-and the built_in function-call counts, 401 in all, are:
-= -- 29
-> -- 21
-< -- 2
-+ -- 7
-- -- 6
-* -- 28
-:= -- 68
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 4
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 20
-empty$ -- 33
-format.name$ -- 9
-if$ -- 78
+            619 strings with 5165 characters,
+and the built_in function-call counts, 1316 in all, are:
+= -- 118
+> -- 61
+< -- 3
++ -- 21
+- -- 18
+* -- 110
+:= -- 214
+add.period$ -- 14
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 61
+empty$ -- 110
+format.name$ -- 23
+if$ -- 270
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 12
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 12
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 12
 quote$ -- 0
-skip$ -- 17
+skip$ -- 43
 stack$ -- 0
-substring$ -- 2
-swap$ -- 2
+substring$ -- 39
+swap$ -- 6
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 28
 warning$ -- 0
-while$ -- 3
+while$ -- 11
 width$ -- 0
-write$ -- 20
-(There were 4 warnings)
+write$ -- 56

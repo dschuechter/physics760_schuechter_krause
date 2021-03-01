@@ -38,6 +38,8 @@
 \usepackage{bm}% bold math
 \usepackage{hyperref}% add hypertext capabilities
 \usepackage{natbib}
+\usepackage{xcolor}
+
 \bibliographystyle{abbrvnat}
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -82,7 +84,15 @@
 %\tableofcontents
 
 \section{\label{sec:level1}Introduction}
-We mainly write everything that is in \cite{sivia}. Here an awesome introduction will form
+\noindent In physics, one is often faced with the problem of \emph{Model Selection} for a given data set. That means finding a mathematical description of the data, which on the one hand sufficiently characterizes the data structure and on the other hand satisfies the expected dependencies. This is by no means a trivial task; one has to understand the underlying physical model beforehand to not make the mistake of choosing a too complicated model although it may seemingly fit the data. At the same time too trivial assumptions can also lead in the wrong direction. Compactly this problem can be formulated in the following way (adapted from \cite[Chap. 4]{sivia}):
+
+\begin{center}
+	\emph{Alice has a theory; Bob also has a theory, but with an adjustable parameter $\lambda$. Whose theory should we prefer on the basis of data D?}
+\end{center}
+
+
+ {\color{red}
+\textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
 \section{Theory}
 
 \subsection{Bayes' Theorem}
