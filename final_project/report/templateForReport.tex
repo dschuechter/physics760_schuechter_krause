@@ -40,6 +40,7 @@
 \usepackage{natbib}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{siunitx}
 \bibliographystyle{abbrvnat}
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -83,7 +84,7 @@
 
 %\tableofcontents
 
-\section{\label{sec:level1}Introduction}
+\section{\label{sec:intro}Introduction}
 \noindent In physics, one is often faced with the problem of \emph{Model Selection} for a given data set. That means finding a mathematical description of the data, which on the one hand sufficiently characterizes the data structure and on the other hand satisfies the expected dependencies. This is by no means a trivial task; one has to understand the underlying physical model beforehand to not make the mistake of choosing a too complicated model although it may seemingly fit the data. At the same time too trivial assumptions can also lead in the wrong direction. Compactly this problem can be formulated in the following way (adapted from \cite[Chap. 4]{sivia}):
 
 \begin{center}
@@ -92,20 +93,64 @@
 
 
  {\color{red}
-\textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
+\textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz,Trotta_2008} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
 \section{Theory}
 \noindent In the following we will give a short introduction into \textsc{Bayes Theory} and the underlying concepts of model selection.
 \subsection{Bayes' Theorem}
 \noindent The fundamental equation of \textsc{Bayesian} statistics -- for a dataset $y$ and parameters $\boldsymbol{\theta}$ -- is given by \textsc{Bayes} Theorem.
 \begin{equation}
+\label{eq:bayes}
 \text{prob}(\boldsymbol{\theta} | y) =	p(\boldsymbol{\theta} | y) = \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)} 
 \end{equation}
 Where $p(\boldsymbol{\theta} | y) $ is the posterior probability for parameters $\boldsymbol{\theta}$ given the data $y$, $p(y|\boldsymbol{\theta})$ is the likelihood that the data fits a model with parameters $\boldsymbol{\theta}$, $p(\boldsymbol{\theta})$ is the prior probability of $\boldsymbol{\theta}$ and $p(y)= \int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$ is the marginal likelihood which acts as a normalization.  In the case of parameter selection, the normalization can often be neglected since it is only a  constant. In the case of the model comparison it is a crucial quantity, as we will disuss in section (\ref{sec:Model_comparison}) \cite[Chap. 2]{sivia}. 
 
 \subsection{Parameter estimation}
-\noindent 
+\noindent Assume we want to find the best parameters for a given dataset $y$ and model $M$. Eq. \eqref{eq:bayes} then can be written as
+\begin{equation}
+	p(\boldsymbol{\theta} | y,M) = \frac{p(y|\boldsymbol{\theta},M)\cdot p(\boldsymbol{\theta}|M)}{p(y|M)}.
+\end{equation}
+Evaluating this equation will give probability density functions (PDFs) 
+\begin{equation}
+\label{eq:marp}
+	p(\theta|D,M)=\int \text{d}\boldsymbol{\varphi}p(\theta,\boldsymbol{\varphi}|D,M)
+\end{equation}
+ for each parameter $\theta$, where $\boldsymbol{\theta}=(\boldsymbol{\varphi},\theta)$.  Because of equation \eqref{eq:marp} $p(\theta|D,M)$ is also called \emph{marginal posterior}. From this one can find the best fit value either by finding the value of $\theta$ for which the marginal posterior is maximized or by calculating the mean with respect to the marginal posterior.
+
+\begin{align}
+	\begin{split}
+		p(\theta|D,M)=\max \Leftrightarrow \theta=\hat{\theta}\\
+		\langle\theta\rangle=\int_{-\infty}^{\infty}\text{d}\theta  p(\theta|D,M)\cdot\theta
+	\end{split}
+\end{align}
+Throughout this paper we will use $\langle\theta\rangle$ as our best fit estimate. \cite{sivia}
+
 \subsection{Model comparison}\label{sec:Model_comparison}
+\noindent To compare two (or more) competing models $M_i$ that describe a dataset $D$ let us write \textsc{Bayes} theorem once again
+\begin{equation}
+	p(M_i|D)=\frac{p(M_i)\cdot p(D|M_i)}{p(D)}.
+\end{equation}
+We recognize $p(D|M_i)$ as the marginal likelihood of the model $M_i$. Let now  the two competing models be those of Alice and Bob introduced in section \eqref{sec:intro}.Thus, $$p(D|M_i)=\int_{-\infty}^{\infty}\text{d}\lambda p(D|\lambda, M)\cdot p(\lambda|M)$$
+follows \cite[Chap. 3]{sivia}.
 \subsubsection{Bayes Factor}
+One way of comparing two models is to compare their posterior odds, that is the ratio \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|D)}{p(M_j|D)}}_{\text{posterior odds}}=\underbrace{\frac{p(D|M_i)}{p(D|M_i)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
+
+\begin{table}[htbp]
+	\centering
+	{\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		$|\ln B_{ij}|$& Odds & Probability & Strength of evidence \\
+		\hline
+		$< 1.0$& $ \lesssim 3:1$ & $< 0.750$  & Inconclusive  \\
+		$1.0$ & $\sim 3:1$ & $0.750$ & Weak evidence  \\
+		$2.5$& $\sim 12:1$ & $0.923$ & Moderate evidence \\
+		$5.0$& $\sim 150:1$ & $0.993$ & Strong evidence \\
+		\hline
+	\end{tabular}}
+\caption{Empirical scale for evaluating the strength of evidence when comparing two models $M_i$ vs. $M_j$, adapted from \cite{Trotta_2008}}
+\end{table}
+
+
 \subsubsection{Bayes Complexity}
 
 

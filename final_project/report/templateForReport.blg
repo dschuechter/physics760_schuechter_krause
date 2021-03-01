@@ -6,45 +6,45 @@ Database file #1: templateForReportNotes.bib
 Database file #2: refs.bib
 Warning--to sort, need author or key in PyMC3
 Warning--empty year in PyMC3
-You've used 4 entries,
+You've used 5 entries,
             2773 wiz_defined-function locations,
-            623 strings with 5246 characters,
-and the built_in function-call counts, 1556 in all, are:
-= -- 141
-> -- 61
-< -- 3
-+ -- 22
-- -- 18
-* -- 126
-:= -- 233
-add.period$ -- 16
-call.type$ -- 4
-change.case$ -- 17
-chr.to.int$ -- 4
-cite$ -- 11
-duplicate$ -- 76
-empty$ -- 145
-format.name$ -- 23
-if$ -- 329
+            635 strings with 5469 characters,
+and the built_in function-call counts, 1986 in all, are:
+= -- 185
+> -- 71
+< -- 4
++ -- 26
+- -- 21
+* -- 162
+:= -- 301
+add.period$ -- 22
+call.type$ -- 5
+change.case$ -- 21
+chr.to.int$ -- 5
+cite$ -- 13
+duplicate$ -- 96
+empty$ -- 186
+format.name$ -- 27
+if$ -- 420
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 32
-num.names$ -- 12
-pop$ -- 38
+missing$ -- 5
+newline$ -- 40
+num.names$ -- 16
+pop$ -- 42
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 17
 quote$ -- 0
-skip$ -- 57
+skip$ -- 69
 stack$ -- 0
-substring$ -- 42
-swap$ -- 7
+substring$ -- 68
+swap$ -- 9
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 39
+type$ -- 50
 warning$ -- 2
-while$ -- 11
+while$ -- 15
 width$ -- 0
-write$ -- 65
+write$ -- 84
 (There were 2 warnings)
