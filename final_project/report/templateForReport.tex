@@ -41,6 +41,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{siunitx}
+\usepackage[labelfont=bf]{caption}
 \bibliographystyle{abbrvnat}
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -131,10 +132,21 @@ Throughout this paper we will use $\langle\theta\rangle$ as our best fit estimat
 \end{equation}
 We recognize $p(D|M_i)$ as the marginal likelihood of the model $M_i$. Let now  the two competing models be those of Alice and Bob introduced in section \eqref{sec:intro}.Thus, $$p(D|M_i)=\int_{-\infty}^{\infty}\text{d}\lambda p(D|\lambda, M)\cdot p(\lambda|M)$$
 follows \cite[Chap. 3]{sivia}.
-\subsubsection{Bayes Factor}
-One way of comparing two models is to compare their posterior odds, that is the ratio \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|D)}{p(M_j|D)}}_{\text{posterior odds}}=\underbrace{\frac{p(D|M_i)}{p(D|M_i)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
+\subsubsection{\textbf{Bayes Factor}}
+One way of comparing two models is to compare their posterior odds, that is the ratio {\color{red} quote lecture A. Wirzba?} \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|D)}{p(M_j|D)}}_{\text{posterior odds}}=\underbrace{\frac{p(D|M_i)}{p(D|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
+Usually we can assume the prior odds to be $\sim 1$ because we do not favor one model over the other just on prior beliefs. With this equation \eqref{eq:bf} simply becomes $$O_{ij}=B_{ij}.$$
+Calculating $B_{ij}$ will be referred to as calculating the \textsc{Bayes} factor \emph{in favor of} model $M_i$. We can then evaluate the result of $B_{ij}$ as follows 
+\begin{equation*}
+	B_{ij}=B_{ji}^{-1}=\begin{cases} \geq 1 & \text{model } M_i \text{ favored}\\
+	 <1 & \text{model } M_j \text{ favored}
+	\end{cases}
+\end{equation*}
+
+Nevertheless a \textsc{Bayes} Factor $\geq1$ does not mean that the favored model is far superior. There is an empirical scale which points to the strength of evidence for a given $B_{ij}$. This is displayed in table \eqref{tab:bf}.
+
 
 \begin{table}[htbp]
+
 	\centering
 	{\renewcommand{\arraystretch}{1.3}
 	\begin{tabular}{|c|c|c|c|}
@@ -148,13 +160,22 @@ One way of comparing two models is to compare their posterior odds, that is the 
 		\hline
 	\end{tabular}}
 \caption{Empirical scale for evaluating the strength of evidence when comparing two models $M_i$ vs. $M_j$, adapted from \cite{Trotta_2008}}
+\label{tab:bf}
 \end{table}
+{\color{red} Bayes factor vor allem attraktiv für genestete modelle}
 
 
-\subsubsection{Bayes Complexity}
+\subsubsection{\textbf{Bayes Complexity}}
+When comparing models with a different amount of parameters, we obviously denote more parameters as more complex. A fundamental question of model-selection is then if the given data supports more or less parameters. A na\"ive measure of complexity would be the number of free parameters a model has, we denote this as $\mathcal{C}_0$. A more sophisticated measure of complexity is given by the so called \textsc{Bayesian} complexity, first introduced by Spiegelhalter et al \cite{Spiegelhalter}, which can be written as \cite{kunz} \begin{equation}
+	\mathcal{C}_b=-2\int \text{d}\boldsymbol{\theta} p(\boldsymbol{\theta}|D,M)\log(\mathcal{L}(\boldsymbol{\theta}))+2\log(\mathcal{L}(\boldsymbol{\tilde{\theta}})),
+\end{equation}
+with  the likelihood $\mathcal{L}(\boldsymbol{\theta})=p(D|\boldsymbol{\theta},M)$ and $\boldsymbol{\tilde{\theta}}=\langle\boldsymbol{\theta}\rangle$. $\mathcal{C}_b$ describes how many model parameters the data is able to constrain \cite{kunz} and is thus a useful tool for examining models with an increasing number of parameters. If we define a $\chi^2$ as $\mathcal{L}(\boldsymbol{\theta})\propto \exp(-\chi^2/2)$, we can write 
+\begin{equation}
+	\mathcal{C}_b=\overline{\chi^2(\boldsymbol{\theta})}-\chi^2(\boldsymbol{\tilde{\theta}}),
+\end{equation}
+where $\overline{\chi}$ denotes the mean taken over the posterior PDF. 
 
-
-
+The definition of $\mathcal{C}_b$ is chosen such that $\mathcal{C}_b\to\mathcal{C}_0$ for highly informative data \cite{kunz}.
 \section{Methods}
 \noindent We will now describe the functions of the used algorithms for the model selection. Since the implementation of the so called nested sampling is sufficiently dealt with by {\color{red} Gruppe - Bayesian parameter fitting} our implementation uses the \texttt{PyMC3}-Python Library \cite{PyMC3}.
  

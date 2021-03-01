@@ -6,17 +6,17 @@
 \BOOKMARK [2][-]{section*.6}{Parameter estimation}{section*.4}% 6
 \BOOKMARK [2][-]{section*.7}{Model comparison}{section*.4}% 7
 \BOOKMARK [3][-]{section*.8}{Bayes Factor}{section*.7}% 8
-\BOOKMARK [3][-]{section*.9}{Bayes Complexity}{section*.7}% 9
-\BOOKMARK [1][-]{section*.10}{Methods}{section*.2}% 10
-\BOOKMARK [2][-]{section*.11}{Monte-Carlo integration}{section*.10}% 11
-\BOOKMARK [2][-]{section*.12}{Savage Dickey Density Ration \(SDDR\)}{section*.10}% 12
-\BOOKMARK [1][-]{section*.13}{Examples}{section*.2}% 13
-\BOOKMARK [2][-]{section*.14}{Betabinomial example \(coin flip\)}{section*.13}% 14
-\BOOKMARK [3][-]{section*.15}{Analytical approach?}{section*.14}% 15
-\BOOKMARK [3][-]{section*.16}{Numerical approach}{section*.14}% 16
-\BOOKMARK [2][-]{section*.17}{Fitting a polynomial of unknown degree}{section*.13}% 17
-\BOOKMARK [3][-]{section*.18}{Analytical approach?}{section*.17}% 18
-\BOOKMARK [3][-]{section*.19}{Numerical approach}{section*.17}% 19
-\BOOKMARK [1][-]{section*.20}{Discussion}{section*.2}% 20
-\BOOKMARK [1][-]{section*.21}{Summary}{section*.2}% 21
-\BOOKMARK [1][-]{section*.22}{References}{section*.2}% 22
+\BOOKMARK [3][-]{section*.10}{Bayes Complexity}{section*.7}% 9
+\BOOKMARK [1][-]{section*.11}{Methods}{section*.2}% 10
+\BOOKMARK [2][-]{section*.12}{Monte-Carlo integration}{section*.11}% 11
+\BOOKMARK [2][-]{section*.13}{Savage Dickey Density Ration \(SDDR\)}{section*.11}% 12
+\BOOKMARK [1][-]{section*.14}{Examples}{section*.2}% 13
+\BOOKMARK [2][-]{section*.15}{Betabinomial example \(coin flip\)}{section*.14}% 14
+\BOOKMARK [3][-]{section*.16}{Analytical approach?}{section*.15}% 15
+\BOOKMARK [3][-]{section*.17}{Numerical approach}{section*.15}% 16
+\BOOKMARK [2][-]{section*.18}{Fitting a polynomial of unknown degree}{section*.14}% 17
+\BOOKMARK [3][-]{section*.19}{Analytical approach?}{section*.18}% 18
+\BOOKMARK [3][-]{section*.20}{Numerical approach}{section*.18}% 19
+\BOOKMARK [1][-]{section*.21}{Discussion}{section*.2}% 20
+\BOOKMARK [1][-]{section*.22}{Summary}{section*.2}% 21
+\BOOKMARK [1][-]{section*.23}{References}{section*.2}% 22

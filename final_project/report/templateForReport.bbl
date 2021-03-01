@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,15 @@ M.~Kunz, R.~Trotta, and D.~R. Parkinson.
 D.~Sivia and J.~Skilling.
 \newblock \emph{Data Analysis - A Bayesian tutorial}, volume~2.
 \newblock Oxford University Press, 2006.
+
+\bibitem[Spiegelhalter et~al.(2002)Spiegelhalter, Best, Carlin, and van~der
+  Linde]{Spiegelhalter}
+D.~J. Spiegelhalter, N.~G. Best, B.~P. Carlin, and A.~van~der Linde.
+\newblock Bayesian measures of model complexity and fit.
+\newblock \emph{Journal of the Royal Statistical Society. Series B (Statistical
+  Methodology)}, 64\penalty0 (4):\penalty0 583--639, 2002.
+\newblock ISSN 13697412, 14679868.
+\newblock URL \url{http://www.jstor.org/stable/3088806}.
 
 \bibitem[Trotta(2007)]{trotta}
 R.~Trotta.
