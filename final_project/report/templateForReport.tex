@@ -43,7 +43,7 @@
 \usepackage{siunitx}
 \usepackage[labelfont=bf]{caption}
 \bibliographystyle{abbrvnat}
-
+\newcommand{\btheta}{\boldsymbol{\theta}}
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
 
@@ -96,7 +96,7 @@
  {\color{red}
 \textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz,Trotta_2008} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
 \section{Theory}
-\noindent In the following we will give a short introduction into \textsc{Bayes Theory} and the underlying concepts of model selection.
+\noindent In the following we will give a short introduction into \textsc{Bayes} theorem and the underlying concepts of parameter estimation and model selection.
 \subsection{Bayes' Theorem}
 \noindent The fundamental equation of \textsc{Bayesian} statistics -- for a dataset $y$ and parameters $\boldsymbol{\theta}$ -- is given by \textsc{Bayes} Theorem.
 \begin{equation}
@@ -181,7 +181,7 @@ The definition of $\mathcal{C}_b$ is chosen such that $\mathcal{C}_b\to\mathcal{
 \noindent We will now describe the functions of the used algorithms for the model selection. Since the implementation of the so called nested sampling is sufficiently dealt with by {\color{red} Gruppe - Bayesian parameter fitting} our implementation uses the \texttt{PyMC3}-Python Library \cite{PyMC3}.  \texttt{PyMC3} offers simple solutions to create models and a wide variety of sampling algorithms. Furthermore the \texttt{ArviZ}-Library provides methods for posterior analysis and visualization \cite{ArviZ}.
 
  \subsection{Monte-Carlo Sampling}
-\noindent Often equations \eqref{eq:marp}, \eqref{eq:Bayes_Complexity} and \eqref{eq:Bayes_Complexity_alt} have no closed analytical solutions, so we are left with a numerical ansatz (or analytical approximations) \cite{Toussaint}. One possibility is given by Markov-Chain-Monte-Carlo Sampling (MCMC) {\color{red} \cite{??}}. The main idea is to generate a chain of parameter samples $\boldsymbol{\theta}^{(t)}$ that follow the posterior PDF \eqref{eq:PDF}. For such a chain the mean with respect to the posterior is given by 
+\noindent First, the goal of \textsc{Monte-Carlo} sampling is discussed. Often equations \eqref{eq:marp}, \eqref{eq:Bayes_Complexity} and \eqref{eq:Bayes_Complexity_alt} have no closed analytical solutions, so we are left with a numerical ansatz (or analytical approximations) \cite{Toussaint}. One possibility is given by Markov-Chain-Monte-Carlo Sampling (MCMC) {\color{red} \cite{??}}. The main idea is to generate a chain of parameter samples $\boldsymbol{\theta}^{(t)}$ that follow the posterior PDF \eqref{eq:PDF}. For such a chain the mean with respect to the posterior is given by 
  \begin{equation}
  	\langle \boldsymbol{\theta}\rangle\approx \int p(\boldsymbol{\theta} | y)\boldsymbol{\theta}d\boldsymbol{\theta}=\frac{1}{N}\sum_{t=0}^{N-1}\boldsymbol{\theta}^{(t)},
  \end{equation}
@@ -192,13 +192,24 @@ since the samples follow the PDF $p(\boldsymbol{\theta} | y)$. Analogously the e
 Having established a \textsc{Markov} chain, one can compute the marginal posterior \eqref{eq:marp} by binning $\theta_i$ in the given parameter range and ignoring all other parameters \cite{Trotta_2008}. 
 
 \subsection{Metropolis-Hastings Algorithm}
-\noindent The main characterization of a \textsc{Markov} chain -- which consists of random parameters $\boldsymbol{\theta}^{(t)}$ -- is that each element is only determined by the previous element. 
+\noindent Because the \textsc{Metropolis-Hastings}-algorithm is one of the fundamentals of understanding SMC, see section \eqref{sec:SMC}, we briefly state it here. The main characterization of a \textsc{Markov} chain -- which consists of random parameters $\boldsymbol{\theta}^{(t)}$ -- is that each element is only determined by the previous element. In our case we want to sample in the parameter space according to the distribution $p(\btheta|y,M):=p(\btheta)$ \eqref{eq:PDF}. We can achieve this by randomly proposing a new vector in parameter space $\btheta'$  according to a arbitrary proposal distribution $p_p(\boldsymbol{a}|\boldsymbol{b})$ and accept it with a probability $$A(\btheta',\btheta^{(t)})=\min\left(1,\frac{p(\btheta')p_p(\btheta^{(t)}|\btheta')}{p(\btheta^{(t)})p_p(\btheta'|\btheta^{(t)})}\right).$$
+This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is only a very brief overview of MCMC. More information on the underlying theory can be found e.g. in \cite{neal}
 
-\subsection{Sequential Monte Carlo (SMC)}
- \noindent For our purposes we chose the \emph{Sequential Monte Carlo} sampling algorithm provided by \texttt{PyMC3} \cite{PyMC3_SMC}, because it grants easy access to the marginal likelihood. 
+\subsection{Sequential Monte Carlo (SMC)}\label{sec:SMC}
+ \noindent For our purposes we chose the \emph{Sequential Monte Carlo} sampling algorithm provided by \texttt{PyMC3} \cite{PyMC3_SMC}, because it grants easy access to the marginal likelihood. This in turn is needed for model comparison via the \textsc{Bayes}-factor.
+ 
+ Since the SMC algorithm joins several statistical concepts, including \emph{importance sampling}, \emph{tempering} and and MCMC kernel (\textsc{Metropolis-Hastings}) \cite{PyMC3_SMC}, it is a highly non-trivial algorithm. Thus, a detailed description is beyond the scope of this paper. We will now sketch the main idea of the algorithm. 
+ First let us introduce an auxiliary \emph{parameter} $\beta$ and write equation \eqref{eq:PDF} as 
+   $$p(\btheta|y)_\beta=\frac{p(y|\btheta)^\beta\cdot p(\btheta)}{Z_\beta},$$
+   with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$. For $\beta=1$ we get the same equation as before, that is $p(\btheta|y)_\beta=p(\btheta|y)$. The idea is to gradually sample from $\beta=0$ to $\beta=1$ using $\beta$ to control the transition from an easy to sample distribution to a harder one. The final result is a collection of samples from the true posterior \cite{PyMC3_SMC}. We can then estimate the marginal likelihood as \cite{SMC_PEPE} $$\hat{p}(y)=\prod_{i}\widehat{\frac{Z_{\beta_i}}{Z_{\beta_{i-1}}}}.$$
+   The hat denotes, that this is a numerical estimation of $p(y)$ \cite{PyMC3_SMC}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
  
 \subsection{Savage Dickey Density Ration (SDDR)}
-
+Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us furhter assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
+We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
+	\label{eq:sddr}
+	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_1)}{p(\omega|M_1)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
+\end{equation}
 
 \section{Examples}
 

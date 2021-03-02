@@ -4,51 +4,60 @@ The top-level auxiliary file: templateForReport.aux
 The style file: abbrvnat.bst
 Database file #1: templateForReportNotes.bib
 Database file #2: refs.bib
+I was expecting a `,' or a `}'---line 85 of file refs.bib
+ :  
+ :  year={1993},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "??"
 Warning--to sort, need author or key in PyMC3
 Warning--to sort, need author or key in ArviZ
 Warning--to sort, need author or key in PyMC3_SMC
 Warning--empty year in ArviZ
 Warning--empty year in PyMC3
 Warning--empty year in PyMC3_SMC
-You've used 9 entries,
+Warning--empty journal in SMC_PEPE
+Warning--empty year in neal
+Warning--empty year in neal
+You've used 11 entries,
             2773 wiz_defined-function locations,
-            666 strings with 6230 characters,
-and the built_in function-call counts, 3504 in all, are:
-= -- 338
-> -- 120
-< -- 5
-+ -- 46
-- -- 36
-* -- 289
-:= -- 504
-add.period$ -- 39
-call.type$ -- 9
-change.case$ -- 38
-chr.to.int$ -- 8
-cite$ -- 27
-duplicate$ -- 167
-empty$ -- 336
-format.name$ -- 44
-if$ -- 752
+            677 strings with 6544 characters,
+and the built_in function-call counts, 4341 in all, are:
+= -- 407
+> -- 178
+< -- 6
++ -- 66
+- -- 54
+* -- 355
+:= -- 641
+add.period$ -- 47
+call.type$ -- 11
+change.case$ -- 50
+chr.to.int$ -- 10
+cite$ -- 34
+duplicate$ -- 206
+empty$ -- 397
+format.name$ -- 64
+if$ -- 919
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 7
-newline$ -- 65
-num.names$ -- 24
-pop$ -- 92
+missing$ -- 9
+newline$ -- 77
+num.names$ -- 32
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 40
 quote$ -- 0
-skip$ -- 110
+skip$ -- 137
 stack$ -- 0
-substring$ -- 128
-swap$ -- 16
+substring$ -- 132
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
-warning$ -- 6
-while$ -- 25
+type$ -- 116
+warning$ -- 9
+while$ -- 31
 width$ -- 0
-write$ -- 144
-(There were 6 warnings)
+write$ -- 170
+(There was 1 error message)

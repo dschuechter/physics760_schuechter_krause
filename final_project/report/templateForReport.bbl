@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,12 +20,24 @@ Pymc3 documentation — sequential monte carlo, {\natexlab{b}}.
 \newblock URL \url{https://docs.pymc.io/notebooks/SMC2_gaussians.html}.
 \newblock last visit: \today.
 
+\bibitem[Gunawan et~al.(2020)Gunawan, Dang, Quiroz, Kohn, and Tran]{SMC_PEPE}
+D.~Gunawan, K.-D. Dang, M.~Quiroz, R.~Kohn, and M.-N. Tran.
+\newblock Subsampling sequential monte carlo for static bayesian models.
+\newblock 2020.
+\newblock URL \url{https://arxiv.org/pdf/1805.03317.pdf}.
+\newblock last visit: \today.
+
 \bibitem[Kunz et~al.(2006)Kunz, Trotta, and Parkinson]{kunz}
 M.~Kunz, R.~Trotta, and D.~R. Parkinson.
 \newblock Measuring the effective complexity of cosmological models.
 \newblock \emph{Phys. Rev. D}, 74:\penalty0 023503, Jul 2006.
 \newblock \doi{10.1103/PhysRevD.74.023503}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.74.023503}.
+
+\bibitem[Neal()]{neal}
+R.~M. Neal.
+\newblock Probabilistic inference using markov chain monte carlo methods.
+\newblock \emph{Technical Report CRG-TR-93-1}.
 
 \bibitem[Sivia and Skilling(2006)]{sivia}
 D.~Sivia and J.~Skilling.
