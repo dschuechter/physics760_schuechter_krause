@@ -1,13 +1,24 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[PyM()]{PyMC3}
-Pymc3 documentation — pymc3 3.10.0 documentation.
+\bibitem[Arv()]{ArviZ}
+Arviz: Exploratory analysis of bayesian models — arviz dev documentation.
+\newblock URL \url{https://arviz-devs.github.io/arviz/}.
+\newblock last visit: \today.
+
+\bibitem[PyM({\natexlab{a}})]{PyMC3}
+Pymc3 documentation — pymc3 3.10.0 documentation, {\natexlab{a}}.
 \newblock URL \url{https://docs.pymc.io/}.
+\newblock last visit: \today.
+
+\bibitem[PyM({\natexlab{b}})]{PyMC3_SMC}
+Pymc3 documentation — sequential monte carlo, {\natexlab{b}}.
+\newblock URL \url{https://docs.pymc.io/notebooks/SMC2_gaussians.html}.
+\newblock last visit: \today.
 
 \bibitem[Kunz et~al.(2006)Kunz, Trotta, and Parkinson]{kunz}
 M.~Kunz, R.~Trotta, and D.~R. Parkinson.
@@ -49,5 +60,12 @@ R.~Trotta.
 \newblock ISSN 1366-5812.
 \newblock \doi{10.1080/00107510802066753}.
 \newblock URL \url{http://dx.doi.org/10.1080/00107510802066753}.
+
+\bibitem[von Toussaint(2011)]{Toussaint}
+U.~von Toussaint.
+\newblock Bayesian inference in physics.
+\newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 943--999, Sep 2011.
+\newblock \doi{10.1103/RevModPhys.83.943}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.943}.
 
 \end{thebibliography}
