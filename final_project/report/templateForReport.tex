@@ -192,6 +192,7 @@ since the samples follow the PDF $p(\boldsymbol{\theta} | y)$. Analogously the e
 Having established a \textsc{Markov} chain, one can compute the marginal posterior \eqref{eq:marp} by binning $\theta_i$ in the given parameter range and ignoring all other parameters \cite{Trotta_2008}. 
 
 \subsection{Metropolis-Hastings Algorithm}
+\noindent The main characterization of a \textsc{Markov} chain -- which consists of random parameters $\boldsymbol{\theta}^{(t)}$ -- is that each element is only determined by the previous element. 
 
 \subsection{Sequential Monte Carlo (SMC)}
  \noindent For our purposes we chose the \emph{Sequential Monte Carlo} sampling algorithm provided by \texttt{PyMC3} \cite{PyMC3_SMC}, because it grants easy access to the marginal likelihood. 

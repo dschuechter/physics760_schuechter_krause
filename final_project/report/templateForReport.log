@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  2 MAR 2021 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  2 MAR 2021 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -602,10 +602,10 @@ Underfull \hbox (badness 6961) in paragraph at lines 65--70
 Package natbib Warning: There were undefined citations.
 
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./templateForReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `templateForReport.out' has not changed.
 (rerunfilecheck)             Checksum: 1217A397BD96CC47DA39478866606CD4;1617.
 
@@ -645,7 +645,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on templateForReport.pdf (3 pages, 291079 bytes).
+Output written on templateForReport.pdf (3 pages, 291321 bytes).
 PDF statistics:
  306 PDF objects out of 1000 (max. 8388607)
  272 compressed objects within 3 object streams
