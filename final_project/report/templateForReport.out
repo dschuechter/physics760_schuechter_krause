@@ -17,8 +17,10 @@
 \BOOKMARK [3][-]{section*.18}{Analytical approach}{section*.17}% 17
 \BOOKMARK [3][-]{section*.20}{Numerical approach}{section*.17}% 18
 \BOOKMARK [2][-]{section*.22}{Fitting a polynomial of unknown degree}{section*.16}% 19
-\BOOKMARK [3][-]{section*.23}{Analytical approach?}{section*.22}% 20
-\BOOKMARK [3][-]{section*.24}{Numerical approach}{section*.22}% 21
-\BOOKMARK [1][-]{section*.25}{Discussion}{section*.2}% 22
-\BOOKMARK [1][-]{section*.26}{Summary}{section*.2}% 23
-\BOOKMARK [1][-]{section*.27}{References}{section*.2}% 24
+\BOOKMARK [3][-]{section*.24}{Bayes-factor via SMC}{section*.22}% 20
+\BOOKMARK [3][-]{section*.26}{Bayes-factor via SDDR}{section*.22}% 21
+\BOOKMARK [3][-]{section*.29}{Bayes-Complexity}{section*.22}% 22
+\BOOKMARK [1][-]{section*.30}{Discussion}{section*.2}% 23
+\BOOKMARK [1][-]{section*.31}{Summary}{section*.2}% 24
+\BOOKMARK [1][-]{section*.32}{Appendix}{section*.2}% 25
+\BOOKMARK [1][-]{section*.33}{References}{section*.2}% 26

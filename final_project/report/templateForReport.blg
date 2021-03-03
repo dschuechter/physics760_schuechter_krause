@@ -36,45 +36,45 @@ Warning--empty year in wiki
 Warning--empty journal in SMC_PEPE
 Warning--empty year in neal
 Warning--empty year in neal
-You've used 15 entries,
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            694 strings with 6910 characters,
-and the built_in function-call counts, 5624 in all, are:
-= -- 534
-> -- 199
-< -- 7
-+ -- 76
-- -- 60
-* -- 464
-:= -- 794
-add.period$ -- 62
-call.type$ -- 15
-change.case$ -- 64
-chr.to.int$ -- 14
-cite$ -- 57
-duplicate$ -- 283
-empty$ -- 537
-format.name$ -- 73
-if$ -- 1204
+            699 strings with 6958 characters,
+and the built_in function-call counts, 5909 in all, are:
+= -- 557
+> -- 209
+< -- 8
++ -- 80
+- -- 63
+* -- 479
+:= -- 836
+add.period$ -- 64
+call.type$ -- 16
+change.case$ -- 68
+chr.to.int$ -- 15
+cite$ -- 59
+duplicate$ -- 298
+empty$ -- 569
+format.name$ -- 77
+if$ -- 1265
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 13
-newline$ -- 100
-num.names$ -- 36
-pop$ -- 165
+newline$ -- 104
+num.names$ -- 40
+pop$ -- 178
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 53
 quote$ -- 0
-skip$ -- 182
+skip$ -- 195
 stack$ -- 0
-substring$ -- 170
-swap$ -- 22
+substring$ -- 172
+swap$ -- 24
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
+type$ -- 171
 warning$ -- 21
-while$ -- 35
+while$ -- 38
 width$ -- 0
-write$ -- 222
+write$ -- 232
 (There were 2 error messages)

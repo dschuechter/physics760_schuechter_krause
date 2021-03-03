@@ -210,7 +210,7 @@ This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is
    \end{equation}
      The hat denotes, that this is a numerical estimation of $p(y)$ \cite{PyMC3_SMC}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
  
-\subsection{Savage Dickey Density Ration (SDDR)}
+\subsection{Savage Dickey Density Ration (SDDR)} \label{subsec:sddr}
 Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
 We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
 	\label{eq:sddr}
@@ -222,7 +222,7 @@ We will now discuss two instructive examples applying the methods described in s
 
 \subsection{Betabinomial example (coin flip)}
 Let us consider as a starting example, the flipping of a coin, i.e. an experiment where we can measure either heads ($H$) or tails ($T$) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many problems with the option of either success or failure. Assume we throw a coin $N$ times.  Based on the outcome we wish to determine the probability for $H$ and draw a conclusion whether the coin is fair or, in fact, biased. We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
-\subsubsection{Analytical approach}
+\subsubsection{\textbf{Analytical approach}}
 Since this example is relatively simple we can compute the \textsc{Bayes}-factor also analytically.
 
 
@@ -254,7 +254,7 @@ With this solution the \textsc{Bayes}-factor becomes
 \end{equation}
 For the biased coin $M_2$ should be superior. The analytical result of equation \eqref{eq:anal_bf} is $$B_{21}=B_{12}^{-1}=9.5839.$$
 
-\subsubsection{Numerical approach}
+\subsubsection{\textbf{Numerical approach}}
 \noindent We now compute the \textsc{Bayes}-factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach with a sample size of 2000 and 20 \textsc{Monte-Carlo} runs. The sampling yielded the \emph{marginal posteriors} depicted in figure \eqref{fig:coin_marp}. 
 The \textsc{Bayes}-factor according to equation \eqref{eq:with_the_hat} evaluated to
 $$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
@@ -271,13 +271,69 @@ in very good agreement with the analytical result.
 	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
 \end{figure}
 \subsection{Fitting a polynomial of unknown degree}
-\subsubsection{Analytical approach?}
-\subsubsection{Numerical approach}
+\noindent A common problem in physics is to find an appropiate function to fit unknown data. In the following we will show how \textsc{Bayesian} model selection can help to answer this question. For that an example dataset -- following a polynomial of second order with a known variation of $\sigma=[0.7, 0.2]$ -- will be used and polynomials of first to third order will be considered as possible models. 
+The true regression line is given by
+\begin{equation*}
+	f(x;\btheta)=a\cdot x^2+b\cdot x+c=2\cdot x^2+3\cdot x+1.
+\end{equation*}
+To tackle this problem numerically via the SMC algorithm, we have to assign \emph{priors} and \emph{likelihoods}. The \emph{priors} for the fit-parameters $a,b$ and $c$  are each described by a normal distribution with $\mu=0$ and $\sigma=2$, because we have some intuition what the parameters might be. That means $p(\btheta|M_i)=p(\theta_1|M_i)\cdot p(\theta_2|M_i)\cdots $. For the \emph{likelihood} functions we used normal distributions because we considered the noise being gaussian. The \emph{likelihood} can then be written as \cite[Chap. 3]{sivia}
+$$p(y|\btheta, M_i)=\prod_{k=1}^{N}\frac{1}{\sigma\sqrt{2\pi}}\exp{\left[\frac{(-f(y_k;\btheta)-y_k)^2}{2\sigma^2}\right]}.$$
+According to \textsc{Bayes} theorem we generated 2000 samples following the \emph{posterior} PDF $p(\btheta|y,M_i)\propto p(y|\btheta, M_i)\cdot p(\btheta|M_i) $ using the SMC algorithm. The resulting functions with parameters $a,b$ and $c$ in the highest density intervals (HDI) containing 99\% of the sampled values are displayed in figure \eqref{fig:HDI_sigma_07}.
+\begin{figure*}
+	%	\includegraphics[width=\textwidth]{HDI_sigma_07}
+	\caption{Result of parameter estimation with SMC. The data was generated with $\sigma=0.7$}\label{fig:HDI_sigma_07}
+\end{figure*}
 
+
+\subsubsection{\textbf{Bayes-factor via SMC}}
+As before, it is now straightforward to compute the \textsc{Bayes}-factor comparing the models. Our results are in table \eqref{tab:res_smc}.
+
+\begin{table}[htbp]
+	{\renewcommand{\arraystretch}{1.3}
+		\begin{tabular}{|c|c|}
+			\hline
+			Comparison $M_1$ vs. $M_2$ & $\ln(B_{12})$  \\
+			\hline
+			square vs. linear& $8.5507\pm0.053$\\
+			cubic vs. linear & $7.6225\pm0.094$\\
+			square vs. cubic&$0.9371\pm0.1093$  \\
+			\hline
+	\end{tabular}}
+	\caption{Results of \textsc{Bayes}-factor via SMC}
+	\label{tab:res_smc}
+\end{table}
+
+
+\subsubsection{\textbf{Bayes-factor via SDDR}}
+In section \eqref{subsec:sddr} we discussed an alternative way of computing the \textsc{Bayes}-factor. We notice this simplification applies to the case of polynomials of different degrees. Here each simpler model follows from the next more complex one by setting the coefficient of highest order to $0$. Also the criterion of seperable priors applies. It is now a simple task to evaluate equation \eqref{eq:sddr}. We only need the normalized \emph{marginal posterior} of the highest order coefficient and its corresponding prior at $0$. The prior is known and the marginal posterior is directly obtained once we have sampled and can then be normalized. In figure \eqref{fig:sddr} we show the priors and \emph{marginal posteriors} of the highest order coefficient of the polynomial of second and third order respectively, which leads us to the following results, see table \eqref{tab:res_sddr}.
+
+\begin{table}[htbp]
+	{\renewcommand{\arraystretch}{1.3}
+		\begin{tabular}{|c|c|}
+			\hline
+			Comparison $M_1$ vs. $M_2$ & $\ln(B_{12})$  \\
+			\hline
+			square vs. linear& $>2.4301$\\
+			square vs. cubic&$0.8091$  \\
+			cubic vs. linear & $>0.3329$\\
+			\hline
+	\end{tabular}}
+	\caption{Results of \textsc{Bayes}-factor via SDDR. Note that for the comparison square vs. linear we could only provide a lower bound because our sample size did not provide us with values around $\omega_\star$ }
+	\label{tab:res_sddr}
+\end{table}
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07+.pdf}
+	\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07+.pdf}
+	\caption{Computation of the SDDR}
+	\label{fig:sddr}
+\end{figure}
+\subsubsection{\textbf{Bayes-Complexity}}
+As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} $$\mathcal{C}_b=\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f()]}{}\right)$$
 \section{Discussion}
 
 \section{Summary}
-
+\section{Appendix}
 \newpage
 
 \bibliography{refs}
