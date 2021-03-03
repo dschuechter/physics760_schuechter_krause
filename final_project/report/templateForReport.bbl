@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,6 +18,24 @@ Pymc3 documentation — pymc3 3.10.0 documentation, {\natexlab{a}}.
 \bibitem[PyM({\natexlab{b}})]{PyMC3_SMC}
 Pymc3 documentation — sequential monte carlo, {\natexlab{b}}.
 \newblock URL \url{https://docs.pymc.io/notebooks/SMC2_gaussians.html}.
+\newblock last visit: \today.
+
+\bibitem[bet()]{beta_function}
+Beta function.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Beta_function}.
+\newblock last visit: \today.
+
+\bibitem[gam()]{gamma_function}
+Gamma function.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Gamma_function}.
+\newblock last visit: \today.
+
+\bibitem[wik()]{wiki}
+Beta distribution.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Beta_distribution}.
 \newblock last visit: \today.
 
 \bibitem[Celik and Korkmaz(2016)]{kormaz}

@@ -30,3 +30,13 @@ def beauty_settings():
     plt.xticks(fontsize=22,fontname='DejaVu Serif')
     plt.yticks(fontsize=22,fontname='DejaVu Serif')
     plt.grid(color='black',linestyle=':')    
+
+def beauty_settings_az():
+    #plt.figure(figsize=(10,5))
+    plt.minorticks_on()
+    plt.rcParams["mathtext.fontset"]="cm"
+    plt.rcParams['errorbar.capsize'] = 3
+    plt.rcParams['mathtext.rm'] = 'serif'
+    font={'family' : 'serif','size'   : 22}
+    plt.rc("font",**font)
+    

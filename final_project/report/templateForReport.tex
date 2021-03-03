@@ -32,7 +32,7 @@
 %prstper,
 %floatfix,
 ]{revtex4-1}
-
+\usepackage{boxhandler}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
@@ -42,8 +42,12 @@
 \usepackage{amsmath}
 \usepackage{siunitx}
 \usepackage[labelfont=bf]{caption}
+\usepackage{subcaption}
 \bibliographystyle{abbrvnat}
+\graphicspath{{figs/}}  
 \newcommand{\btheta}{\boldsymbol{\theta}}
+
+
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
 
@@ -215,7 +219,7 @@ We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
 We will now discuss two instructive examples applying the methods described in section \eqref{sec:meth}.
 
 \subsection{Betabinomial example (coin flip)}
-Let us consider as a starting example, the flipping of a coin, i.e. an experiment where we can measure either heads ($H$) or tails ($T$) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many problems with the option of either success or failure. Assume we throw a coin $N$ times. Based on the outcome we wish to determine the probability for $H$ and draw a conclusion whether the coin is fair or, in fact, biased.
+Let us consider as a starting example, the flipping of a coin, i.e. an experiment where we can measure either heads ($H$) or tails ($T$) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many problems with the option of either success or failure. Assume we throw a coin $N$ times.  Based on the outcome we wish to determine the probability for $H$ and draw a conclusion whether the coin is fair or, in fact, biased. We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
 \subsubsection{Analytical approach}
 Since this example is relatively simple we can compute the \textsc{Bayes}-factor also analytically.
 
@@ -224,10 +228,43 @@ Let us remember \textsc{Bayes} theorem in the context of this example where we w
 $$p(\theta|y,M_i)=\frac{p(y|\theta,M_i)\cdot p(\theta|M_i)}{p(y|M_i)}.$$
 Let now $M_1$ be a model which assumes a fair coin, so that the \emph{prior} is narrowly set around $\theta=0.5$. $M_2$ assumes a biased coin, that is a \emph{prior} centered around $\theta =0.25$. If we want to obtain the \textsc{Bayes}-factor we have to calculate $$p(y|M_i)=\int \text{d}\theta p(y|\theta,M_i)\cdot p(\theta|M_i) $$
 because $B_{12}$ is given by \eqref{eq:bf} $$B_{12}=\frac{p(y|M_1)}{p(y|M_2)}.$$
-To get an analytical solution we first have to assign \emph{prior} and \emph{likelihood} for each model. A natural ansatz for a prior $p(\theta|M_i)$ would be the Beta-distribution, since it is limited to the finite interval $[0,1]$. Its PDF is given by \cite{kormaz} \begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}
+To get an analytical solution we first have to assign \emph{prior} and \emph{likelihood} for each model. A natural ansatz for a prior $p(\theta|M_i)$ would be the Beta-distribution, since it is limited to the finite interval $[0,1]$. Its PDF is given by \cite{kormaz} \begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
 \end{align*}
-\subsubsection{Numerical approach}
+Where $\Gamma$ is the \emph{Gamma-function} \cite{gamma_function} and $\beta$ is the \emph{Beta-function} \cite{beta_function}.
+To get a narrowly centered distribution around $0.5$ we chose $\alpha=\beta=50$. To get a distribution skewed around $0.25$ we have to choose $\beta=3\alpha-2$ \cite{wiki}, in our case $\alpha=5,\beta=13$, see figure \eqref{fig:beta_dist}.
+\begin{figure}
+	\centering
+%	\includegraphics[width=\linewidth]{beta_dist}
+	\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
+	\label{fig:beta_dist}
+\end{figure}
+Now we will assign the \emph{likelihood} function $p(y|\theta,M)$. We can assume that each coin throw is independent of preceding coin throws and, naturally, only two outcomes are possible. Then a \emph{Binomial Distribution} is a suitable choice for our likelihood $p(y|\theta,M_i)$. If we observe $k$ heads out of $N$ coin throws ($y=(N,k)$) $$p(y|\theta,M_i)=\begin{pmatrix}N\\k
+\end{pmatrix}\theta^k(1-\theta)^{N-k}.$$
+Since we only are only interested in the ratio $B_{12}$ we can drop the binomial coefficient and write $$p(y|\theta, M_i)\propto \theta^k(1-\theta)^{N-k}.$$
+Then the integral becomes 
+\begin{align*}
+	p(y|M_i)&\propto \int_{0}^{1} \text{d}\theta \frac{1}{B(\alpha,\beta)} \cdot \theta^{\alpha+k-1}\cdot (1-\theta)^{N-k+\beta-1}\\
+	&=\frac{B(\alpha+k,\beta+N-k)}{B(\alpha, \beta)}.
+\end{align*}
+With this solution the \textsc{Bayes}-factor becomes
+\begin{equation}\label{eq:anal_bf}
+	B_{12}=\frac{B(\alpha_1+k,\beta_1+N-k)\cdot B(\alpha_2,\beta_2)}{B(\alpha_2+k,\beta_2+N-k)\cdot B(\alpha_1,\beta_1)}.
+\end{equation}
+For the biased coin $M_2$ should be superior. The analytical result of equation \eqref{eq:anal_bf} is $$B_{21}=B_{12}^{-1}=9.5839.$$
 
+\subsubsection{Numerical approach}
+We now compute the \textsc{Bayes}-factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach. The sampling yielded the following \emph{marginal posteriors} depicted in \eqref{fig:coin_marp}.
+\begin{figure}
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
+		\subcaption{}\label{fig:coin_marp_a}
+	\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
+		\subcaption{}\label{fig:coin_marp_b}
+	\end{subfigure}
+	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b}. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
+\end{figure}
 \subsection{Fitting a polynomial of unknown degree}
 \subsubsection{Analytical approach?}
 \subsubsection{Numerical approach}
@@ -236,6 +273,7 @@ To get an analytical solution we first have to assign \emph{prior} and \emph{lik
 
 \section{Summary}
 
+\newpage
 
 \bibliography{refs}
 \end{document}

@@ -18,51 +18,63 @@ Warning--I didn't find a database entry for "??"
 Warning--to sort, need author or key in PyMC3
 Warning--to sort, need author or key in ArviZ
 Warning--to sort, need author or key in PyMC3_SMC
+Warning--to sort, need author or key in gamma_function
+Warning--to sort, need author or key in beta_function
+Warning--to sort, need author or key in wiki
 Warning--empty year in ArviZ
 Warning--empty year in PyMC3
 Warning--empty year in PyMC3_SMC
+Warning--empty author in beta_function
+Warning--empty year in beta_function
+Warning--empty year in beta_function
+Warning--empty author in gamma_function
+Warning--empty year in gamma_function
+Warning--empty year in gamma_function
+Warning--empty author in wiki
+Warning--empty year in wiki
+Warning--empty year in wiki
 Warning--empty journal in SMC_PEPE
 Warning--empty year in neal
 Warning--empty year in neal
-You've used 12 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            684 strings with 6692 characters,
-and the built_in function-call counts, 4802 in all, are:
-= -- 450
+            694 strings with 6910 characters,
+and the built_in function-call counts, 5624 in all, are:
+= -- 534
 > -- 199
 < -- 7
-+ -- 73
++ -- 76
 - -- 60
-* -- 392
-:= -- 710
-add.period$ -- 50
-call.type$ -- 12
-change.case$ -- 55
-chr.to.int$ -- 11
-cite$ -- 36
-duplicate$ -- 226
-empty$ -- 438
+* -- 464
+:= -- 794
+add.period$ -- 62
+call.type$ -- 15
+change.case$ -- 64
+chr.to.int$ -- 14
+cite$ -- 57
+duplicate$ -- 283
+empty$ -- 537
 format.name$ -- 73
-if$ -- 1018
+if$ -- 1204
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 82
+missing$ -- 13
+newline$ -- 100
 num.names$ -- 36
-pop$ -- 129
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 50
 quote$ -- 0
-skip$ -- 152
+skip$ -- 182
 stack$ -- 0
-substring$ -- 161
-swap$ -- 19
+substring$ -- 170
+swap$ -- 22
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 127
-warning$ -- 9
+type$ -- 160
+warning$ -- 21
 while$ -- 35
 width$ -- 0
-write$ -- 183
+write$ -- 222
 (There were 2 error messages)
