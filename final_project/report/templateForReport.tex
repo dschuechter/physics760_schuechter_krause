@@ -93,8 +93,8 @@
 \end{center}
 
 
- {\color{red}
-\textsc{Bayes}ian inference provides quantitative measures for this model-selection problem, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity}, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz,Trotta_2008} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
+
+For this model-selection problem \textsc{Bayesian} inference provides quantitative measures, e.g. the \textsc{Bayes}-factor and the \textsc{Bayes}-complexity, these have among others been successfully used in astronomy as can be found in \cite{trotta,kunz,Trotta_2008} respectively. In this paper we will investigate two simulated example problems and apply various measures of bayesian model selection as to find out the true underlying model which was used to generate the simulated data. We will  focus on the numerical evaluation of such problems, especially\textsc{ Monte-Carlo} techniques.
 \section{Theory}
 \noindent In the following we will give a short introduction into \textsc{Bayes} theorem and the underlying concepts of parameter estimation and model selection.
 \subsection{Bayes' Theorem}
@@ -103,7 +103,7 @@
 \label{eq:bayes}
 \text{prob}(\boldsymbol{\theta} | y) =	p(\boldsymbol{\theta} | y) = \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)} 
 \end{equation}
-Where $p(\boldsymbol{\theta} | y) $ is the posterior probability for parameters $\boldsymbol{\theta}$ given the data $y$, $p(y|\boldsymbol{\theta})$ is the likelihood that the data fits a model with parameters $\boldsymbol{\theta}$, $p(\boldsymbol{\theta})$ is the prior probability of $\boldsymbol{\theta}$ and $p(y)= \int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$ is the marginal likelihood which acts as a normalization.  In the case of parameter selection, the normalization can often be neglected since it is only a  constant. In the case of the model comparison it is a crucial quantity, as we will disuss in section (\ref{sec:Model_comparison}) \cite[Chap. 2]{sivia}. 
+Where $p(\boldsymbol{\theta} | y) $ is the posterior probability for parameters $\boldsymbol{\theta}$ given the data $y$, $p(y|\boldsymbol{\theta})$ is the likelihood that the data fits a model with parameters $\boldsymbol{\theta}$, $p(\boldsymbol{\theta})$ is the prior probability of $\boldsymbol{\theta}$ and $p(y)= \int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$ is the marginal likelihood which acts as a normalization.  In the case of parameter selection, the normalization can often be neglected since it is only a  constant. In the case of the model comparison it is a crucial quantity, as we will disuss in subsection (\ref{sec:Model_comparison}) \cite[Chap. 2]{sivia}. 
 
 \subsection{Parameter estimation}
 \noindent Assume we want to find the best parameters for a given dataset $y$ and model $M$. Eq. \eqref{eq:bayes} then can be written as
@@ -133,7 +133,7 @@ Throughout this paper we will use $\langle\theta\rangle$ as our best fit estimat
 We recognize $p(y|M_i)$ as the marginal likelihood of the model $M_i$. Let now  the two competing models be those of Alice and Bob introduced in section \eqref{sec:intro}.Thus, $$p(y|M_i)=\int_{-\infty}^{\infty}\text{d}\lambda p(y|\lambda, M)\cdot p(\lambda|M)$$
 follows \cite[Chap. 3]{sivia}.
 \subsubsection{\textbf{Bayes Factor}}
-One way of comparing two models is to compare their posterior odds, that is the ratio {\color{red} quote lecture A. Wirzba?} \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
+One way of comparing two models is to compare their posterior odds, that is the ratio \cite{Trotta_2008} \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
 Usually we can assume the prior odds to be $\sim 1$ because we do not favor one model over the other just on prior beliefs. With this equation \eqref{eq:bf} simply becomes $$O_{ij}=B_{ij}.$$
 Calculating $B_{ij}$ will be referred to as calculating the \textsc{Bayes} factor \emph{in favor of} model $M_i$. We can then evaluate the result of $B_{ij}$ as follows 
 \begin{equation*}
@@ -162,7 +162,7 @@ Nevertheless a \textsc{Bayes} Factor $\geq1$ does not mean that the favored mode
 \caption{Empirical scale for evaluating the strength of evidence when comparing two models $M_i$ vs. $M_j$, adapted from \cite{Trotta_2008}}
 \label{tab:bf}
 \end{table}
-{\color{red} Bayes factor vor allem attraktiv für genestete modelle}
+%{\color{red} Bayes factor vor allem attraktiv für genestete modelle}
 
 
 \subsubsection{\textbf{Bayes Complexity}}
@@ -177,7 +177,7 @@ with  the likelihood $\mathcal{L}(\boldsymbol{\theta})=p(D|\boldsymbol{\theta},M
 where $\overline{\chi}$ denotes the mean taken over the posterior PDF. 
 The definition of $\mathcal{C}_b$ is chosen such that $\mathcal{C}_b\to\mathcal{C}_0$ for highly informative data \cite{kunz}.
 
-\section{Methods}
+\section{Methods}\label{sec:meth}
 \noindent We will now describe the functions of the used algorithms for the model selection. Since the implementation of the so called nested sampling is sufficiently dealt with by {\color{red} Gruppe - Bayesian parameter fitting} our implementation uses the \texttt{PyMC3}-Python Library \cite{PyMC3}.  \texttt{PyMC3} offers simple solutions to create models and a wide variety of sampling algorithms. Furthermore the \texttt{ArviZ}-Library provides methods for posterior analysis and visualization \cite{ArviZ}.
 
  \subsection{Monte-Carlo Sampling}
@@ -192,11 +192,11 @@ since the samples follow the PDF $p(\boldsymbol{\theta} | y)$. Analogously the e
 Having established a \textsc{Markov} chain, one can compute the marginal posterior \eqref{eq:marp} by binning $\theta_i$ in the given parameter range and ignoring all other parameters \cite{Trotta_2008}. 
 
 \subsection{Metropolis-Hastings Algorithm}
-\noindent Because the \textsc{Metropolis-Hastings}-algorithm is one of the fundamentals of understanding SMC, see section \eqref{sec:SMC}, we briefly state it here. The main characterization of a \textsc{Markov} chain -- which consists of random parameters $\boldsymbol{\theta}^{(t)}$ -- is that each element is only determined by the previous element. In our case we want to sample in the parameter space according to the distribution $p(\btheta|y,M):=p(\btheta)$ \eqref{eq:PDF}. We can achieve this by randomly proposing a new vector in parameter space $\btheta'$  according to a arbitrary proposal distribution $p_p(\boldsymbol{a}|\boldsymbol{b})$ and accept it with a probability $$A(\btheta',\btheta^{(t)})=\min\left(1,\frac{p(\btheta')p_p(\btheta^{(t)}|\btheta')}{p(\btheta^{(t)})p_p(\btheta'|\btheta^{(t)})}\right).$$
+\noindent So far we have discussed what we gain from sampling from the posterior distribution. We have not yet explained an algorithm how this is actually achieved.  For our purposes we chose the \emph{Sequential Monte Carlo} sampling algorithm provided by \texttt{PyMC3} \cite{PyMC3_SMC}, because it grants easy access to the marginal likelihood. This in turn is needed for model comparison via the \textsc{Bayes}-factor. Because the \textsc{Metropolis-Hastings}-algorithm is one of the fundamentals of understanding SMC, see subsection \eqref{sec:SMC}, we briefly state it here. The main characterization of a \textsc{Markov} chain -- which consists of random parameters $\boldsymbol{\theta}^{(t)}$ -- is that each element is only determined by the previous element. In our case we want to sample in the parameter space according to the distribution $p(\btheta|y,M):=p(\btheta)$ \eqref{eq:PDF}. We can achieve this by randomly proposing a new vector in parameter space $\btheta'$  according to a arbitrary proposal distribution $p_p(\boldsymbol{a}|\boldsymbol{b})$ and accept it with a probability $$A(\btheta',\btheta^{(t)})=\min\left(1,\frac{p(\btheta')p_p(\btheta^{(t)}|\btheta')}{p(\btheta^{(t)})p_p(\btheta'|\btheta^{(t)})}\right).$$
 This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is only a very brief overview of MCMC. More information on the underlying theory can be found e.g. in \cite{neal}
 
 \subsection{Sequential Monte Carlo (SMC)}\label{sec:SMC}
- \noindent For our purposes we chose the \emph{Sequential Monte Carlo} sampling algorithm provided by \texttt{PyMC3} \cite{PyMC3_SMC}, because it grants easy access to the marginal likelihood. This in turn is needed for model comparison via the \textsc{Bayes}-factor.
+ \noindent
  
  Since the SMC algorithm joins several statistical concepts, including \emph{importance sampling}, \emph{tempering} and and MCMC kernel (\textsc{Metropolis-Hastings}) \cite{PyMC3_SMC}, it is a highly non-trivial algorithm. Thus, a detailed description is beyond the scope of this paper. We will now sketch the main idea of the algorithm. 
  First let us introduce an auxiliary \emph{parameter} $\beta$ and write equation \eqref{eq:PDF} as 
@@ -205,18 +205,27 @@ This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is
    The hat denotes, that this is a numerical estimation of $p(y)$ \cite{PyMC3_SMC}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
  
 \subsection{Savage Dickey Density Ration (SDDR)}
-Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us furhter assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
+Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
 We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
 	\label{eq:sddr}
 	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_1)}{p(\omega|M_1)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
 \end{equation}
 
 \section{Examples}
+We will now discuss two instructive examples applying the methods described in section \eqref{sec:meth}.
 
 \subsection{Betabinomial example (coin flip)}
-Let us now consider as a starting example, the flipping of a two-sided coin, i.e. an experiment where we can measure either heads (H) or tails (T) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many real-life problems, such as birth rates, $\dots$, or anything with the option of either success or failure.
-\subsubsection{Analytical approach?}
-Assume we throw a coin 20 times. We observe 6 H and 14 T. "Is this a fair coin?" might be a question to ask yourself since the bias in outcome is quite large. Naively expecting a fair coin we could assign a \emph{prior} to the probability of heads $\theta$ as centred around $0.5$, so for example a gaussian with $\mu=0.5,\sigma=0.1$.  
+Let us consider as a starting example, the flipping of a coin, i.e. an experiment where we can measure either heads ($H$) or tails ($T$) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many problems with the option of either success or failure. Assume we throw a coin $N$ times. Based on the outcome we wish to determine the probability for $H$ and draw a conclusion whether the coin is fair or, in fact, biased.
+\subsubsection{Analytical approach}
+Since this example is relatively simple we can compute the \textsc{Bayes}-factor also analytically.
+
+
+Let us remember \textsc{Bayes} theorem in the context of this example where we want to compare two models $M_i,i=1,2$ which assign the following posterior to the probability of heads $p(\theta|y,M_i)$ for a given dataset $y$
+$$p(\theta|y,M_i)=\frac{p(y|\theta,M_i)\cdot p(\theta|M_i)}{p(y|M_i)}.$$
+Let now $M_1$ be a model which assumes a fair coin, so that the \emph{prior} is narrowly set around $\theta=0.5$. $M_2$ assumes a biased coin, that is a \emph{prior} centered around $\theta =0.25$. If we want to obtain the \textsc{Bayes}-factor we have to calculate $$p(y|M_i)=\int \text{d}\theta p(y|\theta,M_i)\cdot p(\theta|M_i) $$
+because $B_{12}$ is given by \eqref{eq:bf} $$B_{12}=\frac{p(y|M_1)}{p(y|M_2)}.$$
+To get an analytical solution we first have to assign \emph{prior} and \emph{likelihood} for each model. A natural ansatz for a prior $p(\theta|M_i)$ would be the Beta-distribution, since it is limited to the finite interval $[0,1]$. Its PDF is given by \cite{kormaz} \begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}
+\end{align*}
 \subsubsection{Numerical approach}
 
 \subsection{Fitting a polynomial of unknown degree}

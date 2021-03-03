@@ -9,6 +9,11 @@ I was expecting a `,' or a `}'---line 85 of file refs.bib
  :  year={1993},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 113 of file refs.bib
+ :  
+ :  url={https://www.researchgate.net/publication/303784548_BETA_DISTRIBUTION_AND_INFERENCES_ABOUT_THE_BETA_FUNCTIONS}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "??"
 Warning--to sort, need author or key in PyMC3
 Warning--to sort, need author or key in ArviZ
@@ -19,45 +24,45 @@ Warning--empty year in PyMC3_SMC
 Warning--empty journal in SMC_PEPE
 Warning--empty year in neal
 Warning--empty year in neal
-You've used 11 entries,
+You've used 12 entries,
             2773 wiz_defined-function locations,
-            677 strings with 6544 characters,
-and the built_in function-call counts, 4341 in all, are:
-= -- 407
-> -- 178
-< -- 6
-+ -- 66
-- -- 54
-* -- 355
-:= -- 641
-add.period$ -- 47
-call.type$ -- 11
-change.case$ -- 50
-chr.to.int$ -- 10
-cite$ -- 34
-duplicate$ -- 206
-empty$ -- 397
-format.name$ -- 64
-if$ -- 919
+            684 strings with 6692 characters,
+and the built_in function-call counts, 4802 in all, are:
+= -- 450
+> -- 199
+< -- 7
++ -- 73
+- -- 60
+* -- 392
+:= -- 710
+add.period$ -- 50
+call.type$ -- 12
+change.case$ -- 55
+chr.to.int$ -- 11
+cite$ -- 36
+duplicate$ -- 226
+empty$ -- 438
+format.name$ -- 73
+if$ -- 1018
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 77
-num.names$ -- 32
-pop$ -- 121
+missing$ -- 10
+newline$ -- 82
+num.names$ -- 36
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 44
 quote$ -- 0
-skip$ -- 137
+skip$ -- 152
 stack$ -- 0
-substring$ -- 132
-swap$ -- 17
+substring$ -- 161
+swap$ -- 19
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
+type$ -- 127
 warning$ -- 9
-while$ -- 31
+while$ -- 35
 width$ -- 0
-write$ -- 170
-(There was 1 error message)
+write$ -- 183
+(There were 2 error messages)
