@@ -236,7 +236,7 @@ Where $\Gamma$ is the \emph{Gamma-function} \cite{gamma_function} and $\beta$ is
 To get a narrowly centered distribution around $0.5$ we chose $\alpha=\beta=50$. To get a distribution skewed around $0.25$ we have to choose $\beta=3\alpha-2$ \cite{wiki}, in our case $\alpha=5,\beta=13$, see figure \eqref{fig:beta_dist}.
 \begin{figure}
 	\centering
-%	\includegraphics[width=\linewidth]{beta_dist}
+	\includegraphics[width=\linewidth]{beta_dist}
 	\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
 	\label{fig:beta_dist}
 \end{figure}
@@ -261,11 +261,11 @@ $$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
 in very good agreement with the analytical result.
 \begin{figure}
 	\begin{subfigure}{\linewidth}
-%		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
+		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
 		\subcaption{}\label{fig:coin_marp_a}
 	\end{subfigure}
 	\begin{subfigure}{\linewidth}
-%		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
+		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
 		\subcaption{}\label{fig:coin_marp_b}
 	\end{subfigure}
 	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
@@ -279,8 +279,8 @@ The true regression line is given by
 To tackle this problem numerically via the SMC algorithm, we have to assign \emph{priors} and \emph{likelihoods}. The \emph{priors} for the fit-parameters $a,b$ and $c$  are each described by a normal distribution with $\mu=0$ and $\sigma=2$, because we have some intuition what the parameters might be. That means $p(\btheta|M_i)=p(\theta_1|M_i)\cdot p(\theta_2|M_i)\cdots $. For the \emph{likelihood} functions we used normal distributions because we considered the noise being gaussian. The \emph{likelihood} can then be written as \cite[Chap. 3]{sivia}
 $$p(y|\btheta, M_i)=\prod_{k=1}^{N}\frac{1}{\sigma\sqrt{2\pi}}\exp{\left[\frac{(-f(y_k;\btheta)-y_k)^2}{2\sigma^2}\right]}.$$
 According to \textsc{Bayes} theorem we generated 2000 samples following the \emph{posterior} PDF $p(\btheta|y,M_i)\propto p(y|\btheta, M_i)\cdot p(\btheta|M_i) $ using the SMC algorithm. The resulting functions with parameters $a,b$ and $c$ in the highest density intervals (HDI) containing 99\% of the sampled values are displayed in figure \eqref{fig:HDI_sigma_07}.
-\begin{figure*}
-	%	\includegraphics[width=\textwidth]{HDI_sigma_07}
+\begin{figure*}[htbp]
+		\includegraphics[width=\textwidth]{HDI_sigma_07}
 	\caption{Result of parameter estimation with SMC. The data was generated with $\sigma=0.7$}\label{fig:HDI_sigma_07}
 \end{figure*}
 
@@ -323,13 +323,21 @@ In section \eqref{subsec:sddr} we discussed an alternative way of computing the 
 \end{table}
 \begin{figure}
 	\centering
-	%\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07+.pdf}
-	%\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07+.pdf}
+	\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
+	\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
 	\caption{Computation of the SDDR}
 	\label{fig:sddr}
 \end{figure}
 \subsubsection{\textbf{Bayes-Complexity}}
-As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} \begin{align*}\mathcal{C}_b=&\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\btheta^{(t)})]^2}{\sigma^2}\right)\\&-\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\frac{1}{N_S}\sum_{t=0}^{N_S-1}\btheta^{(t)})]^2}{\sigma^2}\end{align*}
+As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} \begin{align*}\mathcal{C}_b=&\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\btheta^{(t)})]^2}{\sigma^2}\right)\\&-\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\frac{1}{N_S}\sum_{t=0}^{N_S-1}\btheta^{(t)})]^2}{\sigma^2}.\end{align*}
+In figure \eqref{fig:complex} we plotted the computed complexity $\mathcal{C}_b$ as a function of the number of parameters and also the input complexity $\mathcal{C}_0$.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{_sigma_07acomplexity.pdf}
+	\caption{\textsc{Bayesian} complexity as a function of number of input parameters}
+	\label{fig:complex}
+\end{figure}
 \section{Discussion}
 
 \section{Summary}
