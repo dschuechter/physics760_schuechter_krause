@@ -234,7 +234,7 @@ To get an analytical solution we first have to assign \emph{prior} and \emph{lik
 \end{align*}
 Where $\Gamma$ is the \emph{Gamma-function} \cite{gamma_function} and $\beta$ is the \emph{Beta-function} \cite{beta_function}.
 To get a narrowly centered distribution around $0.5$ we chose $\alpha=\beta=50$. To get a distribution skewed around $0.25$ we have to choose $\beta=3\alpha-2$ \cite{wiki}, in our case $\alpha=5,\beta=13$, see figure \eqref{fig:beta_dist}.
-\begin{figure}
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{beta_dist}
 	\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
@@ -259,7 +259,7 @@ For the biased coin $M_2$ should be superior. The analytical result of equation 
 The \textsc{Bayes}-factor according to equation \eqref{eq:with_the_hat} evaluated to
 $$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
 in very good agreement with the analytical result.
-\begin{figure}
+\begin{figure}[htbp]
 	\begin{subfigure}{\linewidth}
 		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
 		\subcaption{}\label{fig:coin_marp_a}
@@ -321,7 +321,7 @@ In section \eqref{subsec:sddr} we discussed an alternative way of computing the 
 	\caption{Results of \textsc{Bayes}-factor via SDDR. Note that for the comparison square vs. linear we could only provide a lower bound because our sample size did not provide us with values around $\omega_\star$ }
 	\label{tab:res_sddr}
 \end{table}
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
 	\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
@@ -332,7 +332,7 @@ In section \eqref{subsec:sddr} we discussed an alternative way of computing the 
 As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} \begin{align*}\mathcal{C}_b=&\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\btheta^{(t)})]^2}{\sigma^2}\right)\\&-\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\frac{1}{N_S}\sum_{t=0}^{N_S-1}\btheta^{(t)})]^2}{\sigma^2}.\end{align*}
 In figure \eqref{fig:complex} we plotted the computed complexity $\mathcal{C}_b$ as a function of the number of parameters and also the input complexity $\mathcal{C}_0$.
 
-\begin{figure}
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{_sigma_07acomplexity.pdf}
 	\caption{\textsc{Bayesian} complexity as a function of number of input parameters}
