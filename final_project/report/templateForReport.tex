@@ -205,14 +205,16 @@ This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is
  Since the SMC algorithm joins several statistical concepts, including \emph{importance sampling}, \emph{tempering} and and MCMC kernel (\textsc{Metropolis-Hastings}) \cite{PyMC3_SMC}, it is a highly non-trivial algorithm. Thus, a detailed description is beyond the scope of this paper. We will now sketch the main idea of the algorithm. 
  First let us introduce an auxiliary \emph{parameter} $\beta$ and write equation \eqref{eq:PDF} as 
    $$p(\btheta|y)_\beta=\frac{p(y|\btheta)^\beta\cdot p(\btheta)}{Z_\beta},$$
-   with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$. For $\beta=1$ we get the same equation as before, that is $p(\btheta|y)_\beta=p(\btheta|y)$. The idea is to gradually sample from $\beta=0$ to $\beta=1$ using $\beta$ to control the transition from an easy to sample distribution to a harder one. The final result is a collection of samples from the true posterior \cite{PyMC3_SMC}. We can then estimate the marginal likelihood as \cite{SMC_PEPE} $$\hat{p}(y)=\prod_{i}\widehat{\frac{Z_{\beta_i}}{Z_{\beta_{i-1}}}}.$$
-   The hat denotes, that this is a numerical estimation of $p(y)$ \cite{PyMC3_SMC}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
+   with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$. For $\beta=1$ we get the same equation as before, that is $p(\btheta|y)_\beta=p(\btheta|y)$. The idea is to gradually sample from $\beta=0$ to $\beta=1$ using $\beta$ to control the transition from an easy to sample distribution to a harder one. The final result is a collection of samples from the true posterior \cite{PyMC3_SMC}. We can then estimate the marginal likelihood as \cite{SMC_PEPE} \begin{equation}\label{eq:with_the_hat}
+   	\hat{p}(y)=\prod_{i}\widehat{\frac{Z_{\beta_i}}{Z_{\beta_{i-1}}}}.
+   \end{equation}
+     The hat denotes, that this is a numerical estimation of $p(y)$ \cite{PyMC3_SMC}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
  
 \subsection{Savage Dickey Density Ration (SDDR)}
 Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
 We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
 	\label{eq:sddr}
-	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_1)}{p(\omega|M_1)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
+	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_j)}{p(\omega|M_j)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
 \end{equation}
 
 \section{Examples}
@@ -253,17 +255,20 @@ With this solution the \textsc{Bayes}-factor becomes
 For the biased coin $M_2$ should be superior. The analytical result of equation \eqref{eq:anal_bf} is $$B_{21}=B_{12}^{-1}=9.5839.$$
 
 \subsubsection{Numerical approach}
-We now compute the \textsc{Bayes}-factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach. The sampling yielded the following \emph{marginal posteriors} depicted in \eqref{fig:coin_marp}.
+\noindent We now compute the \textsc{Bayes}-factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach with a sample size of 2000 and 20 \textsc{Monte-Carlo} runs. The sampling yielded the \emph{marginal posteriors} depicted in figure \eqref{fig:coin_marp}. 
+The \textsc{Bayes}-factor according to equation \eqref{eq:with_the_hat} evaluated to
+$$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
+in very good agreement with the analytical result.
 \begin{figure}
 	\begin{subfigure}{\linewidth}
-		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
+%		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
 		\subcaption{}\label{fig:coin_marp_a}
 	\end{subfigure}
 	\begin{subfigure}{\linewidth}
-		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
+%		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
 		\subcaption{}\label{fig:coin_marp_b}
 	\end{subfigure}
-	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b}. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
+	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
 \end{figure}
 \subsection{Fitting a polynomial of unknown degree}
 \subsubsection{Analytical approach?}
