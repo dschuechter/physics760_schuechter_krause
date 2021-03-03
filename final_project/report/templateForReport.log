@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  3 MAR 2021 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  3 MAR 2021 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,27 +615,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 
 Package natbib Warning: Citation `??' on page 2 undefined on input line 188.
 
-[2] [3] [4]
-<figs/SDDR_linear vs. squared_sigma_07+.pdf, id=257, 1000.57817pt x 427.9827pt>
-
-File: figs/SDDR_linear vs. squared_sigma_07+.pdf Graphic file (type pdf)
-<use figs/SDDR_linear vs. squared_sigma_07+.pdf>
-Package pdftex.def Info: figs/SDDR_linear vs. squared_sigma_07+.pdf  used on in
-put line 326.
-(pdftex.def)             Requested size: 246.0pt x 105.21912pt.
-<figs/SDDR_squared vs. cubic_sigma_07+.pdf, id=258, 1000.57817pt x 427.9827pt>
-File: figs/SDDR_squared vs. cubic_sigma_07+.pdf Graphic file (type pdf)
-<use figs/SDDR_squared vs. cubic_sigma_07+.pdf>
-Package pdftex.def Info: figs/SDDR_squared vs. cubic_sigma_07+.pdf  used on inp
-ut line 327.
-(pdftex.def)             Requested size: 246.0pt x 105.21912pt.
- [5 <./figs/SDDR_linear vs. squared_sigma_07+.pdf> <./figs/SDDR_squared vs. cub
-ic_sigma_07+.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figs/SDDR_squared vs. cubi
-c_sigma_07+.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
->] (./templateForReport.bbl
+[2] [3] [4] [5] (./templateForReport.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--22
  []$\OT1/cmtt/m/n/9 https : / / docs . pymc . io / notebooks / SMC2 _ gaussians
  .
@@ -715,10 +695,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13085 strings out of 480608
- 231119 string characters out of 5903630
+ 13073 strings out of 480608
+ 230556 string characters out of 5903630
  516426 words of memory out of 5000000
- 28689 multiletter control sequences out of 15000+600000
+ 28680 multiletter control sequences out of 15000+600000
  549585 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,46p,1302b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -751,10 +731,10 @@ s/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on templateForReport.pdf (6 pages, 384002 bytes).
+Output written on templateForReport.pdf (6 pages, 355265 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
+ 412 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
  70 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

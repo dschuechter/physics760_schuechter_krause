@@ -323,13 +323,13 @@ In section \eqref{subsec:sddr} we discussed an alternative way of computing the 
 \end{table}
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07+.pdf}
-	\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07+.pdf}
+	%\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07+.pdf}
+	%\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07+.pdf}
 	\caption{Computation of the SDDR}
 	\label{fig:sddr}
 \end{figure}
 \subsubsection{\textbf{Bayes-Complexity}}
-As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} $$\mathcal{C}_b=\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f()]}{}\right)$$
+As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} \begin{align*}\mathcal{C}_b=&\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\btheta^{(t)})]^2}{\sigma^2}\right)\\&-\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\frac{1}{N_S}\sum_{t=0}^{N_S-1}\btheta^{(t)})]^2}{\sigma^2}\end{align*}
 \section{Discussion}
 
 \section{Summary}
