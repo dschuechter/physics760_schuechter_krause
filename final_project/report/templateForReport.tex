@@ -40,13 +40,14 @@
 \usepackage{natbib}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{float}
 \usepackage{siunitx}
 \usepackage[labelfont=bf]{caption}
 \usepackage{subcaption}
 \bibliographystyle{abbrvnat}
 \graphicspath{{figs/}}  
 \newcommand{\btheta}{\boldsymbol{\theta}}
-
+\usepackage[section]{placeins}
 
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -75,7 +76,7 @@
              %  but any date may be explicitly specified
 
 \begin{abstract}
-\noindent This paper is an introduction to the concepts of \textsc{Bayesian} model selection. \textsc{Bayesian} statistics provide quantitative measures for model comparison, namely \textsc{Bayes} factor and \textsc{Bayes} complexity. 
+\noindent This paper is an introduction to the concepts of \textsc{Bayesian} model selection. \textsc{Bayesian} statistics provide quantitative measures for model comparison, namely \textsc{Bayes} factor and \textsc{Bayes} complexity. The underlying theory and applications of those measures are shown as well as numerical techniques used in the process thereof.
 \end{abstract}
 \maketitle
 
@@ -228,7 +229,7 @@ Where $\Gamma$ is the \emph{Gamma-function} \cite{gamma_function} and $B(\alpha,
 To get a narrowly centered distribution around $0.5$ we chose $\alpha=\beta=50$. To get a distribution skewed around $0.25$ we have to choose $\beta=3\alpha-2$ \cite{wiki}, in our case $\alpha=5,\beta=13$, see figure \eqref{fig:beta_dist}.
 \begin{figure}[htbp]
 	\centering
-%	\includegraphics[width=\linewidth]{beta_dist}
+	\includegraphics[width=\linewidth]{beta_dist}
 	\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
 	\label{fig:beta_dist}
 \end{figure}
@@ -253,11 +254,11 @@ $$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
 in very good agreement with the analytical result.
 \begin{figure}[htbp]
 	\begin{subfigure}{\linewidth}
-%		\includegraphics[width=\linewidth]{coin_marp_m1.pdf}
+		\includegraphics[width=0.9\linewidth]{coin_marp_m1.pdf}
 		\subcaption{}\label{fig:coin_marp_a}
 	\end{subfigure}
 	\begin{subfigure}{\linewidth}
-%		\includegraphics[width=\linewidth]{coin_marp_m2.pdf}
+		\includegraphics[width=0.9\linewidth]{coin_marp_m2.pdf}
 		\subcaption{}\label{fig:coin_marp_b}
 	\end{subfigure}
 	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
@@ -271,16 +272,14 @@ The true regression line is given by
 To tackle this problem numerically via the SMC algorithm, we have to assign \emph{priors} and \emph{likelihoods}. The \emph{priors} for the fit-parameters $a,b$ and $c$  are each described by a normal distribution with $\mu_{\text{prior}}=0$ and $\sigma_{\text{prior}}=2$, because we have some intuition what the parameters might be. That means $p(\btheta|M_i)=p(\theta_1|M_i)\cdot p(\theta_2|M_i)\cdots $. For the \emph{likelihood} functions we used normal distributions because we considered the noise being gaussian. The \emph{likelihood} can then be written as \cite[Chap. 3]{sivia}
 $$p(y|\btheta, M_i)=\prod_{k=1}^{N}\frac{1}{\sigma\sqrt{2\pi}}\exp{\left[-\frac{(f(y_k;\btheta)-y_k)^2}{2\sigma^2}\right]}.$$
 According to \textsc{Bayes} theorem we generated 2000 samples following the \emph{posterior} PDF $p(\btheta|y,M_i)\propto p(y|\btheta, M_i)\cdot p(\btheta|M_i) $ using the SMC algorithm. The resulting functions with parameters $a,b$ and $c$ in the highest density intervals (HDI) containing 99\% of the sampled values are displayed in figure \eqref{fig:HDI_sigma_07} for $\sigma=0.7$.
-\begin{figure*}[htbp]
-%		\includegraphics[width=\textwidth]{HDI_sigma_07}
+\begin{figure*}
+	\includegraphics[width=\textwidth]{HDI_sigma_07}
 	\caption{Result of parameter estimation with SMC. The data was generated with $\sigma=0.7$}\label{fig:HDI_sigma_07}
 \end{figure*}
-
-
 \subsubsection{\textbf{Bayes-factor via SMC}}
-\noindent As before, it is now straightforward to compute the \textsc{Bayes}-factor comparing the models. Our results are in table \eqref{tab:res_smc}.
+\noindent As before, it is now straightforward to compute the \textsc{Bayes}-factor comparing the models. Our results are listed in table \eqref{tab:res_smc}.
 
-\begin{table}[htbp]
+\begin{table}[H]
 	{\renewcommand{\arraystretch}{1.3}
 		\begin{tabular}{|c|c|c|}
 			\hline
@@ -295,41 +294,44 @@ According to \textsc{Bayes} theorem we generated 2000 samples following the \emp
 	\label{tab:res_smc}
 \end{table}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
+	\includegraphics[width=0.9\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
+	\caption{Computation of the SDDR}
+	\label{fig:sddr}
+\end{figure}
 
-\subsubsection{\textbf{Bayes-factor via SDDR}}
-\noindent In section \eqref{subsec:sddr} we discussed an alternative way of computing the \textsc{Bayes}-factor. We notice this simplification applies to the case of polynomials of different degrees. Here each simpler model follows from the next more complex one by setting the coefficient of highest order to $0$. Also the criterion of seperable priors applies. It is now a simple task to evaluate equation \eqref{eq:sddr}. We only need the normalized \emph{marginal posterior} of the highest order coefficient and its corresponding prior at $0$. The prior is known and the marginal posterior is directly obtained once we have sampled and can then be normalized. In figure \eqref{fig:sddr} we show the priors and \emph{marginal posteriors} of the highest order coefficient of the polynomial of second and third order respectively, which leads us to the following results, see table \eqref{tab:res_sddr}.
-
-\begin{table}[htbp]
-	{\renewcommand{\arraystretch}{1.3}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			Comparison $M_1$ vs. $M_2$ & $\ln(B_{12}(\sigma=0.7))$ & $\ln(B_{12}(\sigma=0.2))$ \\
-			\hline
-			square vs. linear& $>2.4301\pm0.27613$&$>2.0624\pm0.3077$\\
-			square vs. cubic&$0.8091\pm0.0265$  &$2.1184\pm0.0723$\\
-			cubic vs. linear & $>0.3329\pm0.1292$&$>1.0272\pm0.1572$\\
-			\hline
+\begin{table}[H]
+		{\renewcommand{\arraystretch}{1.3}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				Comparison $M_1$ vs. $M_2$ & $\ln(B_{12}(\sigma=0.7))$ & $\ln(B_{12}(\sigma=0.2))$ \\
+				\hline
+				square vs. linear& $>2.4301\pm0.27613$&$>2.0624\pm0.3077$\\
+				square vs. cubic&$0.8091\pm0.0265$  &$2.1184\pm0.0723$\\
+				cubic vs. linear & $>0.3329\pm0.1292$&$>1.0272\pm0.1572$\\
+				\hline
 	\end{tabular}}
 	\caption{Results of \textsc{Bayes}-factor via SDDR. Note that for the comparison square vs. linear we could only provide a lower bound because our sample size did not provide us with values around $\omega_\star$. We compared the ratio of the \textsc{Bayes}-factors of square vs. linear and square vs. cubic to get the \textsc{Bayes}-factor of cubic vs. linear.}
 	\label{tab:res_sddr}
 \end{table}
-\begin{figure}[h]
+\subsubsection{\textbf{Bayes-factor via SDDR}}
+\noindent In section \eqref{subsec:sddr} we discussed an alternative way of computing the \textsc{Bayes}-factor. We notice this simplification applies to the case of polynomials of different degrees. Here each simpler model follows from the next more complex one by setting the coefficient of highest order to $0$. Also the criterion of seperable priors applies. It is now a simple task to evaluate equation \eqref{eq:sddr}. We only need the normalized \emph{marginal posterior} of the highest order coefficient and its corresponding prior at $0$. The prior is known and the marginal posterior is directly obtained once we have sampled and can then be normalized. In figure \eqref{fig:sddr} we show the priors and \emph{marginal posteriors} of the highest order coefficient of the polynomial of second and third order respectively, which leads us to the following results, see table \eqref{tab:res_sddr}.
+
+\begin{figure}[H]
 	\centering
-%	\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
-%	\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
-	\caption{Computation of the SDDR}
-	\label{fig:sddr}
+	\includegraphics[width=\linewidth]{_sigma_07acomplexity.pdf}
+	\caption{\textsc{Bayesian} complexity as a function of number of input parameters}
+	\label{fig:complex}
 \end{figure}
+
+\vspace{-1.2cm}
 \subsubsection{\textbf{Bayes-Complexity}}
 \noindent As another measure of model selection, the \textsc{Bayesian} complexity $\mathcal{C}_b$ was introduced. Having sampled in parameter space $\btheta^{(t)}$, equation \eqref{eq:Bayes_Complexity_alt} is evaluated instantly as \cite{wuerz} \begin{align*}\mathcal{C}_b=&\frac{1}{N_S}\sum_{t=0}^{N_S-1}\left(\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\btheta^{(t)})]^2}{\sigma^2}\right)\\&-\sum_{k=0}^{N_y-1}\frac{[y_k-f(y_k;\frac{1}{N_S}\sum_{t=0}^{N_S-1}\btheta^{(t)})]^2}{\sigma^2}.\end{align*}
 In figure \eqref{fig:complex} we plotted the computed complexity $\mathcal{C}_b$ as a function of the number of parameters and also the input complexity $\mathcal{C}_0$.
 
-\begin{figure}[htbp]
-	\centering
-%	\includegraphics[width=\linewidth]{_sigma_07acomplexity.pdf}
-	\caption{\textsc{Bayesian} complexity as a function of number of input parameters}
-	\label{fig:complex}
-\end{figure}
+
 \section{Discussion}
 \noindent We now discuss the results obtained in section \eqref{sec:examples}.
 \subsection{Betabinomial example}
@@ -344,12 +346,13 @@ Since all errors are relatively small, we can conclude again that the \textsc{Ma
 Using figure \eqref{fig:complex} one can see, that the effective complexity $\mathcal{C}_b$ diverges for a number of parameters $\dim{\btheta}>3$. The data is not able to constrain more parameters than three. Using this information and the obtained \textsc{Bayes} factors one can confidentially assume, that the underlying model is a polynomial of second order. 
 
 We chose a rather simple model that can easily be scaled up for higher order polynomials. The benefit of the shown simpler model is, that the reader can easily follow the chain of thought.  
+
 \section{Summary}
 \noindent In this paper we investigated the problem of \textsc{Bayesian} model selection. After introducing the needed theory of \textsc{Bayes} theorem, parameter estimation and model comparison we established two measures of \textsc{Bayesian} model comparison, namely \textsc{Bayes} factor and \textsc{Bayes} complexity. As a method to evaluate these the SMC algorithm and the \textsc{Savage Dicky} Density Ratio were introduced. First we studied the example of a biased coin flip. We could successfully use the \textsc{Bayes} factor to obtain a weak to moderate strength of evidence about the coin bias, see section \eqref{sec:coin}. As a second example we studied data distributed by a polynomial of second order with applied gaussian noise of two different magnitudes. We then used \textsc{Bayesian} inference to fit polynomials of order one to three. Again we could successfully derive that the polynomial of second order is the with moderate to strong evidence the correct model by using \textsc{Bayes} factor, \textsc{Savage Dicky} density ratio and \textsc{Bayes} complexity, see \eqref{sec:poly}. Having now established intuition for \textsc{Bayesian} model selection, one could apply those methods to experimental data and complex problems.
 
-\noindent 
-\newpage
 
+\noindent 
+\FloatBarrier
 \bibliography{refs}
 \end{document}
 %
