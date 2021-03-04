@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,8 +15,13 @@ Pymc3 documentation — pymc3 3.10.0 documentation, {\natexlab{a}}.
 \newblock URL \url{https://docs.pymc.io/}.
 \newblock last visit: \today.
 
-\bibitem[PyM({\natexlab{b}})]{PyMC3_SMC}
-Pymc3 documentation — sequential monte carlo, {\natexlab{b}}.
+\bibitem[PyM({\natexlab{b}})]{PyMC3_BF}
+Bayes factors and marginal likelihood, {\natexlab{b}}.
+\newblock URL \url{https://docs.pymc.io/notebooks/Bayes_factor.html}.
+\newblock last visit: \today.
+
+\bibitem[PyM({\natexlab{c}})]{PyMC3_SMC}
+Pymc3 documentation — sequential monte carlo, {\natexlab{c}}.
 \newblock URL \url{https://docs.pymc.io/notebooks/SMC2_gaussians.html}.
 \newblock last visit: \today.
 
@@ -76,6 +81,10 @@ D.~J. Spiegelhalter, N.~G. Best, B.~P. Carlin, and A.~van~der Linde.
   Methodology)}, 64\penalty0 (4):\penalty0 583--639, 2002.
 \newblock ISSN 13697412, 14679868.
 \newblock URL \url{http://www.jstor.org/stable/3088806}.
+
+\bibitem[{Szyszko vel Chorazy, Jan Grzegorz}()]{paramter_fit}
+M.~{Szyszko vel Chorazy, Jan Grzegorz}.
+\newblock Bayesian parameter fitting.
 
 \bibitem[Trotta(2007)]{trotta}
 R.~Trotta.

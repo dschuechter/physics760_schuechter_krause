@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2020)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: templateForReport.aux
 The style file: abbrvnat.bst
 Database file #1: templateForReportNotes.bib
@@ -21,8 +21,10 @@ Warning--to sort, need author or key in PyMC3_SMC
 Warning--to sort, need author or key in gamma_function
 Warning--to sort, need author or key in beta_function
 Warning--to sort, need author or key in wiki
+Warning--to sort, need author or key in PyMC3_BF
 Warning--empty year in ArviZ
 Warning--empty year in PyMC3
+Warning--empty year in PyMC3_BF
 Warning--empty year in PyMC3_SMC
 Warning--empty author in beta_function
 Warning--empty year in beta_function
@@ -36,45 +38,48 @@ Warning--empty year in wiki
 Warning--empty journal in SMC_PEPE
 Warning--empty year in neal
 Warning--empty year in neal
-You've used 16 entries,
+Warning--empty journal in paramter_fit
+Warning--empty year in paramter_fit
+Warning--empty year in paramter_fit
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            699 strings with 6958 characters,
-and the built_in function-call counts, 5909 in all, are:
-= -- 557
-> -- 209
-< -- 8
-+ -- 80
-- -- 63
-* -- 479
-:= -- 836
-add.period$ -- 64
-call.type$ -- 16
-change.case$ -- 68
-chr.to.int$ -- 15
-cite$ -- 59
-duplicate$ -- 298
-empty$ -- 569
-format.name$ -- 77
-if$ -- 1265
-int.to.chr$ -- 2
+            706 strings with 7140 characters,
+and the built_in function-call counts, 6460 in all, are:
+= -- 606
+> -- 219
+< -- 9
++ -- 86
+- -- 66
+* -- 517
+:= -- 903
+add.period$ -- 69
+call.type$ -- 18
+change.case$ -- 75
+chr.to.int$ -- 16
+cite$ -- 69
+duplicate$ -- 332
+empty$ -- 634
+format.name$ -- 81
+if$ -- 1386
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 104
-num.names$ -- 40
-pop$ -- 178
+missing$ -- 14
+newline$ -- 113
+num.names$ -- 44
+pop$ -- 209
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 58
 quote$ -- 0
-skip$ -- 195
+skip$ -- 214
 stack$ -- 0
-substring$ -- 172
-swap$ -- 24
+substring$ -- 177
+swap$ -- 26
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 171
-warning$ -- 21
-while$ -- 38
+type$ -- 193
+warning$ -- 26
+while$ -- 41
 width$ -- 0
-write$ -- 232
+write$ -- 253
 (There were 2 error messages)
