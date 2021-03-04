@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.4)  4 MAR 2021 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.4)  4 MAR 2021 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -601,17 +601,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 88.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-Overfull \hbox (2.19884pt too wide) in paragraph at lines 293--302
+Overfull \hbox (2.19884pt too wide) in paragraph at lines 285--294
  []$[]$ 
  []
 
 
-Overfull \hbox (13.10112pt too wide) in paragraph at lines 312--321
+Overfull \hbox (13.10112pt too wide) in paragraph at lines 304--313
  []$[]$ 
  []
 
@@ -681,22 +677,18 @@ Underfull \hbox (badness 5288) in paragraph at lines 110--115
 
  []
 
-) [6] (./templateForReport.aux)
+[6]) [7] (./templateForReport.aux)
 Package rerunfilecheck Info: File `templateForReport.out' has not changed.
-(rerunfilecheck)             Checksum: 69D4029CCC1E81033910049F77A1B6C1;1975.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+(rerunfilecheck)             Checksum: C23A7074ED56CCA465EA67DF92EBD5F3;1870.
  ) 
 Here is how much of TeX's memory you used:
- 12838 strings out of 479383
- 222561 string characters out of 5875831
- 551859 words of memory out of 5000000
- 29661 multiletter control sequences out of 15000+600000
- 420677 words of font info for 91 fonts, out of 8000000 for 9000
+ 12837 strings out of 479383
+ 222534 string characters out of 5875831
+ 548888 words of memory out of 5000000
+ 29660 multiletter control sequences out of 15000+600000
+ 420978 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,16n,85p,1302b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,16n,85p,1302b,912s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -721,10 +713,10 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1
 s/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on templateForReport.pdf (6 pages, 359855 bytes).
+Output written on templateForReport.pdf (7 pages, 359897 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
+ 448 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
  76 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,7 +61,7 @@
 
 \begin{document}
 
-\title{Exploring \textsc{Monte-Carlo}-integration techniques in Bayesian model selection}% Force line breaks with \\
+\title{Bayesian model selection}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
 
 \author{Jakob Krause}
@@ -75,15 +75,7 @@
              %  but any date may be explicitly specified
 
 \begin{abstract}
-  An article usually includes an abstract, a concise summary of the work
-  covered at length in the main body of the article.
-  \begin{description}
-  \item[Usage]
-    Secondary publications and information retrieval purposes.
-  \item[Structure]
-    You may use the \texttt{description} environment to structure your abstract;
-    use the optional argument of the \verb+\item+ command to give the category of each item.
-  \end{description}
+\noindent This paper is an introduction to the concepts of \textsc{Bayesian} model selection. \textsc{Bayesian} statistics provide quantitative measures for model comparison, namely \textsc{Bayes} factor and \textsc{Bayes} complexity. 
 \end{abstract}
 \maketitle
 
@@ -208,7 +200,7 @@ This ensures the sampled values follow the desired PDF \cite{Toussaint}. This is
    \end{equation}
      The hat denotes, that this is a numerical estimation of $p(y)$ \cite{SMC_PEPE}. Using SMC we can in one run do parameter inference and also compare different models using the \textsc{Bayes}-factor \eqref{eq:bf}.
  
-\subsection{Savage Dickey Density Ration (SDDR)} \label{subsec:sddr}
+\subsection{Savage Dickey Density Ratio (SDDR)} \label{subsec:sddr}
 Now we introduce an alternative way of computing the \textsc{Bayes}-factor \eqref{eq:bf} for \emph{nested} models; Consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume seperable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
 We can then write the \textsc{Bayes}-factor as \cite{trotta} \begin{equation}
 	\label{eq:sddr}
@@ -221,7 +213,7 @@ To check whether the \textsc{Markov} chains converge, we used the \texttt{ArviZ}
 \section{Examples}\label{sec:examples}
 \noindent We will now discuss two instructive examples applying the methods described in section \eqref{sec:meth}.
 
-\subsection{Betabinomial example (coin flip)}
+\subsection{Betabinomial example (coin flip)}\label{sec:coin}
 \noindent Let us consider as a starting example, the flipping of a coin, i.e. an experiment where we can measure either heads ($H$) or tails ($T$) with $50\%$ probability, respectively. This, while simple, allows us an intuitive approach to Bayesian inference and model selection as well as to the MCMC techniques discussed before. Furthermore is this example easily altered to many problems with the option of either success or failure. Assume we throw a coin $N$ times.  Based on the outcome we wish to determine the probability for $H$ and draw a conclusion whether the coin is fair or, in fact, biased. We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
 \subsubsection{\textbf{Analytical approach}}
 \noindent Since this example is relatively simple we can compute the \textsc{Bayes}-factor also analytically.
@@ -270,7 +262,7 @@ in very good agreement with the analytical result.
 	\end{subfigure}
 	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density intervall. The highlighted green intervals denotes the expected value.}\label{fig:coin_marp}
 \end{figure}
-\subsection{Fitting a polynomial of unknown degree}
+\subsection{Fitting a polynomial of unknown degree}\label{sec:poly}
 \noindent A common problem in physics is to find an appropiate function to fit unknown data. In the following we will show how \textsc{Bayesian} model selection can help to answer this question. For that an example dataset -- following a polynomial of second order with a known variation of $\sigma=[0.7, 0.2]$ -- will be used and polynomials of first to third order will be considered as possible models. 
 The true regression line is given by
 \begin{equation*}
@@ -341,15 +333,20 @@ In figure \eqref{fig:complex} we plotted the computed complexity $\mathcal{C}_b$
 \section{Discussion}
 \noindent We now discuss the results obtained in section \eqref{sec:examples}.
 \subsection{Betabinomial example}
-\noindent The analytical and numerical result are matching until the third decimal, while the analytical lies within the estimated statistical error. We were able to reproduce the expected results by using \textsc{Bayesian} inference. The marginal posteriors of figure \eqref{fig:coin_marp} indicate that the choice of \emph{priors} determines the best fit value. While model $M_1$ with the \emph{prior} centred around  $\theta=0.25$ achieves to include the true value (highlighted in green) in its 94\% HDI, model $M_2$ doesn't have enough data to discard its prior belief. 
+\noindent The analytical and numerical result are matching until the third decimal, while the analytical lies within the estimated statistical error. We were able to reproduce the expected results by using \textsc{Bayesian} inference.  By using table \eqref{tab:bf} we can say with weak to moderate confidence that the coin is biased. By using a bigger dataset, the confidence would rise. The marginal posteriors of figure \eqref{fig:coin_marp} indicate that the choice of \emph{priors} determines the best fit value. While model $M_1$ with the \emph{prior} centred around  $\theta=0.25$ achieves to include the true value (highlighted in green) in its 94\% HDI, model $M_2$ doesn't have enough data to discard its prior belief. 
 \subsection{Fitting a polynomial of unknown degree}
 \noindent To interpret the found results of the \textsc{Bayes} factor we consult table \eqref{tab:bf}. One can see that for both $\sigma$ the linear model is clearly disfavoured with strong evidence. For $\sigma=0.7$ we find inconclusive evidence if the square or cubic model is superior to the other. With $\sigma=0.2$ we find weak to moderate evidence that the square model is favoured. This is a result of the small variance of datapoints and the fact that a simpler model is generally favoured with the \textsc{Bayes} factor \cite{sivia}.This result is as we expected, since the underlying model is a polynomial of second order. 
 
-The same can be said about the SDDR, although we could only find lower limits for the linear model in comparison to the others. This could be circumvented by choosing a bigger sample size or $\sigma$. The second proposal is not usable for real world data. We did not make use of a bigger sample size because we did not want to focus on the SDDR and only use it as a sanity check for the \textsc{Bayes} factor. 
+The same can be said about the SDDR, although we could only find lower limits for the linear model in comparison to the others. This could be circumvented by choosing a bigger sample size or $\sigma$. The second proposal is not usable for real world data. We did not make use of a bigger sample size because we did not want to focus on the SDDR and only use it as a sanity check for the \textsc{Bayes} factor. Never the less we can say, that the results of the SDDR method are consistent with the results of the SMC method.
 
 Since all errors are relatively small, we can conclude again that the \textsc{Markov} chains sufficiently converged.
+
+Using figure \eqref{fig:complex} one can see, that the effective complexity $\mathcal{C}_b$ diverges for a number of parameters $\dim{\btheta}>3$. The data is not able to constrain more parameters than three. Using this information and the obtained \textsc{Bayes} factors one can confidentially assume, that the underlying model is a polynomial of second order. 
+
+We chose a rather simple model that can easily be scaled up for higher order polynomials. The benefit of the shown simpler model is, that the reader can easily follow the chain of thought.  
 \section{Summary}
-\section{Appendix}\label{sec:Appendix}
+\noindent In this paper we investigated the problem of \textsc{Bayesian} model selection. After introducing the needed theory of \textsc{Bayes} theorem, parameter estimation and model comparison we established two measures of \textsc{Bayesian} model comparison, namely \textsc{Bayes} factor and \textsc{Bayes} complexity. As a method to evaluate these the SMC algorithm and the \textsc{Savage Dicky} Density Ratio were introduced. First we studied the example of a biased coin flip. We could successfully use the \textsc{Bayes} factor to obtain a weak to moderate strength of evidence about the coin bias, see section \eqref{sec:coin}. As a second example we studied data distributed by a polynomial of second order with applied gaussian noise of two different magnitudes. We then used \textsc{Bayesian} inference to fit polynomials of order one to three. Again we could successfully derive that the polynomial of second order is the with moderate to strong evidence the correct model by using \textsc{Bayes} factor, \textsc{Savage Dicky} density ratio and \textsc{Bayes} complexity, see \eqref{sec:poly}. Having now established intuition for \textsc{Bayesian} model selection, one could apply those methods to experimental data and complex problems.
+
 \noindent 
 \newpage
 

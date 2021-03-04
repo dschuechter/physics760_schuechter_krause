@@ -1,4 +1,4 @@
-\BOOKMARK [0][-]{section*.2}{Exploring Monte-Carlo-integration techniques in Bayesian model selection}{}% 2
+\BOOKMARK [0][-]{section*.2}{Bayesian model selection}{}% 2
 \BOOKMARK [1][-]{section*.1}{Abstract}{section*.2}% 1
 \BOOKMARK [1][-]{section*.3}{Introduction}{section*.2}% 3
 \BOOKMARK [1][-]{section*.4}{Theory}{section*.2}% 4
@@ -11,7 +11,7 @@
 \BOOKMARK [2][-]{section*.12}{Monte-Carlo Sampling}{section*.11}% 11
 \BOOKMARK [2][-]{section*.13}{Metropolis-Hastings Algorithm}{section*.11}% 12
 \BOOKMARK [2][-]{section*.14}{Sequential Monte Carlo \(SMC\)}{section*.11}% 13
-\BOOKMARK [2][-]{section*.15}{Savage Dickey Density Ration \(SDDR\)}{section*.11}% 14
+\BOOKMARK [2][-]{section*.15}{Savage Dickey Density Ratio \(SDDR\)}{section*.11}% 14
 \BOOKMARK [2][-]{section*.16}{Error-analysis and diagnostics}{section*.11}% 15
 \BOOKMARK [1][-]{section*.17}{Examples}{section*.2}% 16
 \BOOKMARK [2][-]{section*.18}{Betabinomial example \(coin flip\)}{section*.17}% 17
@@ -25,5 +25,4 @@
 \BOOKMARK [2][-]{section*.33}{Betabinomial example}{section*.32}% 25
 \BOOKMARK [2][-]{section*.34}{Fitting a polynomial of unknown degree}{section*.32}% 26
 \BOOKMARK [1][-]{section*.35}{Summary}{section*.2}% 27
-\BOOKMARK [1][-]{section*.36}{Appendix}{section*.2}% 28
-\BOOKMARK [1][-]{section*.37}{References}{section*.2}% 29
+\BOOKMARK [1][-]{section*.36}{References}{section*.2}% 28
