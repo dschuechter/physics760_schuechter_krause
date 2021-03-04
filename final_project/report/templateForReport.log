@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.4)  4 MAR 2021 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.4)  4 MAR 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,7 +769,7 @@ Package rerunfilecheck Info: File `templateForReport.out' has not changed.
 Here is how much of TeX's memory you used:
  12973 strings out of 479383
  225639 string characters out of 5875831
- 561161 words of memory out of 5000000
+ 561181 words of memory out of 5000000
  29778 multiletter control sequences out of 15000+600000
  420978 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -798,7 +798,7 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1
 s/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on templateForReport.pdf (7 pages, 479804 bytes).
+Output written on templateForReport.pdf (7 pages, 479861 bytes).
 PDF statistics:
  781 PDF objects out of 1000 (max. 8388607)
  515 compressed objects within 6 object streams
