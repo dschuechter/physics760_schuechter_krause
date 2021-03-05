@@ -15,4 +15,5 @@ Exercises:
 - [Exercise 7: Two body scattering](https://github.com/dschuechter/physics760_schuechter_krause/tree/master/Exercise07)
 
 Final Project:
-...
+
+- [Bayesian model selection](https://github.com/dschuechter/physics760_schuechter_krause/master/final_project) 
