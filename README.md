@@ -16,4 +16,4 @@ Exercises:
 
 Final Project:
 
-- [Bayesian model selection](https://github.com/dschuechter/physics760_schuechter_krause/master/final_project) 
+- [Bayesian model selection](https://github.com/dschuechter/physics760_schuechter_krause/tree/master/final_project) 
