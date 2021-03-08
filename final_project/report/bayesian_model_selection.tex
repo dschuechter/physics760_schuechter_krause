@@ -248,7 +248,7 @@ With this solution the \textsc{Bayes} factor becomes
 For the biased coin $M_2$ should be superior. The analytical result of equation \eqref{eq:anal_bf} is $$B_{21}=B_{12}^{-1}=9.5839.$$
 
 \subsubsection{\textbf{Numerical approach}}
-\noindent We now compute the \textsc{Bayes} factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach with a sample size of 2000 and 20 \textsc{Monte-Carlo} runs. The sampling yielded the \emph{marginal posteriors} depicted in figure \eqref{fig:coin_marp}. 
+\noindent We now compute the \textsc{Bayes} factor numerically using the SMC-algorithm provided by \texttt{PyMC3}. We assigned the same \emph{priors} and \emph{likelikhoods} as in the analytical approach with a sample size of 2000 and 20 \textsc{Monte-Carlo} runs. The sampling yielded the \emph{marginal posteriors} depicted in figure \ref{fig:coin_marp}. 
 The \textsc{Bayes} factor according to equation \eqref{eq:with_the_hat} evaluated to
 $$B_{21}=B_{12}^{-1}=9.5829\pm0.4719$$
 in very good agreement with the analytical result.
@@ -264,7 +264,7 @@ in very good agreement with the analytical result.
 	\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density interval. The highlighted green intervals denote the expected value.}\label{fig:coin_marp}
 \end{figure}
 \subsection{Fitting a polynomial of unknown degree}\label{sec:poly}
-\noindent A common problem in physics is to find an appropiate function to fit unknown data. In the following we will show how \textsc{Bayesian} model selection can help to answer this question. For that an example dataset containing $N_y=25$ datapoints -- following a polynomial of second order with a known noise of $\sigma\in\{0.7, 0.2\}$ -- was generated (see figure \eqref{fig:HDI_sigma_07}) and polynomials of first to third order will be considered as possible models. 
+\noindent A common problem in physics is to find an appropiate function to fit unknown data. In the following we will show how \textsc{Bayesian} model selection can help to answer this question. For that an example dataset containing $N_y=25$ datapoints -- following a polynomial of second order with a known noise of $\sigma\in\{0.7, 0.2\}$ -- was generated (see figure \ref{fig:HDI_sigma_07}) and polynomials of first to third order will be considered as possible models. 
 The true regression line is given by
 \begin{equation*}
 	f(x;\btheta)=a\cdot x^2+b\cdot x+c=2\cdot x^2+3\cdot x+1.
