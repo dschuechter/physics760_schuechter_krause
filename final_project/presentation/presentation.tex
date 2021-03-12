@@ -3,6 +3,7 @@
 \usetheme{default}
 \usepackage{DasBeamerPaket}
 \usepackage{animate}
+\usepackage{lastpage}
 \setbeamercolor{section in toc}{fg=NavyBlue}
 \setbeamercolor{frametitle}{fg=NavyBlue}
 \captionsetup[figure]{labelfont=bf}
@@ -10,15 +11,15 @@
 \setbeamertemplate{caption}[numbered]
 \begin{document}
 \author{{\Large Dominic Schüchter}\\ \scriptsize \href{mail:dschuechter@uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}dschuechter@uni-bonn.de} {\color{black}$|$} \href{https://github.com/dschuechter}{\faGithub  \hspace*{0.1cm}dschuechter}}
-\title{\textsc{Bayes model selection}}
-\subtitle{\textsc{Kolloquium zur Bachelorarbeit}}
+\title{Bayesian model selection}
+\subtitle[Seminar physics760]{\textsc{Seminar physics760-Computational Physics}}
 \logo{\includegraphics[width=1cm]{UniBonnLogo}\vspace{235pt}\hspace{8pt}}
 
 \date{\includegraphics[width=1.3cm]{institutelogo}\hspace{10px}\includegraphics[width=1.3cm]{UniBonnLogo}}
 \date{\includegraphics[width=8cm]{Titelbild.png}}
 
 
-\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hspace{1.5cm}\textsc{\insertshorttitle}  \hfill \insertpagenumber/XXXXXX}}}
+\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\insertshorttitle\hfill\insertshortsubtitle  \hfill \insertpagenumber/\pageref{LastPage}}}}
 
 \addtobeamertemplate{footline}{ \makebox[0pt][l]{\hspace{-1cm}
 		\raisebox{0cm}[0pt][0pt]{\colorbox{gray!15!black}{\phantom{{\large TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT}}}}}}
@@ -31,14 +32,13 @@
 \setbeamertemplate{section in toc}[sections numbered]
 \captionsetup{font=scriptsize,labelfont=scriptsize}
 
-\newcommand{\dracocoords}{gal. Breite: $84.1^\circ$ bis $95.9^\circ$, gal. Länge: $32.9^\circ$ bis $42.8^\circ$ }
-\newcommand{\orionbubblecoords}{gal. Breite: $200^\circ$ bis $215^\circ$, gal. Länge: $-15^\circ$ bis $-27^\circ$ }
+
 
 \begin{frame}[plain]
 	\setcounter{page}{0}
 	\centering
-	{\Large \textsc{\color{MidnightBlue}{\textsc{Bayes} model selection}}}\\
-	\textsc{Computational Physics}
+	{\Large \color{MidnightBlue}{\textsc{Bayesian} model selection}}\\
+	{Seminar physics760 -- Computational Physics}
 	\vfill
 	
 	\includegraphics[width=0.5\linewidth]{HDI_sigma_07a}
@@ -47,15 +47,19 @@
 		\centering
 		\begin{minipage}{0.45\linewidth}
 			\centering
-			Dominic Schüchter\\
-			\scriptsize \href{mail:dschuechter@uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}dschuechter@uni-bonn.de} {\color{black}$|$} \href{https://github.com/dschuechter}{\faGithub  \hspace*{0.1cm}dschuechter}\\
+			\textsc{Dominic Schüchter}\\
+			\scriptsize \href{mailto:dschuechter@uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}dschuechter@uni-bonn.de} {\color{black}$|$} \href{https://github.com/dschuechter}{\faGithub  \hspace*{0.1cm}dschuechter}\\
 		\end{minipage}
 %		$|$
 		\begin{minipage}{0.45\linewidth}
 			\centering
-			Jakob Krause\\
-			\scriptsize \href{mail:krause@hiskp.uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}krause@hiskp.uni-bonn.de} {\color{black}$|$} \href{https://github.com/krausejm}{\faGithub  \hspace*{0.1cm}krausejm}\\
+			\textsc{Jakob Krause}\\
+			\scriptsize \href{mailto:krause@hiskp.uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}krause@hiskp.uni-bonn.de} {\color{black}$|$} \href{https://github.com/krausejm}{\faGithub  \hspace*{0.1cm}krausejm}\\
 		\end{minipage}
+	\vspace{.5cm}
+	
+	Tutor: \textsc{Andreas Wirzba}\\
+	\scriptsize \href{mailto:a.wirzba@fz-juelich.de}{\faEnvelope  \hspace*{0.1cm}a.wirzba@fz-juelich.de}
 	\end{minipage}
 	\vspace{0.5cm}
 	
@@ -73,23 +77,23 @@
 %	\setcounter{page}{0}
 %\end{frame}
 
-\section*{Einleitung}
-\begin{frame}{Einleitung}
+\section*{Introduction}
+\begin{frame}{Introduction}
 	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes'} Theorem] 
 \end{tcolorbox}
 \end{frame}
 
 
-\section*{Inhaltsverzeichnis}
+\section*{Table of Contents}
 
-\begin{frame}{Inhaltsverzeichnis}
+\begin{frame}{Table of Contents}
 	\tableofcontents
 \end{frame}
 
 
 
-\section{Zusammenfassung}
-\begin{frame}{Zusammenfassung}
+\section{Summary}
+\begin{frame}{Summary}
 	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=, width=\linewidth]
 		\begin{itemize}
 			\item 
@@ -97,8 +101,8 @@
 	\end{tcolorbox}
 \end{frame}
 
-\section*{Referenzen}
-\begin{frame}[allowframebreaks]{Referenzen}
+\section*{References}
+\begin{frame}[allowframebreaks]{References}
 	\setbeamertemplate{bibliography item}[text]
 	\bibliographystyle{plainnat}
 	\bibliography{refs}

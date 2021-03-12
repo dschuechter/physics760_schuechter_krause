@@ -1,0 +1,113 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Sivia and Skilling(2006)]{sivia}
+D.S. Sivia and J.~Skilling.
+\newblock \emph{Data Analysis - A Bayesian tutorial}, volume~2.
+\newblock Oxford University Press, 2006.
+
+\bibitem[Trotta(2007)]{trotta}
+Roberto Trotta.
+\newblock {Applications of Bayesian model selection to cosmological
+  parameters}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  378\penalty0 (1):\penalty0 72--82, 05 2007.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1111/j.1365-2966.2007.11738.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1365-2966.2007.11738.x}.
+
+\bibitem[Kunz et~al.(2006)Kunz, Trotta, and Parkinson]{kunz}
+Martin Kunz, Roberto Trotta, and David~R. Parkinson.
+\newblock Measuring the effective complexity of cosmological models.
+\newblock \emph{Phys. Rev. D}, 74:\penalty0 023503, Jul 2006.
+\newblock \doi{10.1103/PhysRevD.74.023503}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.74.023503}.
+
+\bibitem[Trotta(2008)]{Trotta_2008}
+Roberto Trotta.
+\newblock Bayes in the sky: Bayesian inference and model selection in
+  cosmology.
+\newblock \emph{Contemporary Physics}, 49\penalty0 (2):\penalty0 71–104, Mar
+  2008.
+\newblock ISSN 1366-5812.
+\newblock \doi{10.1080/00107510802066753}.
+\newblock URL \url{http://dx.doi.org/10.1080/00107510802066753}.
+
+\bibitem[Spiegelhalter et~al.(2002)Spiegelhalter, Best, Carlin, and van~der
+  Linde]{Spiegelhalter}
+David~J. Spiegelhalter, Nicola~G. Best, Bradley~P. Carlin, and Angelika van~der
+  Linde.
+\newblock Bayesian measures of model complexity and fit.
+\newblock \emph{Journal of the Royal Statistical Society. Series B (Statistical
+  Methodology)}, 64\penalty0 (4):\penalty0 583--639, 2002.
+\newblock ISSN 13697412, 14679868.
+\newblock URL \url{http://www.jstor.org/stable/3088806}.
+
+\bibitem[PyM({\natexlab{a}})]{PyMC3}
+Pymc3 documentation — pymc3 3.10.0 documentation, {\natexlab{a}}.
+\newblock URL \url{https://docs.pymc.io/}.
+\newblock last visit: \today.
+
+\bibitem[Arv()]{ArviZ}
+Arviz: Exploratory analysis of bayesian models — arviz dev documentation.
+\newblock URL \url{https://arviz-devs.github.io/arviz/}.
+\newblock last visit: \today.
+
+\bibitem[von Toussaint(2011)]{Toussaint}
+Udo von Toussaint.
+\newblock Bayesian inference in physics.
+\newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 943--999, Sep 2011.
+\newblock \doi{10.1103/RevModPhys.83.943}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.943}.
+
+\bibitem[PyM({\natexlab{b}})]{PyMC3_SMC}
+Pymc3 documentation — sequential monte carlo, {\natexlab{b}}.
+\newblock URL \url{https://docs.pymc.io/notebooks/SMC2_gaussians.html}.
+\newblock last visit: \today.
+
+\bibitem[Neal(1993)]{neal}
+Radford~M. Neal.
+\newblock Probabilistic inference using markov chain monte carlo methods.
+\newblock \emph{Technical Report CRG-TR-93-1}, Sep 1993.
+\newblock URL \url{https://bayes.wustl.edu/Manual/RadfordNeal.review.pdf}.
+\newblock last visit: \today.
+
+\bibitem[Gunawan et~al.(2020)Gunawan, Dang, Quiroz, Kohn, and Tran]{SMC_PEPE}
+David Gunawan, Khue-Dung Dang, Matias Quiroz, Robert Kohn, and Minh-Ngoc Tran.
+\newblock Subsampling sequential monte carlo for static bayesian models.
+\newblock 2020.
+\newblock URL \url{https://arxiv.org/pdf/1805.03317.pdf}.
+\newblock last visit: \today.
+
+\bibitem[wik()]{wiki}
+Beta distribution.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Beta_distribution}.
+\newblock last visit: \today.
+
+\bibitem[gam()]{gamma_function}
+Gamma function.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Gamma_function}.
+\newblock last visit: \today.
+
+\bibitem[bet()]{beta_function}
+Beta function.
+\newblock \emph{Wikipedia}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Beta_function}.
+\newblock last visit: \today.
+
+\bibitem[PyM({\natexlab{c}})]{PyMC3_BF}
+Bayes factors and marginal likelihood, {\natexlab{c}}.
+\newblock URL \url{https://docs.pymc.io/notebooks/Bayes_factor.html}.
+\newblock last visit: \today.
+
+\bibitem[Wirzba(2021)]{wuerz}
+Andreas Wirzba.
+\newblock private communication, Feb 2021.
+
+\end{thebibliography}

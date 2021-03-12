@@ -1,2 +1,2 @@
-\babel@toc {ngerman}{}
-\beamer@sectionintoc {3}{Zusammenfassung}{3}{0}{1}
+\babel@toc {UKenglish}{}
+\beamer@sectionintoc {3}{Summary}{3}{0}{1}
