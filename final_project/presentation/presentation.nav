@@ -13,22 +13,26 @@
 \headcommand {\beamer@sectionpages {2}{2}}
 \headcommand {\beamer@subsectionpages {2}{2}}
 \headcommand {\sectionentry {3}{Theory}{3}{Theory}{0}}
-\headcommand {\beamer@subsectionpages {3}{1}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{2}{Parameter estimation}}
-\headcommand {\slideentry {3}{1}{1}{2/2}{Parameter estimation}{0}}
-\headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@subsectionpages {2}{3}}
+\headcommand {\slideentry {3}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{3}{Parameter estimation}}
+\headcommand {\slideentry {3}{1}{1}{3/3}{Parameter estimation}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\beamer@subsectionentry {0}{3}{2}{4}{Model comparison}}
 \headcommand {\slideentry {3}{2}{1}{4/4}{Model comparison}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@sectionpages {3}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
 \headcommand {\sectionentry {4}{Methods}{5}{Methods}{0}}
-\headcommand {\beamer@subsectionpages {5}{3}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{4}{\textsc {Sequential Monte Carlo}}}
-\headcommand {\slideentry {4}{1}{1}{4/4}{\textsc {Sequential Monte Carlo}}{0}}
-\headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{5}}
+\headcommand {\slideentry {4}{0}{1}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{4}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{5}{\textsc {Sequential Monte Carlo}}}
+\headcommand {\slideentry {4}{1}{1}{5/5}{\textsc {Sequential Monte Carlo}}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
 \headcommand {\beamer@subsectionentry {0}{4}{2}{6}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}}
 \headcommand {\slideentry {4}{2}{1}{6/6}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}{0}}
 \headcommand {\beamer@framepages {6}{6}}
@@ -39,19 +43,23 @@
 \headcommand {\beamer@sectionpages {5}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
 \headcommand {\sectionentry {5}{Examples}{8}{Examples}{0}}
-\headcommand {\beamer@subsectionpages {8}{6}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{7}{Coin-Flip}}
-\headcommand {\slideentry {5}{1}{1}{7/7}{Coin-Flip}{0}}
-\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {5}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{8}{Coin-Flip}}
+\headcommand {\slideentry {5}{1}{1}{8/8}{Coin-Flip}{0}}
+\headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {5}{1}{2}{9/9}{Coin-Flip}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\beamer@subsectionpages {8}{9}}
 \headcommand {\beamer@subsectionentry {0}{5}{2}{10}{Fitting a polynomial of unknown degree}}
 \headcommand {\beamer@sectionpages {8}{9}}
 \headcommand {\beamer@subsectionpages {10}{9}}
 \headcommand {\sectionentry {6}{Summary}{10}{Summary}{0}}
-\headcommand {\slideentry {6}{0}{1}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {6}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {6}{0}{2}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
 \headcommand {\beamer@sectionpages {10}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
 \headcommand {\sectionentry {7}{References}{11}{References}{0}}

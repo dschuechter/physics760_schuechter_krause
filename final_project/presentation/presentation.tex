@@ -4,6 +4,8 @@
 \usepackage{DasBeamerPaket}
 \usepackage{animate}
 \usepackage{lastpage}
+\usepackage{tikz}
+
 \setbeamercolor{section in toc}{fg=NavyBlue}
 \setbeamercolor{frametitle}{fg=NavyBlue}
 \captionsetup[figure]{labelfont=bf}
@@ -18,16 +20,11 @@
 
 \date{\includegraphics[width=1.3cm]{institutelogo}\hspace{10px}\includegraphics[width=1.3cm]{UniBonnLogo}}
 \date{\includegraphics[width=8cm]{Titelbild.png}}
+\definecolor{myWhite}{rgb}{1,1,1}
 
-
-\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\hspace{-3cm}\insertshorttitle \phantom{ }-- \insertshortsubtitle  \hfill \insertpagenumber/\pageref{LastPage}}}}
+\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white}{\hfill\hspace{-3cm}\insertshorttitle \phantom{ }-- \insertshortsubtitle}  \hfill \textcolor{myWhite}{\insertpagenumber/\pageref{LastPage}}}}
 
 \addtobeamertemplate{footline}{ \makebox[0pt][l]{\hspace{-1cm}
-		\raisebox{0cm}[0pt][0pt]{\colorbox{gray!15!black}{\phantom{{\large TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT}}}}}}
-
-\setbeamertemplate{footlinetoc}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\hspace{-3cm}\insertshorttitle \phantom{ }-- \insertshortsubtitle  \hfill }}}
-
-\addtobeamertemplate{footlinetoc}{ \makebox[0pt][l]{\hspace{-1cm}
 		\raisebox{0cm}[0pt][0pt]{\colorbox{gray!15!black}{\phantom{{\large TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT}}}}}}
 
 \setbeamercovered{transparent}
@@ -39,14 +36,15 @@
 \captionsetup{font=scriptsize,labelfont=scriptsize}
 
 \AtBeginSection[]
-{
+{	
+	\definecolor{myWhite}{rgb}{0,0,0}
 	\begin{frame}[noframenumbering]
 		\frametitle{}
-		\usebeamertemplate{footlinetoc}
 		\addtocounter{page}{-1}
 		\tableofcontents[currentsection]
 		
 	\end{frame}
+\definecolor{myWhite}{rgb}{1,1,1}
 }
 
 
