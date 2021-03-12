@@ -9,6 +9,7 @@
 \captionsetup[figure]{labelfont=bf}
 \captionsetup[table]{labelfont=bf}
 \setbeamertemplate{caption}[numbered]
+\newcommand{\btheta}{\boldsymbol{\theta}}
 \begin{document}
 \author{{\Large Dominic Schüchter}\\ \scriptsize \href{mail:dschuechter@uni-bonn.de}{\faEnvelope  \hspace*{0.1cm}dschuechter@uni-bonn.de} {\color{black}$|$} \href{https://github.com/dschuechter}{\faGithub  \hspace*{0.1cm}dschuechter}}
 \title{Bayesian model selection}
@@ -19,9 +20,14 @@
 \date{\includegraphics[width=8cm]{Titelbild.png}}
 
 
-\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\insertshorttitle\hfill\insertshortsubtitle  \hfill \insertpagenumber/\pageref{LastPage}}}}
+\setbeamertemplate{footline}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\hspace{-3cm}\insertshorttitle \phantom{ }-- \insertshortsubtitle  \hfill \insertpagenumber/\pageref{LastPage}}}}
 
 \addtobeamertemplate{footline}{ \makebox[0pt][l]{\hspace{-1cm}
+		\raisebox{0cm}[0pt][0pt]{\colorbox{gray!15!black}{\phantom{{\large TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT}}}}}}
+
+\setbeamertemplate{footlinetoc}[text line]{\parbox{0.3\linewidth}{\vspace*{-9pt}\textcolor{white} \insertsection  \hfill} \parbox{0.7\linewidth}{\vspace*{-8pt} \textcolor{white} {\hfill\hspace{-3cm}\insertshorttitle \phantom{ }-- \insertshortsubtitle  \hfill }}}
+
+\addtobeamertemplate{footlinetoc}{ \makebox[0pt][l]{\hspace{-1cm}
 		\raisebox{0cm}[0pt][0pt]{\colorbox{gray!15!black}{\phantom{{\large TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT}}}}}}
 
 \setbeamercovered{transparent}
@@ -32,6 +38,16 @@
 \setbeamertemplate{section in toc}[sections numbered]
 \captionsetup{font=scriptsize,labelfont=scriptsize}
 
+\AtBeginSection[]
+{
+	\begin{frame}[noframenumbering]
+		\frametitle{}
+		\usebeamertemplate{footlinetoc}
+		\addtocounter{page}{-1}
+		\tableofcontents[currentsection]
+		
+	\end{frame}
+}
 
 
 \begin{frame}[plain]
@@ -41,7 +57,7 @@
 	{Seminar physics760 -- Computational Physics}
 	\vfill
 	
-	\includegraphics[width=0.5\linewidth]{HDI_sigma_07a}
+	\includegraphics[width=0.8\linewidth]{figs/HDI_sigma_07a.pdf}
 	\vfill
 	\begin{minipage}{\linewidth}
 		\centering
@@ -61,7 +77,7 @@
 	Tutor: \textsc{Andreas Wirzba}\\
 	\scriptsize \href{mailto:a.wirzba@fz-juelich.de}{\faEnvelope  \hspace*{0.1cm}a.wirzba@fz-juelich.de}
 	\end{minipage}
-	\vspace{0.5cm}
+	\vspace{0.2cm}
 	
 	19.03.2021
 	 
@@ -79,8 +95,18 @@
 
 \section*{Introduction}
 \begin{frame}{Introduction}
+	Naturally, we are again all about that \textsc{Bayes}
 	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes'} Theorem] 
+		$$\text{prob}(\btheta|y)=p(\btheta|y)= \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)}$$
+		with
+		\begin{itemize}
+			\item \emph{posterior} $p(\btheta|y)$\\
+			\item \emph{likelihood} $p(y|\boldsymbol{\theta})$\\
+			\item \emph{prior} $p(\boldsymbol{\theta})$\\
+			\item \emph{marginal likelihood} $p(y)=\int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$\\
+		\end{itemize}
 \end{tcolorbox}
+This can be used for \emph{model selection} (?)
 \end{frame}
 
 
@@ -90,7 +116,42 @@
 	\tableofcontents
 \end{frame}
 
+\section{Theory}
+\subsection{Parameter estimation}
+\begin{frame}{Parameter estimation}
+	\textsc{Jan} and \textsc{Marius} already talked about this, so here we only sketch the basics again
+\end{frame}
 
+\subsection{Model comparison}
+\begin{frame}{Model comparison}
+	How do we turn \textsc{Bayes'} theorem into a tool for model comparison?
+\end{frame}
+
+\section{Methods}
+
+\subsection{\textsc{Sequential Monte Carlo}}
+\begin{frame}{Sequential Monte-Carlo (SMC)}
+\end{frame}
+
+\subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
+\begin{frame}{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
+\end{frame}
+\subsection{Error analysis and diagnostics}
+\begin{frame}{Error analysis and diagnostics}
+	Inhalt...
+\end{frame}
+
+\section{Examples}
+
+\subsection{Coin-Flip}
+\begin{frame}{Choosing priors and likelihoods}
+	
+\end{frame}
+
+\begin{frame}{Computing \textsc{Bayes}-factor}
+	
+\end{frame}
+\subsection{Fitting a polynomial of unknown degree}
 
 \section{Summary}
 \begin{frame}{Summary}

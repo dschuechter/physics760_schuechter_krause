@@ -1,2 +1,12 @@
 \babel@toc {UKenglish}{}
-\beamer@sectionintoc {3}{Summary}{3}{0}{1}
+\beamer@sectionintoc {3}{Theory}{3}{0}{1}
+\beamer@subsectionintoc {3}{1}{Parameter estimation}{2}{0}{1}
+\beamer@subsectionintoc {3}{2}{Model comparison}{4}{0}{1}
+\beamer@sectionintoc {4}{Methods}{5}{0}{2}
+\beamer@subsectionintoc {4}{1}{\textsc {Sequential Monte Carlo}}{4}{0}{2}
+\beamer@subsectionintoc {4}{2}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}{6}{0}{2}
+\beamer@subsectionintoc {4}{3}{Error analysis and diagnostics}{7}{0}{2}
+\beamer@sectionintoc {5}{Examples}{8}{0}{3}
+\beamer@subsectionintoc {5}{1}{Coin-Flip}{7}{0}{3}
+\beamer@subsectionintoc {5}{2}{Fitting a polynomial of unknown degree}{10}{0}{3}
+\beamer@sectionintoc {6}{Summary}{10}{0}{4}
