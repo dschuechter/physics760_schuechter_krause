@@ -5,7 +5,6 @@
 \usepackage{animate}
 \usepackage{lastpage}
 \usepackage{tikz}
-
 \setbeamercolor{section in toc}{fg=NavyBlue}
 \setbeamercolor{frametitle}{fg=NavyBlue}
 \captionsetup[figure]{labelfont=bf}
@@ -52,7 +51,7 @@
 	\setcounter{page}{0}
 	\centering
 	{\Large \color{MidnightBlue}{\textsc{Bayesian} model selection}}\\
-	{Seminar physics760 -- Computational Physics}
+	{\href{https://www.youtube.com/watch?v=oHg5SJYRHA0}{Seminar physics760 -- Computational Physics}}
 	\vfill
 	
 	\includegraphics[width=0.8\linewidth]{figs/HDI_sigma_07a.pdf}
@@ -93,7 +92,6 @@
 
 \section*{Introduction}
 \begin{frame}{Introduction}
-	Naturally, we are again all about that \textsc{Bayes}
 	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes'} Theorem] 
 		$$\text{prob}(\btheta|y)=p(\btheta|y)= \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)}$$
 		with
@@ -103,8 +101,10 @@
 			\item \emph{prior} $p(\boldsymbol{\theta})$\\
 			\item \emph{marginal likelihood} $p(y)=\int_{-\infty}^{+\infty}\text{d}\boldsymbol{\theta} p(y|\boldsymbol{\theta})p(\boldsymbol{\theta})$\\
 		\end{itemize}
+	\begin{center}
+		\textbf{This can be used for \emph{model selection} (?)}
+	\end{center}
 \end{tcolorbox}
-This can be used for \emph{model selection} (?)
 \end{frame}
 
 
@@ -118,17 +118,72 @@ This can be used for \emph{model selection} (?)
 \subsection{Parameter estimation}
 \begin{frame}{Parameter estimation}
 	\textsc{Jan} and \textsc{Marius} already talked about this, so here we only sketch the basics again
+	\begin{equation}
+		\label{eq:marp}
+		p(\theta_i|y,M)=\int p(\boldsymbol{\theta}|y,M)\prod_{j\neq i}\text{d}{\theta_j}
+	\end{equation}
+
+\begin{align}
+	\begin{split}
+		p(\theta|y,M)=\max \Leftrightarrow \theta=\hat{\theta}\\
+		\langle\theta\rangle=\int_{-\infty}^{\infty}\text{d}\theta  p(\theta|y,M)\cdot\theta
+	\end{split}
+\end{align}
 \end{frame}
 
 \subsection{Model comparison}
 \begin{frame}{Model comparison}
 	How do we turn \textsc{Bayes'} theorem into a tool for model comparison?
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes} factor] 
+		\begin{equation}
+			p(M_i|y)=\frac{p(M_i)\cdot p(y|M_i)}{p(y)}.
+		\end{equation}
+		\begin{equation}\label{eq:bf}
+			O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.
+		\end{equation}
+	\end{tcolorbox}
 \end{frame}
+\begin{frame}{Model comparison}
 
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayesian} complexity] 
+		\begin{equation}\label{eq:Bayes_Complexity}
+			\mathcal{C}_b=-2\int \text{d}\boldsymbol{\theta} p(\boldsymbol{\theta}|y,M)\log(\mathcal{L}(\boldsymbol{\theta}))+2\log(\mathcal{L}(\boldsymbol{\tilde{\theta}})),
+		\end{equation}
+	
+		\begin{equation}\label{eq:Bayes_Complexity_alt}
+		\mathcal{C}_b=\overline{\chi^2(\boldsymbol{\theta})}-\chi^2(\boldsymbol{\tilde{\theta}}),
+	\end{equation}
+	\end{tcolorbox}
+\end{frame}
 \section{Methods}
 
-\subsection{\textsc{Sequential Monte Carlo}}
-\begin{frame}{Sequential Monte-Carlo (SMC)}
+\subsection{Monte-Carlo-Sampling}
+\begin{frame}{Monte-Carlo-Sampling}
+	\begin{minipage}{\linewidth}
+		\begin{minipage}{0.6\linewidth}
+			\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title={Benefits of Monte-Carlo-Sampling}] 
+				 \begin{equation}
+					\langle \boldsymbol{\theta}\rangle\approx \int p(\boldsymbol{\theta} | y)\boldsymbol{\theta}d\boldsymbol{\theta}=\frac{1}{N}\sum_{t=0}^{N-1}\boldsymbol{\theta}^{(t)},
+				\end{equation}
+				 \begin{equation}
+					\langle f(\boldsymbol{\theta})\rangle\approx\frac{1}{N}\sum_{t=0}^{N-1}f(\boldsymbol{\theta}^{(t)}).
+				\end{equation}
+			\end{tcolorbox}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.3\linewidth}
+			\begin{figure}
+				\includegraphics[width=\linewidth]{arviz_logo}
+				\vspace{0.1cm}
+				
+				\includegraphics[width=\linewidth]{PyMC3_banner}
+				\caption{\texttt{ArviZ} \cite{ArviZ} and \texttt{PyMC3} \cite{PyMC3}}
+			\end{figure}
+			
+		\end{minipage}
+	\end{minipage}
+	
+	
 \end{frame}
 
 \subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
@@ -163,8 +218,8 @@ This can be used for \emph{model selection} (?)
 \section*{References}
 \begin{frame}[allowframebreaks]{References}
 	\setbeamertemplate{bibliography item}[text]
-	\bibliographystyle{plainnat}
-	\bibliography{refs}
+
+	\printbibliography
 \end{frame}
 
 \end{document}
