@@ -5,9 +5,8 @@
 \beamer@subsectionintoc {3}{2}{Model comparison}{4}{0}{1}
 \beamer@sectionintoc {4}{Methods}{6}{0}{2}
 \beamer@subsectionintoc {4}{1}{Monte-Carlo-Sampling}{6}{0}{2}
-\beamer@subsectionintoc {4}{2}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}{7}{0}{2}
-\beamer@subsectionintoc {4}{3}{Error analysis and diagnostics}{8}{0}{2}
+\beamer@subsectionintoc {4}{2}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}{8}{0}{2}
 \beamer@sectionintoc {5}{Examples}{9}{0}{3}
-\beamer@subsectionintoc {5}{1}{Coin-Flip}{9}{0}{3}
-\beamer@subsectionintoc {5}{2}{Fitting a polynomial of unknown degree}{11}{0}{3}
-\beamer@sectionintoc {6}{Summary}{11}{0}{4}
+\beamer@subsectionintoc {5}{1}{Coin Flip}{9}{0}{3}
+\beamer@subsectionintoc {5}{2}{Fitting a polynomial of unknown degree}{14}{0}{3}
+\beamer@sectionintoc {6}{Summary}{14}{0}{4}

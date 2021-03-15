@@ -168,6 +168,7 @@
 				 \begin{equation}
 					\langle f(\boldsymbol{\theta})\rangle\approx\frac{1}{N}\sum_{t=0}^{N-1}f(\boldsymbol{\theta}^{(t)}).
 				\end{equation}
+				also, \emph{marginal posterior} distributions are obtained trivially by binning values of $\theta_i$ ignoring $\theta_{j\neq i}$
 			\end{tcolorbox}
 		\end{minipage}
 		\hfill
@@ -185,24 +186,101 @@
 	
 	
 \end{frame}
+\begin{frame}{Monte-Carlo-Sampling}
+	But how exactly do we get samples $\btheta^{(t)}$?
+			\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title={Sequential Monte Carlo (SMC)}]
+				First let us introduce an auxiliary \emph{temperature parameter} $\beta\in [0,1]$ and write
+				$$p(\btheta|y)_\beta=\frac{p(y|\btheta)^\beta\cdot p(\btheta)}{Z_\beta},$$
+				with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$.
+				
+				Main idea: gradually sample from simple distribution ($\beta=0$) to complex/true distribution ($\beta=1$) using \textsc{Metropolis-Hastings}
+				
+				SMC then allows us to estimate the \emph{marginal likelihood} as 
+				\begin{equation}\label{eq:with_the_hat}
+				\hat{p}(y)=\prod_{i}\widehat{\frac{Z_{\beta_i}}{Z_{\beta_{i-1}}}}.
+				\end{equation}
+		\end{tcolorbox}
+\end{frame}
+
 
 \subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
 \begin{frame}{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
+	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
+	We can then write the \textsc{Bayes} factor as \cite{trotta} \begin{equation}
+	\label{eq:sddr}
+	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_j)}{p(\omega|M_j)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
+	\end{equation}
 \end{frame}
-\subsection{Error analysis and diagnostics}
-\begin{frame}{Error analysis and diagnostics}
-	Inhalt...
-\end{frame}
+%\subsection{Error analysis and diagnostics}
+%\begin{frame}{Error analysis and diagnostics}
+%To evaluate the errors for the computed quantities we estimate the statistical error given by multiple \emph{Monte-Carlo} runs. Since the results matched our expectations, we are not considering systematic errors in our code. This can be said, because we chose the true models of the underlying data.
+%
+%To check whether the \textsc{Markov} chains converge, we used the \texttt{ArviZ}-Library that provides functions to visualize \emph{marginal posteriors} and \textsc{Markov} chains \cite{ArviZ}. 
+%\end{frame}
 
 \section{Examples}
 
-\subsection{Coin-Flip}
-\begin{frame}{Choosing priors and likelihoods}
-	
+\subsection{Coin Flip}
+\begin{frame}{Coin Flip }
+	\begin{itemize}
+		\item remember the flipping of a biased coin from the lecture
+		\item we want to verify that the coin is biased by using the \textsc{Bayes} factor
+		\item two models: $M_1$ -- assumes a fair coin, $M_2$ -- assumes biased coin
+	\end{itemize}
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Posterior of the coin flip problem]
+		\begin{equation}
+			p(\theta|y,M_i)=\frac{p(y|\theta,M_i)\cdot p(\theta|M_i)}{\color{red}p(y|M_i)}
+		\end{equation}
+		to get $p(y|M_i)=\int_{-\infty}^{+\infty}\text{d}{\theta} p(y|{\theta},M_i)p({\theta}|M_i)$ we need to specify a \emph{prior} $p({\theta}|M_i)$ and a \emph{likelihood}  $p(y|{\theta},M_i)$
+	\end{tcolorbox}
 \end{frame}
 
-\begin{frame}{Computing \textsc{Bayes}-factor}
-	
+\begin{frame}{Coin Flip }
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
+	\begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
+	\end{align*}
+	\end{tcolorbox}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.5\linewidth]{beta_dist}
+		\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
+		\label{fig:beta_dist}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Coin Flip}
+		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a likelihood]
+			Since we can assume i.i.d. outcomes of the coin flip a natural choice is a \emph{Binomial distribution}.
+			If we observe $k$ heads out of $N$ coin throws ($y=(N,k)$) $$p(y|\theta,M_i)=\begin{pmatrix}N\\k
+			\end{pmatrix}\theta^k(1-\theta)^{N-k}.$$
+		\end{tcolorbox}
+We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
+\end{frame}
+
+\begin{frame}{Coin Flip}
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Finally computing the \textsc{Bayes} factor]
+		\begin{align*}
+		p(y|M_i)&\propto \int_{0}^{1} \text{d}\theta \frac{1}{B(\alpha,\beta)} \cdot \theta^{\alpha+k-1}\cdot (1-\theta)^{N-k+\beta-1}
+		=\frac{B(\alpha+k,\beta+N-k)}{B(\alpha, \beta)}\\
+		\Rightarrow B_{21}&=B_{12}^{-1}=\frac{B(\alpha_2+k,\beta_2+N-k)\cdot B(\alpha_1,\beta_1)}{B(\alpha_1+k,\beta_1+N-k)\cdot B(\alpha_2,\beta_2)}=9.5839
+		\end{align*}
+	\end{tcolorbox}
+Can we reproduce this numerically?
+\end{frame}
+\begin{frame}{Coin Flip}
+	let us obtain 2000 samples from the posterior distribution using the same \emph{likelihood} and \emph{priors} via the SMC algorithm provided by \texttt{PyMC3}
+	\begin{figure}[htbp]
+		\begin{subfigure}{.49\linewidth}
+			\includegraphics[width=0.9\linewidth]{coin_marp_m1.pdf}
+			\subcaption{}\label{fig:coin_marp_a}
+		\end{subfigure}
+		\begin{subfigure}{.49\linewidth}
+			\includegraphics[width=0.9\linewidth]{coin_marp_m2.pdf}
+			\subcaption{}\label{fig:coin_marp_b}
+		\end{subfigure}
+		\caption{The \emph{marginal posterior} for $\alpha=\beta=50$ \eqref{fig:coin_marp_a} and $\alpha=5, \beta=13$ \eqref{fig:coin_marp_b} of 2000 samples. HDI means highest density interval. The highlighted green intervals denote the expected value.}\label{fig:coin_marp}
+	\end{figure}
+ $$\text{We find }B_{21}=B_{12}^{-1}=9.5829\pm0.4719  \text{ (noice! } \checkmark)$$
 \end{frame}
 \subsection{Fitting a polynomial of unknown degree}
 

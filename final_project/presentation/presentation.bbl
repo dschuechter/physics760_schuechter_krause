@@ -32,6 +32,20 @@
       \verb https://arviz-devs.github.io/arviz/
       \endverb
     \endentry
+    \entry{wiki}{article}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wikipedia}
+      \field{note}{last visit: \today}
+      \field{title}{Beta distribution}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Beta_distribution
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Beta_distribution
+      \endverb
+    \endentry
     \entry{PyMC3}{misc}{}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
@@ -43,6 +57,60 @@
       \endverb
       \verb{url}
       \verb https://docs.pymc.io/
+      \endverb
+    \endentry
+    \entry{PyMC3_SMC}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{note}{last visit: \today}
+      \field{title}{PyMC3 Documentation — Sequential Monte Carlo}
+      \verb{urlraw}
+      \verb https://docs.pymc.io/notebooks/SMC2_gaussians.html
+      \endverb
+      \verb{url}
+      \verb https://docs.pymc.io/notebooks/SMC2_gaussians.html
+      \endverb
+    \endentry
+    \entry{trotta}{article}{}
+      \name{author}{1}{}{%
+        {{hash=06ab81e4d2d92111f0b8fd179676fc97}{%
+           family={Trotta},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{fullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{bibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorbibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authornamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorfullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Bayesian model selection is a tool for deciding whether the introduction of a new parameter is warranted by the data. I argue that the usual sampling statistic significance tests for a null hypothesis can be misleading, since they do not take into account the information gained through the data, when updating the prior distribution to the posterior. In contrast, Bayesian model selection offers a quantitative implementation of Occam's razor.I introduce the Savage–Dickey density ratio, a computationally quick method to determine the Bayes factor of two nested models and hence perform model selection. As an illustration, I consider three key parameters for our understanding of the cosmological concordance model. By using Wilkinson Microwave Anisotropy Probe (WMAP) 3-year data complemented by other cosmological measurements, I show that a non-scale-invariant spectral index of perturbations is favoured for any sensible choice of prior. It is also found that a flat universe is favoured with odds of 29:1 over non-flat models, and that there is strong evidence against a cold dark matter isocurvature component to the initial conditions which is totally (anti)correlated with the adiabatic mode (odds of about 2000:1), but that this is strongly dependent on the prior adopted.These results are contrasted with the analysis of WMAP 1-year data, which were not informative enough to allow a conclusion as to the status of the spectral index. In a companion paper, a new technique to forecast the Bayes factor of a future observation is presented.}}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{05}
+      \field{number}{1}
+      \field{title}{{Applications of Bayesian model selection to cosmological parameters}}
+      \field{volume}{378}
+      \field{year}{2007}
+      \field{pages}{72\bibrangedash 82}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2007.11738.x
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/378/1/72/3961005/mnras0378-0072.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1365-2966.2007.11738.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1365-2966.2007.11738.x
       \endverb
     \endentry
   \enddatalist
