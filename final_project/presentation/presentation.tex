@@ -92,7 +92,7 @@
 
 \section*{Introduction}
 \begin{frame}{Introduction}
-	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes'} Theorem] 
+	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes'} Theorem  -- a quick reminder] 
 		$$\text{prob}(\btheta|y)=p(\btheta|y)= \frac{p(y|\boldsymbol{\theta})\cdot p(\boldsymbol{\theta})}{p(y)}$$
 		with
 		\begin{itemize}
@@ -186,6 +186,8 @@
 		\mathcal{C}_b=\overline{\chi^2(\boldsymbol{\theta})}-\chi^2(\boldsymbol{\tilde{\theta}}),
 	\end{equation}
 	\end{tcolorbox}
+
+describes how many model parameters the data is able to constrain \citet{kunz} and is thus a useful tool for examining models with an increasing number of parameters.
 \end{frame}
 
 \section{Methods}
@@ -239,10 +241,14 @@
 \subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
 \begin{frame}{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
 	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors (which is usually the case \citet{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
-	We can then write the \textsc{Bayes} factor as \citet{trotta} \begin{equation}
+	We can then write the \textsc{Bayes} factor as \citet{trotta} 
+	
+\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title={Savage Dickey-Density-Ratio}]
+	\begin{equation}
 	\label{eq:sddr}
 	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_j)}{p(\omega|M_j)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
 	\end{equation}
+\end{tcolorbox}
 \end{frame}
 %\subsection{Error analysis and diagnostics}
 %\begin{frame}{Error analysis and diagnostics}
@@ -271,12 +277,14 @@
 \begin{frame}{Coin Flip }
 	\begin{minipage}{.49\linewidth}
 		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
+		\vspace{0.3cm}
 			\begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
 			\end{align*}
+			\vspace{0.3cm}
 		\end{tcolorbox}
 	\end{minipage}
 \hfill
-	\begin{minipage}{.49\linewidth}
+	\begin{minipage}{.48\linewidth}
 			\begin{figure}[htbp]
 			\centering
 			\includegraphics[width=\linewidth]{beta_dist}
@@ -331,8 +339,10 @@ Can we reproduce this numerically?
 		\end{minipage}
 		\begin{minipage}{.25\linewidth}
 				\begin{figure}
+						\vspace{4.5cm}
 						\caption{$N=25$ datapoints distributed with a gaussian noise of $\sigma=0.7$. Linear? Quadratic? Cubic?}
 				\end{figure}
+
 		\end{minipage}
 
 	
@@ -410,7 +420,7 @@ Can we reproduce this numerically?
 	\begin{minipage}{.49\linewidth}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
+			\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+_trans.png}
 			\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
 			\caption{Computation of the SDDR  ($\sigma=0.7$)}
 			\label{fig:sddr}
@@ -450,7 +460,7 @@ Can we reproduce this numerically?
 
 \section{Summary}
 \begin{frame}{Summary}
-	\begin{minipage}{0.48\linewidth}
+	\begin{minipage}{0.49\linewidth}
 			\begin{tcolorbox}[colback=blue!5,colframe=gray!15!black,title=Theory and methods, width=\linewidth]
 			\begin{itemize}
 				\item \textsc{Bayesian} statistics provides the \textsc{Bayes} factor and \textsc{Bayesian} complexity as measures of \emph{model comparison}
@@ -459,7 +469,8 @@ Can we reproduce this numerically?
 			\end{itemize}
 		\end{tcolorbox}
 	\end{minipage}
-\begin{minipage}{0.48\linewidth}
+\hfill
+\begin{minipage}{0.49\linewidth}
 	\begin{tcolorbox}[colback=green!5,colframe=gray!15!black,title=Exampless, width=\linewidth]
 		\begin{itemize}
 			\item We can say with weak to moderate confidence that the coin is biased
@@ -468,6 +479,29 @@ Can we reproduce this numerically?
 		\end{itemize}
 	\end{tcolorbox}
 \end{minipage}
+
+\begin{minipage}{0.84\linewidth}
+		\begin{tcolorbox}[colback=red!5,colframe=gray!15!black,title=Outlook, width=\linewidth]
+		
+			\begin{multicols}{2}
+				\begin{itemize}
+					\item Highly scalable
+				\end{itemize}
+			\columnbreak
+			\begin{itemize}
+				\item Used in modern astrophysical problems
+			\end{itemize}	
+		
+		\end{multicols}
+	
+	\end{tcolorbox}
+\end{minipage}
+\hfill
+\begin{minipage}{0.14\linewidth}
+	\includegraphics[width=\linewidth]{frame_alt}
+\end{minipage}
+
+
 \end{frame}
 
 \section*{References}

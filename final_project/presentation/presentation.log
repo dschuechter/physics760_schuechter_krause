@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  15 MAR 2021 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  15 MAR 2021 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1011,23 +1011,93 @@ neric.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pd
 ftex.tex))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count367
+\mult@box=\box95
+\multicol@leftmargin=\dimen311
+\c@unbalance=\count368
+\c@collectmore=\count369
+\doublecol@number=\count370
+\multicoltolerance=\count371
+\multicolpretolerance=\count372
+\full@width=\dimen312
+\page@free=\dimen313
+\premulticols=\dimen314
+\postmulticols=\dimen315
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
+\partial@page=\box96
+\last@line=\box97
+\maxbalancingoverflow=\dimen316
+\mult@rightbox=\box98
+\mult@grightbox=\box99
+\mult@gfirstbox=\box100
+\mult@firstbox=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\c@minrows=\count373
+\c@columnbadness=\count374
+\c@finalcolumnbadness=\count375
+\last@try=\dimen317
+\multicolovershoot=\dimen318
+\multicolundershoot=\dimen319
+\mult@nat@firstbox=\box139
+\colbreak@box=\box140
+\mc@col@check@num=\count376
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/sidecap/sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
-\SC@BOXWD=\dimen311
-\SC@CAPWD=\dimen312
-\SC@tempdima=\dimen313
-\SC@tempdimb=\dimen314
-\c@SC@C=\count367
-\SC@BOX=\box95
+\SC@BOXWD=\dimen320
+\SC@CAPWD=\dimen321
+\SC@tempdima=\dimen322
+\SC@tempdimb=\dimen323
+\c@SC@C=\count377
+\SC@BOX=\box141
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen315
-\TX@old@table=\dimen316
-\TX@old@col=\dimen317
-\TX@target=\dimen318
-\TX@delta=\dimen319
-\TX@cols=\count368
+\TX@col@width=\dimen324
+\TX@old@table=\dimen325
+\TX@old@col=\dimen326
+\TX@target=\dimen327
+\TX@delta=\dimen328
+\TX@cols=\count378
 \TX@ftn=\toks53
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -1035,66 +1105,66 @@ Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count369
+\lrq@indent=\count379
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count370
-\c@listtotal=\count371
-\c@listcount=\count372
-\c@liststart=\count373
-\c@liststop=\count374
-\c@citecount=\count375
-\c@citetotal=\count376
-\c@multicitecount=\count377
-\c@multicitetotal=\count378
-\c@instcount=\count379
-\c@maxnames=\count380
-\c@minnames=\count381
-\c@maxitems=\count382
-\c@minitems=\count383
-\c@citecounter=\count384
-\c@maxcitecounter=\count385
-\c@savedcitecounter=\count386
-\c@uniquelist=\count387
-\c@uniquename=\count388
-\c@refsection=\count389
-\c@refsegment=\count390
-\c@maxextratitle=\count391
-\c@maxextratitleyear=\count392
-\c@maxextraname=\count393
-\c@maxextradate=\count394
-\c@maxextraalpha=\count395
-\c@abbrvpenalty=\count396
-\c@highnamepenalty=\count397
-\c@lownamepenalty=\count398
-\c@maxparens=\count399
-\c@parenlevel=\count400
-\blx@tempcnta=\count401
-\blx@tempcntb=\count402
-\blx@tempcntc=\count403
-\blx@maxsection=\count404
-\blx@maxsegment@0=\count405
-\blx@notetype=\count406
-\blx@parenlevel@text=\count407
-\blx@parenlevel@foot=\count408
-\blx@sectionciteorder@0=\count409
-\blx@entrysetcounter=\count410
-\labelnumberwidth=\skip72
-\labelalphawidth=\skip73
-\biblabelsep=\skip74
-\bibitemsep=\skip75
-\bibnamesep=\skip76
-\bibinitsep=\skip77
-\bibparsep=\skip78
-\bibhang=\skip79
+\c@tabx@nest=\count380
+\c@listtotal=\count381
+\c@listcount=\count382
+\c@liststart=\count383
+\c@liststop=\count384
+\c@citecount=\count385
+\c@citetotal=\count386
+\c@multicitecount=\count387
+\c@multicitetotal=\count388
+\c@instcount=\count389
+\c@maxnames=\count390
+\c@minnames=\count391
+\c@maxitems=\count392
+\c@minitems=\count393
+\c@citecounter=\count394
+\c@maxcitecounter=\count395
+\c@savedcitecounter=\count396
+\c@uniquelist=\count397
+\c@uniquename=\count398
+\c@refsection=\count399
+\c@refsegment=\count400
+\c@maxextratitle=\count401
+\c@maxextratitleyear=\count402
+\c@maxextraname=\count403
+\c@maxextradate=\count404
+\c@maxextraalpha=\count405
+\c@abbrvpenalty=\count406
+\c@highnamepenalty=\count407
+\c@lownamepenalty=\count408
+\c@maxparens=\count409
+\c@parenlevel=\count410
+\blx@tempcnta=\count411
+\blx@tempcntb=\count412
+\blx@tempcntc=\count413
+\blx@maxsection=\count414
+\blx@maxsegment@0=\count415
+\blx@notetype=\count416
+\blx@parenlevel@text=\count417
+\blx@parenlevel@foot=\count418
+\blx@sectionciteorder@0=\count419
+\blx@entrysetcounter=\count420
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\biblabelsep=\skip76
+\bibitemsep=\skip77
+\bibnamesep=\skip78
+\bibinitsep=\skip79
+\bibparsep=\skip80
+\bibhang=\skip81
 \blx@bcfin=\read6
 \blx@bcfout=\write7
 \blx@langwohyphens=\language86
-\c@mincomprange=\count411
-\c@maxcomprange=\count412
-\c@mincompwidth=\count413
+\c@mincomprange=\count421
+\c@maxcomprange=\count422
+\c@mincompwidth=\count423
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1105,88 +1175,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count414
-\c@savedafterword=\count415
-\c@annotator=\count416
-\c@savedannotator=\count417
-\c@author=\count418
-\c@savedauthor=\count419
-\c@bookauthor=\count420
-\c@savedbookauthor=\count421
-\c@commentator=\count422
-\c@savedcommentator=\count423
-\c@editor=\count424
-\c@savededitor=\count425
-\c@editora=\count426
-\c@savededitora=\count427
-\c@editorb=\count428
-\c@savededitorb=\count429
-\c@editorc=\count430
-\c@savededitorc=\count431
-\c@foreword=\count432
-\c@savedforeword=\count433
-\c@holder=\count434
-\c@savedholder=\count435
-\c@introduction=\count436
-\c@savedintroduction=\count437
-\c@namea=\count438
-\c@savednamea=\count439
-\c@nameb=\count440
-\c@savednameb=\count441
-\c@namec=\count442
-\c@savednamec=\count443
-\c@translator=\count444
-\c@savedtranslator=\count445
-\c@shortauthor=\count446
-\c@savedshortauthor=\count447
-\c@shorteditor=\count448
-\c@savedshorteditor=\count449
-\c@labelname=\count450
-\c@savedlabelname=\count451
-\c@institution=\count452
-\c@savedinstitution=\count453
-\c@lista=\count454
-\c@savedlista=\count455
-\c@listb=\count456
-\c@savedlistb=\count457
-\c@listc=\count458
-\c@savedlistc=\count459
-\c@listd=\count460
-\c@savedlistd=\count461
-\c@liste=\count462
-\c@savedliste=\count463
-\c@listf=\count464
-\c@savedlistf=\count465
-\c@location=\count466
-\c@savedlocation=\count467
-\c@organization=\count468
-\c@savedorganization=\count469
-\c@origlocation=\count470
-\c@savedoriglocation=\count471
-\c@origpublisher=\count472
-\c@savedorigpublisher=\count473
-\c@publisher=\count474
-\c@savedpublisher=\count475
-\c@language=\count476
-\c@savedlanguage=\count477
-\c@origlanguage=\count478
-\c@savedoriglanguage=\count479
-\c@pageref=\count480
-\c@savedpageref=\count481
-\shorthandwidth=\skip80
-\shortjournalwidth=\skip81
-\shortserieswidth=\skip82
-\shorttitlewidth=\skip83
-\shortauthorwidth=\skip84
-\shorteditorwidth=\skip85
-\locallabelnumberwidth=\skip86
-\locallabelalphawidth=\skip87
-\localshorthandwidth=\skip88
-\localshortjournalwidth=\skip89
-\localshortserieswidth=\skip90
-\localshorttitlewidth=\skip91
-\localshortauthorwidth=\skip92
-\localshorteditorwidth=\skip93
+\c@afterword=\count424
+\c@savedafterword=\count425
+\c@annotator=\count426
+\c@savedannotator=\count427
+\c@author=\count428
+\c@savedauthor=\count429
+\c@bookauthor=\count430
+\c@savedbookauthor=\count431
+\c@commentator=\count432
+\c@savedcommentator=\count433
+\c@editor=\count434
+\c@savededitor=\count435
+\c@editora=\count436
+\c@savededitora=\count437
+\c@editorb=\count438
+\c@savededitorb=\count439
+\c@editorc=\count440
+\c@savededitorc=\count441
+\c@foreword=\count442
+\c@savedforeword=\count443
+\c@holder=\count444
+\c@savedholder=\count445
+\c@introduction=\count446
+\c@savedintroduction=\count447
+\c@namea=\count448
+\c@savednamea=\count449
+\c@nameb=\count450
+\c@savednameb=\count451
+\c@namec=\count452
+\c@savednamec=\count453
+\c@translator=\count454
+\c@savedtranslator=\count455
+\c@shortauthor=\count456
+\c@savedshortauthor=\count457
+\c@shorteditor=\count458
+\c@savedshorteditor=\count459
+\c@labelname=\count460
+\c@savedlabelname=\count461
+\c@institution=\count462
+\c@savedinstitution=\count463
+\c@lista=\count464
+\c@savedlista=\count465
+\c@listb=\count466
+\c@savedlistb=\count467
+\c@listc=\count468
+\c@savedlistc=\count469
+\c@listd=\count470
+\c@savedlistd=\count471
+\c@liste=\count472
+\c@savedliste=\count473
+\c@listf=\count474
+\c@savedlistf=\count475
+\c@location=\count476
+\c@savedlocation=\count477
+\c@organization=\count478
+\c@savedorganization=\count479
+\c@origlocation=\count480
+\c@savedoriglocation=\count481
+\c@origpublisher=\count482
+\c@savedorigpublisher=\count483
+\c@publisher=\count484
+\c@savedpublisher=\count485
+\c@language=\count486
+\c@savedlanguage=\count487
+\c@origlanguage=\count488
+\c@savedoriglanguage=\count489
+\c@pageref=\count490
+\c@savedpageref=\count491
+\shorthandwidth=\skip82
+\shortjournalwidth=\skip83
+\shortserieswidth=\skip84
+\shorttitlewidth=\skip85
+\shortauthorwidth=\skip86
+\shorteditorwidth=\skip87
+\locallabelnumberwidth=\skip88
+\locallabelalphawidth=\skip89
+\localshorthandwidth=\skip90
+\localshortjournalwidth=\skip91
+\localshortserieswidth=\skip92
+\localshorttitlewidth=\skip93
+\localshortauthorwidth=\skip94
+\localshorteditorwidth=\skip95
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1198,19 +1268,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count482
-\c@textcitetotal=\count483
-\c@textcitemaxnames=\count484
-\c@biburlbigbreakpenalty=\count485
-\c@biburlbreakpenalty=\count486
-\c@biburlnumpenalty=\count487
-\c@biburlucpenalty=\count488
-\c@biburllcpenalty=\count489
+\c@textcitecount=\count492
+\c@textcitetotal=\count493
+\c@textcitemaxnames=\count494
+\c@biburlbigbreakpenalty=\count495
+\c@biburlbreakpenalty=\count496
+\c@biburlnumpenalty=\count497
+\c@biburlucpenalty=\count498
+\c@biburllcpenalty=\count499
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count490
+\c@smartand=\count500
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -1222,8 +1292,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count491
-\c@bbx:relatedtotal=\count492
+\c@bbx:relatedcount=\count501
+\c@bbx:relatedtotal=\count502
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1254,8 +1324,8 @@ File: biblatex.cfg
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen320
-\pgffor@skip=\dimen321
+\pgffor@iter=\dimen329
+\pgffor@skip=\dimen330
 \pgffor@stack=\toks54
 \pgffor@toks=\toks55
 ))
@@ -1266,34 +1336,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count493
-\pgfplotmarksize=\dimen322
+\pgf@plot@mark@count=\count503
+\pgfplotmarksize=\dimen331
 )
-\tikz@lastx=\dimen323
-\tikz@lasty=\dimen324
-\tikz@lastxsaved=\dimen325
-\tikz@lastysaved=\dimen326
-\tikz@lastmovetox=\dimen327
-\tikz@lastmovetoy=\dimen328
-\tikzleveldistance=\dimen329
-\tikzsiblingdistance=\dimen330
-\tikz@figbox=\box96
-\tikz@figbox@bg=\box97
-\tikz@tempbox=\box98
-\tikz@tempbox@bg=\box99
-\tikztreelevel=\count494
-\tikznumberofchildren=\count495
-\tikznumberofcurrentchild=\count496
-\tikz@fig@count=\count497
+\tikz@lastx=\dimen332
+\tikz@lasty=\dimen333
+\tikz@lastxsaved=\dimen334
+\tikz@lastysaved=\dimen335
+\tikz@lastmovetox=\dimen336
+\tikz@lastmovetoy=\dimen337
+\tikzleveldistance=\dimen338
+\tikzsiblingdistance=\dimen339
+\tikz@figbox=\box142
+\tikz@figbox@bg=\box143
+\tikz@tempbox=\box144
+\tikz@tempbox@bg=\box145
+\tikztreelevel=\count504
+\tikznumberofchildren=\count505
+\tikznumberofcurrentchild=\count506
+\tikz@fig@count=\count507
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count498
-\pgfmatrixcurrentcolumn=\count499
-\pgf@matrix@numberofcolumns=\count500
+\pgfmatrixcurrentrow=\count508
+\pgfmatrixcurrentcolumn=\count509
+\pgf@matrix@numberofcolumns=\count510
 )
-\tikz@expandcount=\count501
+\tikz@expandcount=\count511
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1364,16 +1434,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count502
-\scratchdimen=\dimen331
-\scratchbox=\box100
-\nofMPsegments=\count503
-\nofMParguments=\count504
+\scratchcounter=\count512
+\scratchdimen=\dimen340
+\scratchbox=\box146
+\nofMPsegments=\count513
+\nofMParguments=\count514
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count505
-\MPscratchDim=\dimen332
-\MPnumerator=\count506
-\makeMPintoPDFobject=\count507
+\MPscratchCnt=\count515
+\MPscratchDim=\dimen341
+\MPnumerator=\count516
+\makeMPintoPDFobject=\count517
 \everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1385,7 +1455,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box101
+\AtBeginShipoutBox=\box147
 Package hyperref Info: Link coloring OFF on input line 14.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1398,7 +1468,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count508
+\c@section@level=\count518
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
@@ -1451,20 +1521,20 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 126.
 )
-\CenteringLeftskip=\skip94
-\RaggedLeftLeftskip=\skip95
-\RaggedRightLeftskip=\skip96
-\CenteringRightskip=\skip97
-\RaggedLeftRightskip=\skip98
-\RaggedRightRightskip=\skip99
-\CenteringParfillskip=\skip100
-\RaggedLeftParfillskip=\skip101
-\RaggedRightParfillskip=\skip102
-\JustifyingParfillskip=\skip103
-\CenteringParindent=\skip104
-\RaggedLeftParindent=\skip105
-\RaggedRightParindent=\skip106
-\JustifyingParindent=\skip107
+\CenteringLeftskip=\skip96
+\RaggedLeftLeftskip=\skip97
+\RaggedRightLeftskip=\skip98
+\CenteringRightskip=\skip99
+\RaggedLeftRightskip=\skip100
+\RaggedRightRightskip=\skip101
+\CenteringParfillskip=\skip102
+\RaggedLeftParfillskip=\skip103
+\RaggedRightParfillskip=\skip104
+\JustifyingParfillskip=\skip105
+\CenteringParindent=\skip106
+\RaggedLeftParindent=\skip107
+\RaggedRightParindent=\skip108
+\JustifyingParindent=\skip109
 )
 Package biblatex Info: Trying to load language 'UKenglish'...
 Package biblatex Info: ... file 'UKenglish.lbx' found.
@@ -1558,7 +1628,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 15.
 
-<figs/HDI_sigma_07a.pdf, id=70, 1199.61615pt x 556.19911pt>
+<figs/HDI_sigma_07a.pdf, id=66, 1199.61615pt x 556.19911pt>
 File: figs/HDI_sigma_07a.pdf Graphic file (type pdf)
 <use figs/HDI_sigma_07a.pdf>
 Package pdftex.def Info: figs/HDI_sigma_07a.pdf  used on input line 86.
@@ -1575,7 +1645,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figs/
 HDI_sigma_07a.pdf>]
-<figs/UniBonnLogo.png, id=131, 513.92pt x 513.92pt>
+<figs/UniBonnLogo.png, id=127, 513.92pt x 513.92pt>
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
 Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 108.
@@ -1638,6 +1708,12 @@ Overfull \hbox (33.43979pt too wide) in paragraph at lines 176--176
  [] 
  []
 
+
+LaTeX Warning: Citation 'Trotta_2008' on page 4 undefined on input line 176.
+
+
+LaTeX Warning: Citation 'Trotta_2008' on page 4 undefined on input line 176.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
 Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 176.
@@ -1650,9 +1726,12 @@ $[]$ $[]$
 [4
 
 ]
+
+LaTeX Warning: Citation 'kunz' on page 5 undefined on input line 191.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 189.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 191.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1664,7 +1743,7 @@ $[]$ $[]$
 ] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 191.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 193.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1675,34 +1754,46 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \section{Methods}
+l.193 \section{Methods}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \section{Methods}
+l.193 \section{Methods}
                         [5
 
 ]
-<figs/arviz_logo.png, id=252, 1400.23125pt x 411.5375pt>
+<figs/arviz_logo.png, id=245, 1400.23125pt x 411.5375pt>
 File: figs/arviz_logo.png Graphic file (type png)
 <use figs/arviz_logo.png>
-Package pdftex.def Info: figs/arviz_logo.png  used on input line 221.
+Package pdftex.def Info: figs/arviz_logo.png  used on input line 223.
 (pdftex.def)             Requested size: 119.50279pt x 35.1215pt.
-<figs/PyMC3_banner.pdf, id=254, 420.06938pt x 150.26138pt>
+<figs/PyMC3_banner.pdf, id=247, 420.06938pt x 150.26138pt>
 File: figs/PyMC3_banner.pdf Graphic file (type pdf)
 <use figs/PyMC3_banner.pdf>
-Package pdftex.def Info: figs/PyMC3_banner.pdf  used on input line 221.
+Package pdftex.def Info: figs/PyMC3_banner.pdf  used on input line 223.
 (pdftex.def)             Requested size: 119.50279pt x 42.74698pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-21.
+23.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+
+LaTeX Warning: Citation 'ArviZ' on page 6 undefined on input line 223.
+
+
+LaTeX Warning: Citation 'PyMC3' on page 6 undefined on input line 223.
+
+
+LaTeX Warning: Citation 'ArviZ' on page 6 undefined on input line 223.
+
+
+LaTeX Warning: Citation 'PyMC3' on page 6 undefined on input line 223.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 221.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 223.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1714,7 +1805,7 @@ $[]$ $[]$
  <./figs/arviz_logo.png> <./figs/PyMC3_banner.pdf>]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 236.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 238.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1724,9 +1815,15 @@ $[]$ $[]$
 [7
 
 ]
+
+LaTeX Warning: Citation 'trotta' on page 8 undefined on input line 252.
+
+
+LaTeX Warning: Citation 'trotta' on page 8 undefined on input line 252.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 246.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 252.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1738,7 +1835,7 @@ $[]$ $[]$
 ] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 254.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 260.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1749,18 +1846,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation8})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \section{Examples}
+l.260 \section{Examples}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{page.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \section{Examples}
+l.260 \section{Examples}
                          [8
 
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 269.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 275.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1770,18 +1867,18 @@ $[]$ $[]$
 [9
 
 ]
-Overfull \hbox (13.3258pt too wide) detected at line 288
+Overfull \hbox (13.3258pt too wide) detected at line 296
 []
  []
 
-<figs/beta_dist.pdf, id=333, 496.3343pt x 297.28844pt>
+<figs/beta_dist.pdf, id=307, 496.3343pt x 297.28844pt>
 File: figs/beta_dist.pdf Graphic file (type pdf)
 <use figs/beta_dist.pdf>
-Package pdftex.def Info: figs/beta_dist.pdf  used on input line 288.
-(pdftex.def)             Requested size: 195.1881pt x 116.90823pt.
+Package pdftex.def Info: figs/beta_dist.pdf  used on input line 296.
+(pdftex.def)             Requested size: 191.20082pt x 114.52217pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 288.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 296.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1793,7 +1890,7 @@ $[]$ $[]$
  <./figs/beta_dist.pdf>]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 297.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 305.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1805,7 +1902,7 @@ $[]$ $[]$
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 308.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 316.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1815,19 +1912,19 @@ $[]$ $[]$
 [12
 
 ]
-<figs/coin_marp_m1.pdf, id=392, 520.34402pt x 346.89601pt>
+<figs/coin_marp_m1.pdf, id=368, 520.34402pt x 346.89601pt>
 File: figs/coin_marp_m1.pdf Graphic file (type pdf)
 <use figs/coin_marp_m1.pdf>
-Package pdftex.def Info: figs/coin_marp_m1.pdf  used on input line 323.
+Package pdftex.def Info: figs/coin_marp_m1.pdf  used on input line 331.
 (pdftex.def)             Requested size: 175.66809pt x 117.11205pt.
-<figs/coin_marp_m2.pdf, id=393, 520.34402pt x 346.89601pt>
+<figs/coin_marp_m2.pdf, id=369, 520.34402pt x 346.89601pt>
 File: figs/coin_marp_m2.pdf Graphic file (type pdf)
 <use figs/coin_marp_m2.pdf>
-Package pdftex.def Info: figs/coin_marp_m2.pdf  used on input line 323.
+Package pdftex.def Info: figs/coin_marp_m2.pdf  used on input line 331.
 (pdftex.def)             Requested size: 175.66809pt x 117.11205pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 323.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 331.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1841,16 +1938,16 @@ $[]$ $[]$
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figs/coin_marp_m2.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-<figs/data_regression_line_sigma_07a_data.pdf, id=521, 554.07625pt x 449.62857p
+<figs/data_regression_line_sigma_07a_data.pdf, id=496, 554.07625pt x 449.62857p
 t>
 File: figs/data_regression_line_sigma_07a_data.pdf Graphic file (type pdf)
 <use figs/data_regression_line_sigma_07a_data.pdf>
 Package pdftex.def Info: figs/data_regression_line_sigma_07a_data.pdf  used on 
-input line 340.
+input line 350.
 (pdftex.def)             Requested size: 250.9505pt x 203.64825pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 340.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 350.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1862,7 +1959,7 @@ $[]$ $[]$
  <./figs/data_regression_line_sigma_07a_data.pdf>]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 351.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 361.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1872,9 +1969,12 @@ $[]$ $[]$
 [15
 
 ]
+
+LaTeX Warning: Citation 'sivia' on page 16 undefined on input line 373.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 363.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 373.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1886,11 +1986,11 @@ $[]$ $[]$
 ]
 File: figs/HDI_sigma_07a.pdf Graphic file (type pdf)
 <use figs/HDI_sigma_07a.pdf>
-Package pdftex.def Info: figs/HDI_sigma_07a.pdf  used on input line 372.
+Package pdftex.def Info: figs/HDI_sigma_07a.pdf  used on input line 382.
 (pdftex.def)             Requested size: 398.3386pt x 184.68352pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 372.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 382.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1900,22 +2000,23 @@ $[]$ $[]$
 [17
 
 ]
-<figs/SDDR_linear vs. squared_sigma_07a+.pdf, id=713, 806.29233pt x 427.9827pt>
+<figs/SDDR_linear vs. squared_sigma_07a+_trans.png, id=687, 805.8105pt x 427.83
+84pt>
+File: figs/SDDR_linear vs. squared_sigma_07a+_trans.png Graphic file (type png)
 
-File: figs/SDDR_linear vs. squared_sigma_07a+.pdf Graphic file (type pdf)
-<use figs/SDDR_linear vs. squared_sigma_07a+.pdf>
-Package pdftex.def Info: figs/SDDR_linear vs. squared_sigma_07a+.pdf  used on i
-nput line 420.
-(pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
-<figs/SDDR_squared vs. cubic_sigma_07a+.pdf, id=714, 806.29233pt x 427.9827pt>
+<use figs/SDDR_linear vs. squared_sigma_07a+_trans.png>
+Package pdftex.def Info: figs/SDDR_linear vs. squared_sigma_07a+_trans.png  use
+d on input line 430.
+(pdftex.def)             Requested size: 195.1881pt x 103.6299pt.
+<figs/SDDR_squared vs. cubic_sigma_07a+.pdf, id=688, 806.29233pt x 427.9827pt>
 File: figs/SDDR_squared vs. cubic_sigma_07a+.pdf Graphic file (type pdf)
 <use figs/SDDR_squared vs. cubic_sigma_07a+.pdf>
 Package pdftex.def Info: figs/SDDR_squared vs. cubic_sigma_07a+.pdf  used on in
-put line 420.
+put line 430.
 (pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 420.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 430.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1924,22 +2025,17 @@ $[]$ $[]$
 
 [18
 
- <./figs/SDDR_linear vs. squared_sigma_07a+.pdf> <./figs/SDDR_squared vs. cubic
-_sigma_07a+.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figs/SDDR_squared vs. cubi
-c_sigma_07a+.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
->]
-<figs/_sigma_07acomplexity.pdf, id=824, 743.16708pt x 346.48824pt>
+ <./figs/SDDR_linear vs. squared_sigma_07a+_trans.png> <./figs/SDDR_squared vs.
+ cubic_sigma_07a+.pdf>]
+<figs/_sigma_07acomplexity.pdf, id=750, 743.16708pt x 346.48824pt>
 File: figs/_sigma_07acomplexity.pdf Graphic file (type pdf)
 <use figs/_sigma_07acomplexity.pdf>
-Package pdftex.def Info: figs/_sigma_07acomplexity.pdf  used on input line 428.
+Package pdftex.def Info: figs/_sigma_07acomplexity.pdf  used on input line 438.
 
 (pdftex.def)             Requested size: 398.3386pt x 185.71567pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 428.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 438.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1949,15 +2045,15 @@ $[]$ $[]$
 [19
 
  <./figs/_sigma_07acomplexity.pdf>]
-<figs/data_regression_line_sigma_07a.pdf, id=887, 554.07625pt x 449.62857pt>
+<figs/data_regression_line_sigma_07a.pdf, id=812, 554.07625pt x 449.62857pt>
 File: figs/data_regression_line_sigma_07a.pdf Graphic file (type pdf)
 <use figs/data_regression_line_sigma_07a.pdf>
 Package pdftex.def Info: figs/data_regression_line_sigma_07a.pdf  used on input
- line 449.
+ line 459.
 (pdftex.def)             Requested size: 239.00558pt x 193.95398pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 449.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 459.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1969,7 +2065,7 @@ $[]$ $[]$
  <./figs/data_regression_line_sigma_07a.pdf>] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 451.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 461.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1980,18 +2076,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation20}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.451 \section{Summary}
+l.461 \section{Summary}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{page.20}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.451 \section{Summary}
+l.461 \section{Summary}
                         [20
 
 ]
+<figs/frame_alt.png, id=876, 3011.25pt x 3739.9725pt>
+File: figs/frame_alt.png Graphic file (type png)
+<use figs/frame_alt.png>
+Package pdftex.def Info: figs/frame_alt.png  used on input line 505.
+(pdftex.def)             Requested size: 55.76715pt x 69.22264pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 471.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 505.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -2000,10 +2101,13 @@ $[]$ $[]$
 
 [21
 
-]
+ <./figs/frame_alt.png>]
+
+LaTeX Warning: Empty bibliography on input line 512.
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 478.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 512.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -2024,25 +2128,34 @@ $[]$ $[]$
 
  
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 480.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 480.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 514.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 514.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 480.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 480.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 514.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 514.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 72372616F2077D9419CA18E029CCAFCA;796.
+(rerunfilecheck)             Checksum: 888AD1EF2B962B065584D07A18E5948B;750.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                presentation
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'presentation.run.xml'.
 \openout1 = `presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38050 strings out of 480608
- 766390 string characters out of 5903630
- 1428966 words of memory out of 5000000
- 53083 multiletter control sequences out of 15000+600000
+ 38107 strings out of 480608
+ 766625 string characters out of 5903630
+ 1433558 words of memory out of 5000000
+ 53143 multiletter control sequences out of 15000+600000
  624767 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,26n,124p,1660b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,26n,124p,1137b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/
@@ -2070,10 +2183,10 @@ lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb>
 020/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (27 pages, 625226 bytes).
+Output written on presentation.pdf (27 pages, 1050169 bytes).
 PDF statistics:
- 1081 PDF objects out of 1200 (max. 8388607)
- 705 compressed objects within 8 object streams
- 82 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 999 PDF objects out of 1000 (max. 8388607)
+ 658 compressed objects within 7 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

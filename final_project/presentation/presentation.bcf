@@ -2185,13 +2185,14 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Trotta_2008</bcf:citekey>
     <bcf:citekey order="2">Trotta_2008</bcf:citekey>
-    <bcf:citekey order="3">ArviZ</bcf:citekey>
-    <bcf:citekey order="4">PyMC3</bcf:citekey>
-    <bcf:citekey order="5">ArviZ</bcf:citekey>
-    <bcf:citekey order="6">PyMC3</bcf:citekey>
-    <bcf:citekey order="7">trotta</bcf:citekey>
+    <bcf:citekey order="3">kunz</bcf:citekey>
+    <bcf:citekey order="4">ArviZ</bcf:citekey>
+    <bcf:citekey order="5">PyMC3</bcf:citekey>
+    <bcf:citekey order="6">ArviZ</bcf:citekey>
+    <bcf:citekey order="7">PyMC3</bcf:citekey>
     <bcf:citekey order="8">trotta</bcf:citekey>
-    <bcf:citekey order="9">sivia</bcf:citekey>
+    <bcf:citekey order="9">trotta</bcf:citekey>
+    <bcf:citekey order="10">sivia</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
