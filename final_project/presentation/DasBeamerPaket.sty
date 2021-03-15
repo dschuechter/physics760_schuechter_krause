@@ -23,9 +23,10 @@
 \usepackage{fontawesome}
 \usefonttheme{serif}
 \usepackage{textpos}
-%\renewcommand{\cite}[1]{\text{(}\textit{\citet{#1}}\text{)}}
+
 %
+\newcommand{\citet}[1]{\text{[}\cite{#1}\text{]}}
 \usepackage[outercaption]{sidecap}    
 \usepackage{tabularx}
-\usepackage[backend=biber, style=numeric]{biblatex}
+\usepackage[backend=biber, style=authoryear]{biblatex}
 \addbibresource{refs.bib}

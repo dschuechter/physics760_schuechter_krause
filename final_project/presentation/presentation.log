@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  13 MAR 2021 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  15 MAR 2021 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count414
@@ -1212,11 +1212,11 @@ File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count490
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1225,22 +1225,18 @@ File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count491
 \c@bbx:relatedtotal=\count492
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1638,9 +1634,13 @@ $[]$ $[]$
 [3
 
 ]
+Overfull \hbox (33.43979pt too wide) in paragraph at lines 176--176
+ [] 
+ []
+
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 145.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 176.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1652,7 +1652,7 @@ $[]$ $[]$
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 157.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 189.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1664,7 +1664,7 @@ $[]$ $[]$
 ] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 158.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 191.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1675,34 +1675,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \section{Methods}
+l.191 \section{Methods}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \section{Methods}
+l.191 \section{Methods}
                         [5
 
 ]
-<figs/arviz_logo.png, id=245, 1400.23125pt x 411.5375pt>
+<figs/arviz_logo.png, id=252, 1400.23125pt x 411.5375pt>
 File: figs/arviz_logo.png Graphic file (type png)
 <use figs/arviz_logo.png>
-Package pdftex.def Info: figs/arviz_logo.png  used on input line 188.
+Package pdftex.def Info: figs/arviz_logo.png  used on input line 221.
 (pdftex.def)             Requested size: 119.50279pt x 35.1215pt.
-<figs/PyMC3_banner.pdf, id=247, 420.06938pt x 150.26138pt>
+<figs/PyMC3_banner.pdf, id=254, 420.06938pt x 150.26138pt>
 File: figs/PyMC3_banner.pdf Graphic file (type pdf)
 <use figs/PyMC3_banner.pdf>
-Package pdftex.def Info: figs/PyMC3_banner.pdf  used on input line 188.
+Package pdftex.def Info: figs/PyMC3_banner.pdf  used on input line 221.
 (pdftex.def)             Requested size: 119.50279pt x 42.74698pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-88.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+21.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 188.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 221.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1714,7 +1714,7 @@ $[]$ $[]$
  <./figs/arviz_logo.png> <./figs/PyMC3_banner.pdf>]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 203.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 236.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1726,7 +1726,7 @@ $[]$ $[]$
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 213.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 246.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1738,7 +1738,7 @@ $[]$ $[]$
 ] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 221.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 254.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1749,58 +1749,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation8})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.221 \section{Examples}
+l.254 \section{Examples}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{page.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.221 \section{Examples}
+l.254 \section{Examples}
                          [8
-
-]
-File: figs/UniBonnLogo.png Graphic file (type png)
-<use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 236.
-(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
-
-Overfull \hbox (1.72223pt too wide) has occurred while \output is active
-$[]$ $[]$ 
- []
-
-[9
-
-]
-<figs/beta_dist.pdf, id=318, 496.3343pt x 297.28844pt>
-File: figs/beta_dist.pdf Graphic file (type pdf)
-<use figs/beta_dist.pdf>
-Package pdftex.def Info: figs/beta_dist.pdf  used on input line 249.
-(pdftex.def)             Requested size: 199.1693pt x 119.29431pt.
-
-Overfull \vbox (2.66322pt too high) detected at line 249
- []
-
-File: figs/UniBonnLogo.png Graphic file (type png)
-<use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 249.
-(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
-
-Overfull \hbox (1.72223pt too wide) has occurred while \output is active
-$[]$ $[]$ 
- []
-
-[10
-
- <./figs/beta_dist.pdf>]
-File: figs/UniBonnLogo.png Graphic file (type png)
-<use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 258.
-(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
-
-Overfull \hbox (1.72223pt too wide) has occurred while \output is active
-$[]$ $[]$ 
- []
-
-[11
 
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
@@ -1812,22 +1767,67 @@ Overfull \hbox (1.72223pt too wide) has occurred while \output is active
 $[]$ $[]$ 
  []
 
+[9
+
+]
+Overfull \hbox (13.3258pt too wide) detected at line 288
+[]
+ []
+
+<figs/beta_dist.pdf, id=333, 496.3343pt x 297.28844pt>
+File: figs/beta_dist.pdf Graphic file (type pdf)
+<use figs/beta_dist.pdf>
+Package pdftex.def Info: figs/beta_dist.pdf  used on input line 288.
+(pdftex.def)             Requested size: 195.1881pt x 116.90823pt.
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 288.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[10
+
+ <./figs/beta_dist.pdf>]
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 297.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[11
+
+]
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 308.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
 [12
 
 ]
-<figs/coin_marp_m1.pdf, id=379, 520.34402pt x 346.89601pt>
+<figs/coin_marp_m1.pdf, id=392, 520.34402pt x 346.89601pt>
 File: figs/coin_marp_m1.pdf Graphic file (type pdf)
 <use figs/coin_marp_m1.pdf>
-Package pdftex.def Info: figs/coin_marp_m1.pdf  used on input line 284.
+Package pdftex.def Info: figs/coin_marp_m1.pdf  used on input line 323.
 (pdftex.def)             Requested size: 175.66809pt x 117.11205pt.
-<figs/coin_marp_m2.pdf, id=380, 520.34402pt x 346.89601pt>
+<figs/coin_marp_m2.pdf, id=393, 520.34402pt x 346.89601pt>
 File: figs/coin_marp_m2.pdf Graphic file (type pdf)
 <use figs/coin_marp_m2.pdf>
-Package pdftex.def Info: figs/coin_marp_m2.pdf  used on input line 284.
+Package pdftex.def Info: figs/coin_marp_m2.pdf  used on input line 323.
 (pdftex.def)             Requested size: 175.66809pt x 117.11205pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 284.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 323.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1840,32 +1840,17 @@ $[]$ $[]$
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figs/coin_marp_m2.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] (./presentation.toc)
+>]
+<figs/data_regression_line_sigma_07a_data.pdf, id=521, 554.07625pt x 449.62857p
+t>
+File: figs/data_regression_line_sigma_07a_data.pdf Graphic file (type pdf)
+<use figs/data_regression_line_sigma_07a_data.pdf>
+Package pdftex.def Info: figs/data_regression_line_sigma_07a_data.pdf  used on 
+input line 340.
+(pdftex.def)             Requested size: 250.9505pt x 203.64825pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 287.
-(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
-
-Overfull \hbox (1.72223pt too wide) has occurred while \output is active
-$[]$ $[]$ 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.287 \section{Summary}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{page.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.287 \section{Summary}
-                        [13
-
-]
-File: figs/UniBonnLogo.png Graphic file (type png)
-<use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 294.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 340.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1874,10 +1859,10 @@ $[]$ $[]$
 
 [14
 
-]
+ <./figs/data_regression_line_sigma_07a_data.pdf>]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 301.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 351.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1885,6 +1870,147 @@ $[]$ $[]$
  []
 
 [15
+
+]
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 363.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[16
+
+]
+File: figs/HDI_sigma_07a.pdf Graphic file (type pdf)
+<use figs/HDI_sigma_07a.pdf>
+Package pdftex.def Info: figs/HDI_sigma_07a.pdf  used on input line 372.
+(pdftex.def)             Requested size: 398.3386pt x 184.68352pt.
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 372.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[17
+
+]
+<figs/SDDR_linear vs. squared_sigma_07a+.pdf, id=713, 806.29233pt x 427.9827pt>
+
+File: figs/SDDR_linear vs. squared_sigma_07a+.pdf Graphic file (type pdf)
+<use figs/SDDR_linear vs. squared_sigma_07a+.pdf>
+Package pdftex.def Info: figs/SDDR_linear vs. squared_sigma_07a+.pdf  used on i
+nput line 419.
+(pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
+<figs/SDDR_squared vs. cubic_sigma_07a+.pdf, id=714, 806.29233pt x 427.9827pt>
+File: figs/SDDR_squared vs. cubic_sigma_07a+.pdf Graphic file (type pdf)
+<use figs/SDDR_squared vs. cubic_sigma_07a+.pdf>
+Package pdftex.def Info: figs/SDDR_squared vs. cubic_sigma_07a+.pdf  used on in
+put line 419.
+(pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 419.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[18
+
+ <./figs/SDDR_linear vs. squared_sigma_07a+.pdf> <./figs/SDDR_squared vs. cubic
+_sigma_07a+.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figs/SDDR_squared vs. cubi
+c_sigma_07a+.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+>]
+<figs/_sigma_07acomplexity.pdf, id=824, 743.16708pt x 346.48824pt>
+File: figs/_sigma_07acomplexity.pdf Graphic file (type pdf)
+<use figs/_sigma_07acomplexity.pdf>
+Package pdftex.def Info: figs/_sigma_07acomplexity.pdf  used on input line 427.
+
+(pdftex.def)             Requested size: 398.3386pt x 185.71567pt.
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 427.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[19
+
+ <./figs/_sigma_07acomplexity.pdf>]
+<figs/data_regression_line_sigma_07a.pdf, id=887, 554.07625pt x 449.62857pt>
+File: figs/data_regression_line_sigma_07a.pdf Graphic file (type pdf)
+<use figs/data_regression_line_sigma_07a.pdf>
+Package pdftex.def Info: figs/data_regression_line_sigma_07a.pdf  used on input
+ line 448.
+(pdftex.def)             Requested size: 239.00558pt x 193.95398pt.
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 448.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[20
+
+ <./figs/data_regression_line_sigma_07a.pdf>] (./presentation.toc)
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 450.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation20}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.450 \section{Summary}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{page.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.450 \section{Summary}
+                        [20
+
+]
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 457.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[21
+
+]
+File: figs/UniBonnLogo.png Graphic file (type png)
+<use figs/UniBonnLogo.png>
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 464.
+(pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
+
+Overfull \hbox (1.72223pt too wide) has occurred while \output is active
+$[]$ $[]$ 
+ []
+
+[22
 
 ]
 \tf@nav=\write9
@@ -1898,15 +2024,11 @@ $[]$ $[]$
 
  
 AED: lastpage setting LastPage
-
-Package caption Warning: Unused \captionsetup[table] on input line 11.
-See the caption package documentation for explanation.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 466.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 466.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 466.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 466.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 72372616F2077D9419CA18E029CCAFCA;796.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
@@ -1914,13 +2036,13 @@ Package logreq Info: Writing requests to 'presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37963 strings out of 480608
- 764331 string characters out of 5903630
- 1422152 words of memory out of 5000000
- 53018 multiletter control sequences out of 15000+600000
+ 38049 strings out of 480608
+ 766374 string characters out of 5903630
+ 1428966 words of memory out of 5000000
+ 53082 multiletter control sequences out of 15000+600000
  624767 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,18n,124p,1660b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,26n,124p,1660b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/
@@ -1948,10 +2070,10 @@ lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb>
 020/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (20 pages, 526991 bytes).
+Output written on presentation.pdf (27 pages, 624510 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 64 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1081 PDF objects out of 1200 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

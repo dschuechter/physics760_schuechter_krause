@@ -1,17 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'presentation.blg'
-[160] biber-darwin:322> INFO - === Sat Mar 13, 2021, 14:58:12
-[202] Biber.pm:415> INFO - Reading 'presentation.bcf'
-[444] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
-[486] Biber.pm:4256> INFO - Processing section 0
-[487] Utils.pm:75> INFO - Globbing data source 'refs.bib'
-[487] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
-[516] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[521] bibtex.pm:1653> INFO - LaTeX decoding ...
-[563] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
-[617] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[618] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[618] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-UK'
-[618] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-UK'
-[633] bbl.pm:652> INFO - Writing 'presentation.bbl' with encoding 'UTF-8'
-[636] bbl.pm:755> INFO - Output to presentation.bbl
+[1] Config.pm:307> INFO - Logfile is 'presentation.blg'
+[149] biber-darwin:322> INFO - === Mon Mar 15, 2021, 16:37:40
+[182] Biber.pm:415> INFO - Reading 'presentation.bcf'
+[374] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
+[398] Biber.pm:4256> INFO - Processing section 0
+[399] Utils.pm:75> INFO - Globbing data source 'refs.bib'
+[400] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
+[419] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[422] bibtex.pm:1653> INFO - LaTeX decoding ...
+[465] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
+[499] Utils.pm:304> WARN - month field 'Mar' in entry 'Trotta_2008' is not an integer - this will probably not sort properly.
+[562] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[562] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[564] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-UK'
+[564] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-UK'
+[596] bbl.pm:652> INFO - Writing 'presentation.bbl' with encoding 'UTF-8'
+[608] bbl.pm:755> INFO - Output to presentation.bbl
+[608] Biber.pm:128> INFO - WARNINGS: 1

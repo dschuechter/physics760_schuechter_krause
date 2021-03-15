@@ -133,16 +133,48 @@
 
 \subsection{Model comparison}
 \begin{frame}{Model comparison}
-	How do we turn \textsc{Bayes'} theorem into a tool for model comparison?
-	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes} factor] 
-		\begin{equation}
+
+	
+	\begin{minipage}{.48\linewidth}
+		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayes} factor] 
+			\begin{equation}
 			p(M_i|y)=\frac{p(M_i)\cdot p(y|M_i)}{p(y)}.
-		\end{equation}
-		\begin{equation}\label{eq:bf}
-			O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.
-		\end{equation}
-	\end{tcolorbox}
+			\end{equation}
+			\begin{align}\label{eq:bf}
+			\begin{split}
+			O_{ij}&:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}\\&=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}\\&=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.
+			\end{split}
+			\end{align}
+		\end{tcolorbox}
+	\end{minipage}
+\hfil
+\begin{minipage}{.45\linewidth}
+		How do we turn \textsc{Bayes'} theorem into a tool for model comparison?
+	\begin{table}[htbp]
+		
+		\centering
+		{\renewcommand{\arraystretch}{1.3}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				$|\ln B_{ij}|$& Odds  & Strength of evidence \\
+				\hline
+				$< 1.0$& $ \lesssim 3:1$  & Inconclusive  \\
+				$1.0$ & $\sim 3:1$  & Weak evidence  \\
+				$2.5$& $\sim 12:1$  & Moderate evidence \\
+				$5.0$& $\sim 150:1$ & Strong evidence \\
+				\hline
+		\end{tabular}}
+		\caption{Empirical scale for evaluating the strength of evidence when comparing two models $M_i$ vs. $M_j$, adapted from \citet{Trotta_2008}}
+		\label{tab:bf}
+	\end{table}
+\end{minipage}
+	
+
+
+
+
 \end{frame}
+
 \begin{frame}{Model comparison}
 
 	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=\textsc{Bayesian} complexity] 
@@ -155,6 +187,7 @@
 	\end{equation}
 	\end{tcolorbox}
 \end{frame}
+
 \section{Methods}
 
 \subsection{Monte-Carlo-Sampling}
@@ -178,7 +211,7 @@
 				\vspace{0.1cm}
 				
 				\includegraphics[width=\linewidth]{PyMC3_banner}
-				\caption{\texttt{ArviZ} \cite{ArviZ} and \texttt{PyMC3} \cite{PyMC3}}
+				\caption{\texttt{ArviZ} \citet{ArviZ} and \texttt{PyMC3} \citet{PyMC3}}
 			\end{figure}
 			
 		\end{minipage}
@@ -205,8 +238,8 @@
 
 \subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
 \begin{frame}{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
-	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors (which is usually the case \cite{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
-	We can then write the \textsc{Bayes} factor as \cite{trotta} \begin{equation}
+	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors (which is usually the case \citet{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
+	We can then write the \textsc{Bayes} factor as \citet{trotta} \begin{equation}
 	\label{eq:sddr}
 	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_j)}{p(\omega|M_j)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
 	\end{equation}
@@ -215,7 +248,7 @@
 %\begin{frame}{Error analysis and diagnostics}
 %To evaluate the errors for the computed quantities we estimate the statistical error given by multiple \emph{Monte-Carlo} runs. Since the results matched our expectations, we are not considering systematic errors in our code. This can be said, because we chose the true models of the underlying data.
 %
-%To check whether the \textsc{Markov} chains converge, we used the \texttt{ArviZ}-Library that provides functions to visualize \emph{marginal posteriors} and \textsc{Markov} chains \cite{ArviZ}. 
+%To check whether the \textsc{Markov} chains converge, we used the \texttt{ArviZ}-Library that provides functions to visualize \emph{marginal posteriors} and \textsc{Markov} chains \citet{ArviZ}. 
 %\end{frame}
 
 \section{Examples}
@@ -236,16 +269,22 @@
 \end{frame}
 
 \begin{frame}{Coin Flip }
-	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
-	\begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
-	\end{align*}
-	\end{tcolorbox}
-	\begin{figure}[htbp]
-		\centering
-		\includegraphics[width=.5\linewidth]{beta_dist}
-		\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
-		\label{fig:beta_dist}
-	\end{figure}
+	\begin{minipage}{.49\linewidth}
+		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
+			\begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
+			\end{align*}
+		\end{tcolorbox}
+	\end{minipage}
+\hfill
+	\begin{minipage}{.49\linewidth}
+			\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=\linewidth]{beta_dist}
+			\caption{Beta-distribution as \emph{prior} $p(\theta|M_i)$ for the two different models}
+			\label{fig:beta_dist}
+		\end{figure}	
+	\end{minipage}
+
 \end{frame}
 
 \begin{frame}{Coin Flip}
@@ -268,7 +307,7 @@ We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
 Can we reproduce this numerically?
 \end{frame}
 \begin{frame}{Coin Flip}
-	let us obtain 2000 samples from the posterior distribution using the same \emph{likelihood} and \emph{priors} via the SMC algorithm provided by \texttt{PyMC3}
+	let us obtain 2000 samples from the posterior distribution using the same \\ \emph{likelihood} and \emph{priors} via the SMC algorithm provided by \texttt{PyMC3}
 	\begin{figure}[htbp]
 		\begin{subfigure}{.49\linewidth}
 			\includegraphics[width=0.9\linewidth]{coin_marp_m1.pdf}
@@ -283,6 +322,130 @@ Can we reproduce this numerically?
  $$\text{We find }B_{21}=B_{12}^{-1}=9.5829\pm0.4719  \text{ (noice! } \checkmark)$$
 \end{frame}
 \subsection{Fitting a polynomial of unknown degree}
+\begin{frame}{Fitting a polynomial of unknown degree}
+	We wish to determine the true model underlying the generated data depicted in the figure below
+
+		\centering
+		\begin{minipage}{.7\linewidth}
+			\includegraphics[width=.9\linewidth]{data_regression_line_sigma_07a_data.pdf}
+		\end{minipage}
+		\begin{minipage}{.25\linewidth}
+				\begin{figure}
+						\caption{$N=25$ datapoints distributed with a gaussian noise of $\sigma=0.7$. Linear? Quadratic? Cubic?}
+				\end{figure}
+		\end{minipage}
+
+	
+	
+\end{frame}
+
+\begin{frame}{Fitting a polynomial of unknown degree}
+	we want to find the correct model by using
+	
+	\begin{itemize}
+		\item \textsc{Bayes} factor 
+		\item SDDR (as sanity check)
+		\item \textsc{bayesian} complexity
+	\end{itemize}
+	We will tackle this problem numerically by sampling from the \emph{posterior} $\to$ we need to assign \emph{priors} and \emph{likelihoods} again
+\end{frame}
+
+\begin{frame}{Fitting a polynomial of unknown degree}
+	a suitable choice for \emph{prior} and \emph{likelihood} are normal distributions, since the noise is Gaussian \citet{sivia}.
+		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
+		The \emph{priors} for the fit-parameters $a,b$ and $c$  are each described by a normal distribution with $\mu_{\text{prior}}=0$ and $\sigma_{\text{prior}}=2$
+	\end{tcolorbox}
+
+		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a likelihood]
+			$$p(y|\btheta, M_i)=\prod_{k=1}^{N}\frac{1}{\sigma\sqrt{2\pi}}\exp{\left[-\frac{(f(y_k;\btheta)-y_k)^2}{2\sigma^2}\right]}.$$
+			where $f(y_k;\btheta)$ is the fit function $f_i(x)=\displaystyle\sum_{\alpha=0}^{i}a_\alpha x^\alpha$, with $i=1,2,3$
+	\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Fitting a polynomial of unknown degree}
+	Now lets generate 2000 samples following the \emph{posterior}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{figs/HDI_sigma_07a.pdf}
+		\caption{Result of parameter estimation with SMC. The data was generated with $\sigma=0.7$}
+	\end{figure}
+\end{frame}
+\begin{frame}{Fitting a polynomial of unknown degree}
+	\begin{minipage}{.49\linewidth}
+
+		\begin{table}[H]
+			{\renewcommand{\arraystretch}{1.3}
+				\resizebox{\columnwidth}{!}{
+				\begin{tabular}{|c|c|}
+					\hline
+					Comparison $M_1$ vs. $M_2$ & $\ln(B_{12}(\sigma=0.7))$  \\
+					\hline
+					square vs. linear& $8.5507\pm0.053$\\
+					cubic vs. linear & $7.6225\pm0.094$\\
+					square vs. cubic&$0.9371\pm0.1093$ \\
+					\hline
+			\end{tabular}}}
+			\caption{Results of \textsc{Bayes} factor via SMC}
+			\label{tab:res_smc}
+		\end{table}
+	
+		\begin{table}[H]
+			{\renewcommand{\arraystretch}{1.3}
+				\resizebox{\columnwidth}{!}{
+				\begin{tabular}{|c|c|}
+					\hline
+					Comparison $M_1$ vs. $M_2$ & $\ln(B_{12}(\sigma=0.7))$ \\
+					\hline
+					square vs. linear& $>2.4301\pm0.27613$\\
+					square vs. cubic&$0.8091\pm0.0265$  \\
+					cubic vs. linear & $>0.3329\pm0.1292$\\
+					\hline
+			\end{tabular}}}
+			\caption{Results of \textsc{Bayes} factor via SDDR.}
+			\label{tab:res_sddr}
+		\end{table}
+	
+	\end{minipage}
+	\begin{minipage}{.49\linewidth}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\linewidth]{SDDR_linear vs. squared_sigma_07a+.pdf}
+			\includegraphics[width=\linewidth]{SDDR_squared vs. cubic_sigma_07a+.pdf}
+			\caption{Computation of the SDDR  ($\sigma=0.7$)}
+			\label{fig:sddr}
+		\end{figure}
+	\end{minipage}
+
+\end{frame}
+\begin{frame}{Fitting a polynomial of unknown degree}
+	What about the complexity?
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{_sigma_07acomplexity.pdf}
+		\caption{Numerical computation of the complexity $\mathcal{C}_b$, 3 parameters are supported.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Fitting a polynomial of unknown degree}
+	And the true regression line is...
+	
+	\begin{minipage}{.6\linewidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{data_regression_line_sigma_07a}
+		\caption{True regression line}
+	\end{figure}
+	\end{minipage}
+\begin{minipage}{.39\linewidth}
+	\begin{align*}
+	f(x;\btheta)&=a\cdot x^2+b\cdot x+c\\&=2\cdot x^2+3\cdot x+1.
+	\end{align*}
+	\centering
+	\text{ (again, nice!} $\checkmark$)
+\end{minipage}
+	
+
+\end{frame}
 
 \section{Summary}
 \begin{frame}{Summary}
