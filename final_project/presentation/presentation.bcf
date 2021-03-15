@@ -2183,16 +2183,22 @@
     <bcf:datasource type="file" datatype="bibtex">refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Trotta_2008</bcf:citekey>
+    <bcf:citekey order="1">sivia</bcf:citekey>
     <bcf:citekey order="2">Trotta_2008</bcf:citekey>
-    <bcf:citekey order="3">kunz</bcf:citekey>
-    <bcf:citekey order="4">ArviZ</bcf:citekey>
-    <bcf:citekey order="5">PyMC3</bcf:citekey>
-    <bcf:citekey order="6">ArviZ</bcf:citekey>
-    <bcf:citekey order="7">PyMC3</bcf:citekey>
-    <bcf:citekey order="8">trotta</bcf:citekey>
-    <bcf:citekey order="9">trotta</bcf:citekey>
-    <bcf:citekey order="10">sivia</bcf:citekey>
+    <bcf:citekey order="3">Trotta_2008</bcf:citekey>
+    <bcf:citekey order="4">Trotta_2008</bcf:citekey>
+    <bcf:citekey order="5">kunz</bcf:citekey>
+    <bcf:citekey order="6">Trotta_2008</bcf:citekey>
+    <bcf:citekey order="7">ArviZ</bcf:citekey>
+    <bcf:citekey order="8">PyMC3</bcf:citekey>
+    <bcf:citekey order="9">ArviZ</bcf:citekey>
+    <bcf:citekey order="10">PyMC3</bcf:citekey>
+    <bcf:citekey order="11">SMC_PEPE</bcf:citekey>
+    <bcf:citekey order="11">PyMC3_SMC</bcf:citekey>
+    <bcf:citekey order="12">trotta</bcf:citekey>
+    <bcf:citekey order="13">PyMC3_BF</bcf:citekey>
+    <bcf:citekey order="14">PyMC3_BF</bcf:citekey>
+    <bcf:citekey order="15">sivia</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

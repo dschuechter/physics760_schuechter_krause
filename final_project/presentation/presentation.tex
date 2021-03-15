@@ -120,15 +120,17 @@
 	\textsc{Jan} and \textsc{Marius} already talked about this, so here we only sketch the basics again
 	\begin{equation}
 		\label{eq:marp}
-		p(\theta_i|y,M)=\int p(\boldsymbol{\theta}|y,M)\prod_{j\neq i}\text{d}{\theta_j}
+		\text{\emph{marginal posterior }}p(\theta_i|y,M)=\int p(\boldsymbol{\theta}|y,M)\prod_{j\neq i}\text{d}{\theta_j}
 	\end{equation}
 
 \begin{align}
 	\begin{split}
-		p(\theta|y,M)=\max \Leftrightarrow \theta=\hat{\theta}\\
+		\text{best fit value(s) }p(\theta|y,M)=\max \Leftrightarrow \theta=\hat{\theta}\\
 		\langle\theta\rangle=\int_{-\infty}^{\infty}\text{d}\theta  p(\theta|y,M)\cdot\theta
 	\end{split}
 \end{align}
+\raggedleft
+\citet{sivia}
 \end{frame}
 
 \subsection{Model comparison}
@@ -167,6 +169,8 @@
 		\caption{Empirical scale for evaluating the strength of evidence when comparing two models $M_i$ vs. $M_j$, adapted from \citet{Trotta_2008}}
 		\label{tab:bf}
 	\end{table}
+\raggedleft
+\citet{Trotta_2008}
 \end{minipage}
 	
 
@@ -187,7 +191,12 @@
 	\end{equation}
 	\end{tcolorbox}
 
-describes how many model parameters the data is able to constrain \citet{kunz} and is thus a useful tool for examining models with an increasing number of parameters.
+\begin{itemize}
+	\item describes how many model parameters the data is able to constrain 
+	\item is a useful tool for examining models with an increasing number of parameters
+\end{itemize}
+\raggedleft
+\citet{kunz}
 \end{frame}
 
 \section{Methods}
@@ -203,7 +212,7 @@ describes how many model parameters the data is able to constrain \citet{kunz} a
 				 \begin{equation}
 					\langle f(\boldsymbol{\theta})\rangle\approx\frac{1}{N}\sum_{t=0}^{N-1}f(\boldsymbol{\theta}^{(t)}).
 				\end{equation}
-				also, \emph{marginal posterior} distributions are obtained trivially by binning values of $\theta_i$ ignoring $\theta_{j\neq i}$
+				also, \emph{marginal posterior} distributions are obtained trivially by binning values of $\theta_i$ ignoring $\theta_{j\neq i}$ \citet{Trotta_2008}
 			\end{tcolorbox}
 		\end{minipage}
 		\hfill
@@ -234,14 +243,17 @@ describes how many model parameters the data is able to constrain \citet{kunz} a
 				\begin{equation}\label{eq:with_the_hat}
 				\hat{p}(y)=\prod_{i}\widehat{\frac{Z_{\beta_i}}{Z_{\beta_{i-1}}}}.
 				\end{equation}
+				\raggedleft
+				\small\citet{SMC_PEPE,PyMC3_SMC}
 		\end{tcolorbox}
+	
 \end{frame}
 
 
 \subsection{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
 \begin{frame}{\textsc{Savage-Dickey}-Density-Ratio (SDDR)}
-	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors (which is usually the case \citet{trotta}) $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
-	We can then write the \textsc{Bayes} factor as \citet{trotta} 
+	consider model $M_j$ with free parameters $\omega,\psi$ and a submodel $M_i$ with one free parameter $\psi$ and fixed $\omega=\omega_\star$. Let us further assume separable priors $$p(\omega,\psi|M_j)=p(\omega|M_j)p(\psi|M_i).$$
+	We can then write the \textsc{Bayes} factor as 
 	
 \begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title={Savage Dickey-Density-Ratio}]
 	\begin{equation}
@@ -249,6 +261,8 @@ describes how many model parameters the data is able to constrain \citet{kunz} a
 	B_{ij}=B_{ji}^{-1}=\frac{p(\omega|y,M_j)}{p(\omega|M_j)}\bigg|_{\omega=\omega_\star}  \text{\hfill (SDDR)}.
 	\end{equation}
 \end{tcolorbox}
+\raggedleft
+\citet{trotta}
 \end{frame}
 %\subsection{Error analysis and diagnostics}
 %\begin{frame}{Error analysis and diagnostics}
@@ -280,7 +294,9 @@ describes how many model parameters the data is able to constrain \citet{kunz} a
 		\vspace{0.3cm}
 			\begin{align*}f(\theta;\alpha,\beta)&=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}\\&:=\frac{1}{B(\alpha,\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1}.
 			\end{align*}
-			\vspace{0.3cm}
+			\raggedleft
+			\tiny
+			\citet{PyMC3_BF}
 		\end{tcolorbox}
 	\end{minipage}
 \hfill
@@ -313,6 +329,11 @@ We simulated data for $N=50$ and the biased coin with $p(H)=0.25$.
 		\end{align*}
 	\end{tcolorbox}
 Can we reproduce this numerically?
+
+\vspace{1cm}
+
+\raggedleft
+\citet{PyMC3_BF}
 \end{frame}
 \begin{frame}{Coin Flip}
 	let us obtain 2000 samples from the posterior distribution using the same \\ \emph{likelihood} and \emph{priors} via the SMC algorithm provided by \texttt{PyMC3}
