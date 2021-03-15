@@ -406,6 +406,7 @@ Can we reproduce this numerically?
 		\end{table}
 	
 	\end{minipage}
+	\hfill
 	\begin{minipage}{.49\linewidth}
 		\begin{figure}[H]
 			\centering
@@ -449,11 +450,24 @@ Can we reproduce this numerically?
 
 \section{Summary}
 \begin{frame}{Summary}
-	\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=, width=\linewidth]
+	\begin{minipage}{0.48\linewidth}
+			\begin{tcolorbox}[colback=blue!5,colframe=gray!15!black,title=Theory and methods, width=\linewidth]
+			\begin{itemize}
+				\item \textsc{Bayesian} statistics provides the \textsc{Bayes} factor and \textsc{Bayesian} complexity as measures of \emph{model comparison}
+				\item Monte-Carlo-techniques can be used to compute both quantities
+				\vspace{0.5cm}
+			\end{itemize}
+		\end{tcolorbox}
+	\end{minipage}
+\begin{minipage}{0.48\linewidth}
+	\begin{tcolorbox}[colback=green!5,colframe=gray!15!black,title=Exampless, width=\linewidth]
 		\begin{itemize}
-			\item 
+			\item We can say with weak to moderate confidence that the coin is biased
+			\item We can say with weak to moderate evidence that the quadratic model is favoured over the others
+			\item The \textsc{Bayesian} complexity diverges for $\dim{\btheta}>3$ 
 		\end{itemize}
 	\end{tcolorbox}
+\end{minipage}
 \end{frame}
 
 \section*{References}

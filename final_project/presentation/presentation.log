@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.15)  15 MAR 2021 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  15 MAR 2021 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1905,17 +1905,17 @@ $[]$ $[]$
 File: figs/SDDR_linear vs. squared_sigma_07a+.pdf Graphic file (type pdf)
 <use figs/SDDR_linear vs. squared_sigma_07a+.pdf>
 Package pdftex.def Info: figs/SDDR_linear vs. squared_sigma_07a+.pdf  used on i
-nput line 419.
+nput line 420.
 (pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
 <figs/SDDR_squared vs. cubic_sigma_07a+.pdf, id=714, 806.29233pt x 427.9827pt>
 File: figs/SDDR_squared vs. cubic_sigma_07a+.pdf Graphic file (type pdf)
 <use figs/SDDR_squared vs. cubic_sigma_07a+.pdf>
 Package pdftex.def Info: figs/SDDR_squared vs. cubic_sigma_07a+.pdf  used on in
-put line 419.
+put line 420.
 (pdftex.def)             Requested size: 195.1881pt x 103.60608pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 419.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 420.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1934,12 +1934,12 @@ ingle page
 <figs/_sigma_07acomplexity.pdf, id=824, 743.16708pt x 346.48824pt>
 File: figs/_sigma_07acomplexity.pdf Graphic file (type pdf)
 <use figs/_sigma_07acomplexity.pdf>
-Package pdftex.def Info: figs/_sigma_07acomplexity.pdf  used on input line 427.
+Package pdftex.def Info: figs/_sigma_07acomplexity.pdf  used on input line 428.
 
 (pdftex.def)             Requested size: 398.3386pt x 185.71567pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 427.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 428.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1953,11 +1953,11 @@ $[]$ $[]$
 File: figs/data_regression_line_sigma_07a.pdf Graphic file (type pdf)
 <use figs/data_regression_line_sigma_07a.pdf>
 Package pdftex.def Info: figs/data_regression_line_sigma_07a.pdf  used on input
- line 448.
+ line 449.
 (pdftex.def)             Requested size: 239.00558pt x 193.95398pt.
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 448.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 449.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1969,7 +1969,7 @@ $[]$ $[]$
  <./figs/data_regression_line_sigma_07a.pdf>] (./presentation.toc)
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 450.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 451.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -1980,18 +1980,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation20}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.450 \section{Summary}
+l.451 \section{Summary}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{page.20}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.450 \section{Summary}
+l.451 \section{Summary}
                         [20
 
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 457.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 471.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -2003,7 +2003,7 @@ $[]$ $[]$
 ]
 File: figs/UniBonnLogo.png Graphic file (type png)
 <use figs/UniBonnLogo.png>
-Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 464.
+Package pdftex.def Info: figs/UniBonnLogo.png  used on input line 478.
 (pdftex.def)             Requested size: 28.45274pt x 28.44997pt.
 
 Overfull \hbox (1.72223pt too wide) has occurred while \output is active
@@ -2024,11 +2024,11 @@ $[]$ $[]$
 
  
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 466.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 466.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 480.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 480.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 466.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 466.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 480.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 480.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 72372616F2077D9419CA18E029CCAFCA;796.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
@@ -2036,10 +2036,10 @@ Package logreq Info: Writing requests to 'presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38049 strings out of 480608
- 766374 string characters out of 5903630
+ 38050 strings out of 480608
+ 766390 string characters out of 5903630
  1428966 words of memory out of 5000000
- 53082 multiletter control sequences out of 15000+600000
+ 53083 multiletter control sequences out of 15000+600000
  624767 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,26n,124p,1660b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2070,7 +2070,7 @@ lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb>
 020/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (27 pages, 624510 bytes).
+Output written on presentation.pdf (27 pages, 625226 bytes).
 PDF statistics:
  1081 PDF objects out of 1200 (max. 8388607)
  705 compressed objects within 8 object streams
