@@ -234,8 +234,10 @@
 	But how exactly do we get samples $\btheta^{(t)}$?
 			\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title={Sequential Monte Carlo (SMC)}]
 				First let us introduce an auxiliary \emph{temperature parameter} $\beta\in [0,1]$ and write
-				$$p(\btheta|y)_\beta=\frac{p(y|\btheta)^\beta\cdot p(\btheta)}{Z_\beta},$$
-				with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$.
+				\begin{equation}
+					p(\btheta|y)_\beta=\frac{p(y|\btheta)^\beta\cdot p(\btheta)}{Z_\beta}
+				\end{equation}
+			with $Z_\beta=\int\text{d}\btheta p(y|\btheta)^\beta\cdot p(\btheta)$.
 				
 				Main idea: gradually sample from simple distribution ($\beta=0$) to complex/true distribution ($\beta=1$) using \textsc{Metropolis-Hastings}
 				
@@ -384,7 +386,7 @@ Can we reproduce this numerically?
 \begin{frame}{Fitting a polynomial of unknown degree}
 	a suitable choice for \emph{prior} and \emph{likelihood} are normal distributions, since the noise is Gaussian \citet{sivia}.
 		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a prior]
-		The \emph{priors} for the fit-parameters $a,b$ and $c$  are each described by a normal distribution with $\mu_{\text{prior}}=0$ and $\sigma_{\text{prior}}=2$
+		The \emph{priors} for the fit-parameters $a_\alpha$  are each described by a normal distribution with $\mu_{\text{prior}}=0$ and $\sigma_{\text{prior}}=2$
 	\end{tcolorbox}
 
 		\begin{tcolorbox}[colback=black!5,colframe=gray!15!black,title=Choosing a likelihood]
