@@ -130,7 +130,10 @@ Throughout this paper we will use $\langle\theta\rangle$ as our best fit estimat
 We recognize $p(y|M_i)$ as the marginal likelihood of the model $M_i$. Let now  the two competing models be those of Alice and Bob introduced in section \eqref{sec:intro}.Thus, $$p(y|M_i)=\int_{-\infty}^{\infty}\text{d}\lambda p(y|\lambda, M)\cdot p(\lambda|M)$$
 follows \cite[Chap. 3]{sivia}.
 \subsubsection{\textbf{Bayes Factor}}
-One way of comparing two models is to compare their posterior odds, that is the ratio \cite{Trotta_2008} \begin{equation}\label{eq:bf}O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.\end{equation}
+One way of comparing two models is to compare their posterior odds, that is the ratio \cite{Trotta_2008} 
+\begin{equation}\label{eq:bf}
+	O_{ij}:=\underbrace{\frac{p(M_i|y)}{p(M_j|y)}}_{\text{posterior odds}}=\underbrace{\frac{p(y|M_i)}{p(y|M_j)}}_{\text{\textsc{Bayes} Factor}}\cdot\underbrace{\frac{p(M_i)}{p(M_j)}}_{\text{prior odds}}=B_{ij}\cdot\frac{p(M_i)}{p(M_j)}.
+\end{equation}
 Usually we can assume the prior odds to be $\sim 1$ because we do not favor one model over the other just on prior beliefs. With this equation \eqref{eq:bf} simply becomes $$O_{ij}=B_{ij}.$$
 Calculating $B_{ij}$ will be referred to as calculating the \textsc{Bayes} factor \emph{in favor of} model $M_i$. We can then evaluate the result of $B_{ij}$ as follows 
 \begin{equation*}

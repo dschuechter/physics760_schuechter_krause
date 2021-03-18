@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {UKenglish}{}
+\beamer@sectionintoc {3}{Theory}{3}{0}{1}
+\beamer@subsectionintoc {3}{1}{Parameter estimation}{3}{0}{1}
+\beamer@subsectionintoc {3}{2}{Model comparison}{4}{0}{1}
+\beamer@sectionintoc {4}{Methods}{6}{0}{2}
+\beamer@subsectionintoc {4}{1}{Monte-Carlo-Sampling}{6}{0}{2}
+\beamer@subsectionintoc {4}{2}{\textsc {Savage-Dickey}-Density-Ratio (SDDR)}{8}{0}{2}
+\beamer@sectionintoc {5}{Examples}{9}{0}{3}
+\beamer@subsectionintoc {5}{1}{Coin Flip}{9}{0}{3}
+\beamer@subsectionintoc {5}{2}{Fitting a polynomial of unknown degree}{14}{0}{3}
+\beamer@sectionintoc {6}{Summary}{21}{0}{4}

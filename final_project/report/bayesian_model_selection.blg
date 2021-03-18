@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: bayesian_model_selection.aux
+The style file: unsrtnat.bst
+Database file #1: bayesian_model_selectionNotes.bib
+Database file #2: refs.bib
+Warning--empty year in PyMC3
+Warning--empty year in ArviZ
+Warning--empty year in PyMC3_SMC
+Warning--empty journal in SMC_PEPE
+Warning--empty author in wiki
+Warning--empty year in wiki
+Warning--empty year in wiki
+Warning--empty author in gamma_function
+Warning--empty year in gamma_function
+Warning--empty year in gamma_function
+Warning--empty author in beta_function
+Warning--empty year in beta_function
+Warning--empty year in beta_function
+Warning--empty year in PyMC3_BF
+You've used 16 entries,
+            2481 wiz_defined-function locations,
+            657 strings with 6916 characters,
+and the built_in function-call counts, 4931 in all, are:
+= -- 454
+> -- 131
+< -- 7
++ -- 72
+- -- 38
+* -- 369
+:= -- 718
+add.period$ -- 66
+call.type$ -- 16
+change.case$ -- 31
+chr.to.int$ -- 14
+cite$ -- 37
+duplicate$ -- 274
+empty$ -- 521
+format.name$ -- 49
+if$ -- 1071
+int.to.chr$ -- 3
+int.to.str$ -- 17
+missing$ -- 12
+newline$ -- 106
+num.names$ -- 27
+pop$ -- 157
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 152
+stack$ -- 0
+substring$ -- 146
+swap$ -- 41
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 109
+warning$ -- 14
+while$ -- 25
+width$ -- 0
+write$ -- 236
+(There were 14 warnings)

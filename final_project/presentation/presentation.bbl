@@ -1,0 +1,326 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{ArviZ}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{note}{last visit: \today}
+      \field{title}{ArviZ: Exploratory analysis of Bayesian models — ArviZ dev documentation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arviz-devs.github.io/arviz/
+      \endverb
+      \verb{url}
+      \verb https://arviz-devs.github.io/arviz/
+      \endverb
+    \endentry
+    \entry{SMC_PEPE}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=eee5b7a46948491e8cfc5ad38a3a1509}{%
+           family={Gunawan},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d88375262582a292baacf38bdfd89cdb}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Khue-Dung},
+           giveni={K\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93ac0a77dd29efff67e207f2c6ea32e1}{%
+           family={Quiroz},
+           familyi={Q\bibinitperiod},
+           given={Matias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb1882a0a114f6c1c7967db0eb33d20d}{%
+           family={Kohn},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48027d023678afb709bcc017b09e8c8b}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Minh-Ngoc},
+           giveni={M\bibinithyphendelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92ca5dd5873033a4f2bea64c22e91e9b}
+      \strng{fullhash}{be54759d8213ebc9249995fc63be6054}
+      \strng{bibnamehash}{92ca5dd5873033a4f2bea64c22e91e9b}
+      \strng{authorbibnamehash}{92ca5dd5873033a4f2bea64c22e91e9b}
+      \strng{authornamehash}{92ca5dd5873033a4f2bea64c22e91e9b}
+      \strng{authorfullhash}{be54759d8213ebc9249995fc63be6054}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.CO}
+      \field{eprinttype}{arXiv}
+      \field{note}{last visit: \today}
+      \field{title}{Subsampling Sequential Monte Carlo for Static Bayesian Models}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1805.03317
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1805.03317.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1805.03317.pdf
+      \endverb
+    \endentry
+    \entry{kunz}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=68f18172b2ba41015c9ca38f4ad8c34c}{%
+           family={Kunz},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06ab81e4d2d92111f0b8fd179676fc97}{%
+           family={Trotta},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e97848f0e0684989b86c822ed38386d6}{%
+           family={Parkinson},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{82f6e5944511c339287c371a3d0ae59c}
+      \strng{fullhash}{82f6e5944511c339287c371a3d0ae59c}
+      \strng{bibnamehash}{82f6e5944511c339287c371a3d0ae59c}
+      \strng{authorbibnamehash}{82f6e5944511c339287c371a3d0ae59c}
+      \strng{authornamehash}{82f6e5944511c339287c371a3d0ae59c}
+      \strng{authorfullhash}{82f6e5944511c339287c371a3d0ae59c}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{7}
+      \field{title}{Measuring the effective complexity of cosmological models}
+      \field{volume}{74}
+      \field{year}{2006}
+      \field{pages}{023503}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.74.023503
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.74.023503
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.74.023503
+      \endverb
+    \endentry
+    \entry{PyMC3_BF}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{note}{last visit: \today}
+      \field{title}{PyMC3 Documentation -- Bayes Factors and Marginal Likelihood}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.pymc.io/notebooks/Bayes_factor.html
+      \endverb
+      \verb{url}
+      \verb https://docs.pymc.io/notebooks/Bayes_factor.html
+      \endverb
+    \endentry
+    \entry{PyMC3}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{note}{last visit: \today}
+      \field{title}{PyMC3 Documentation — PyMC3 3.10.0 documentation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.pymc.io/
+      \endverb
+      \verb{url}
+      \verb https://docs.pymc.io/
+      \endverb
+    \endentry
+    \entry{PyMC3_SMC}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{note}{last visit: \today}
+      \field{title}{PyMC3 Documentation — Sequential Monte Carlo}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.pymc.io/notebooks/SMC2_gaussians.html
+      \endverb
+      \verb{url}
+      \verb https://docs.pymc.io/notebooks/SMC2_gaussians.html
+      \endverb
+    \endentry
+    \entry{sivia}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=219e0778881cee98dfb47ee803674376}{%
+           family={Sivia},
+           familyi={S\bibinitperiod},
+           given={D.S.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c63eca675a0c80ac4b6aea7e0abf7b8c}{%
+           family={Skilling},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{95064826bf679fa8a941b74b4031924b}
+      \strng{fullhash}{95064826bf679fa8a941b74b4031924b}
+      \strng{bibnamehash}{95064826bf679fa8a941b74b4031924b}
+      \strng{authorbibnamehash}{95064826bf679fa8a941b74b4031924b}
+      \strng{authornamehash}{95064826bf679fa8a941b74b4031924b}
+      \strng{authorfullhash}{95064826bf679fa8a941b74b4031924b}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Analysis - A Bayesian tutorial}
+      \field{volume}{2}
+      \field{year}{2006}
+    \endentry
+    \entry{trotta}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06ab81e4d2d92111f0b8fd179676fc97}{%
+           family={Trotta},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{fullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{bibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorbibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authornamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorfullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Bayesian model selection is a tool for deciding whether the introduction of a new parameter is warranted by the data. I argue that the usual sampling statistic significance tests for a null hypothesis can be misleading, since they do not take into account the information gained through the data, when updating the prior distribution to the posterior. In contrast, Bayesian model selection offers a quantitative implementation of Occam's razor.I introduce the Savage–Dickey density ratio, a computationally quick method to determine the Bayes factor of two nested models and hence perform model selection. As an illustration, I consider three key parameters for our understanding of the cosmological concordance model. By using Wilkinson Microwave Anisotropy Probe (WMAP) 3-year data complemented by other cosmological measurements, I show that a non-scale-invariant spectral index of perturbations is favoured for any sensible choice of prior. It is also found that a flat universe is favoured with odds of 29:1 over non-flat models, and that there is strong evidence against a cold dark matter isocurvature component to the initial conditions which is totally (anti)correlated with the adiabatic mode (odds of about 2000:1), but that this is strongly dependent on the prior adopted.These results are contrasted with the analysis of WMAP 1-year data, which were not informative enough to allow a conclusion as to the status of the spectral index. In a companion paper, a new technique to forecast the Bayes factor of a future observation is presented.}}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{05}
+      \field{number}{1}
+      \field{title}{{Applications of Bayesian model selection to cosmological parameters}}
+      \field{volume}{378}
+      \field{year}{2007}
+      \field{pages}{72\bibrangedash 82}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2007.11738.x
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/378/1/72/3961005/mnras0378-0072.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1365-2966.2007.11738.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1365-2966.2007.11738.x
+      \endverb
+    \endentry
+    \entry{Trotta_2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06ab81e4d2d92111f0b8fd179676fc97}{%
+           family={Trotta},
+           familyi={T\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{fullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{bibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorbibnamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authornamehash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \strng{authorfullhash}{06ab81e4d2d92111f0b8fd179676fc97}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1366-5812}
+      \field{journaltitle}{Contemporary Physics}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Bayes in the sky: Bayesian inference and model selection in cosmology}
+      \field{volume}{49}
+      \field{year}{2008}
+      \field{pages}{71\bibrangedash 104}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1080/00107510802066753
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/00107510802066753
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/00107510802066753
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

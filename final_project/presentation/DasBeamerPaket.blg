@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'DasBeamerPaket.blg'
+[102] biber:330> INFO - === Fri Mar 12, 2021, 14:14:44
+[197] Utils.pm:411> ERROR - Cannot find 'DasBeamerPaket.bcf'!
+[197] Biber.pm:132> INFO - ERRORS: 1

@@ -1,0 +1,20 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'presentation.blg'
+[131] biber-darwin:322> INFO - === Mon Mar 15, 2021, 19:50:38
+[155] Biber.pm:415> INFO - Reading 'presentation.bcf'
+[332] Biber.pm:943> INFO - Found 9 citekeys in bib section 0
+[359] Biber.pm:4256> INFO - Processing section 0
+[360] Utils.pm:75> INFO - Globbing data source 'refs.bib'
+[361] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
+[387] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[389] bibtex.pm:1653> INFO - LaTeX decoding ...
+[435] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
+[476] Utils.pm:304> WARN - month field 'Mar' in entry 'Trotta_2008' is not an integer - this will probably not sort properly.
+[488] Utils.pm:304> WARN - month field 'Jul' in entry 'kunz' is not an integer - this will probably not sort properly.
+[541] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[541] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[541] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-UK'
+[542] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-UK'
+[567] bbl.pm:652> INFO - Writing 'presentation.bbl' with encoding 'UTF-8'
+[575] bbl.pm:755> INFO - Output to presentation.bbl
+[575] Biber.pm:128> INFO - WARNINGS: 2
