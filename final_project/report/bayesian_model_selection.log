@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  12 MAR 2021 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.8)  12 AUG 2021 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bayesian_model_selection.tex
 (./bayesian_model_selection.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-03> xparse <2020-03-03>
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
 (/usr/share/texmf-dist/tex/latex/revtex4-1/revtex4-1.cls
 Document Class: revtex4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for 
 documentation)
@@ -23,18 +23,18 @@ Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 396.
 Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
 note on input line 471.
 Class revtex4-1 Info: Repairing broken LateX \@sect on input line 793.
-\intertabularlinepenalty=\count177
-\@tbpen=\count178
+\intertabularlinepenalty=\count179
+\@tbpen=\count180
 \@arstrutbox@hline=\box47
 Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1824.
 Class revtex4-1 Info: Making \typeout \long on input line 2089.
 ltxfront[2020/09/30 4.1s frontmatter package (AO,DPC)]
-\c@affil=\count179
-\c@collab=\count180
+\c@affil=\count181
+\c@collab=\count182
 \absbox=\box48
 ltxgrid[2020/09/30 4.1s page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
-\c@linecount=\count181
+\c@linecount=\count183
 \output@latex=\toks15
 \box@size@1=\box49
 \box@size@2=\box50
@@ -45,22 +45,22 @@ web at superscript.com)]
 \column@recovered=\box54
 \pagesofar=\box55
 \footsofar=\box56
-\pagegrid@col=\count182
+\pagegrid@col=\count184
 Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
  \\  on input line 5655.
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\c@figure=\count189
+\c@figure=\count191
 \fbox@1=\box57
-\c@table=\count190
+\c@table=\count192
 \fbox@2=\box58
-\c@video=\count191
+\c@video=\count193
 \fbox@4=\box59
 \@bibdataout=\write3
 \widetext@top=\box60
@@ -117,13 +117,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count192
+\inf@bad=\count194
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count193
-\leftroot@=\count194
+\uproot@=\count195
+\leftroot@=\count196
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count195
-\DOTSCASE@=\count196
+\classnum@=\count197
+\DOTSCASE@=\count198
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -132,15 +132,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen140
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count197
-\c@MaxMatrixCols=\count198
+\macc@depth=\count199
+\c@MaxMatrixCols=\count266
 \dotsspace@=\muskip16
-\c@parentequation=\count199
-\dspbrk@lvl=\count266
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
 \tag@help=\toks19
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
 \andhelp@=\toks20
 \eqnshift@=\dimen141
 \alignsep@=\dimen142
@@ -164,7 +164,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count270
+\c@NAT@ctr=\count272
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7623.
 
@@ -187,36 +187,36 @@ Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count271
-\calc@Bcount=\count272
+\calc@Acount=\count273
+\calc@Bcount=\count274
 \calc@Adimen=\dimen147
 \calc@Bdimen=\dimen148
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count273
+\calc@Ccount=\count275
 \calc@Cskip=\skip57
 )
 \pb@xlen=\skip58
 )
-\c@TableIndex=\count274
-\c@FigureIndex=\count275
-\c@TableClearedIndex=\count276
-\c@FigureClearedIndex=\count277
+\c@TableIndex=\count276
+\c@FigureIndex=\count277
+\c@TableClearedIndex=\count278
+\c@FigureClearedIndex=\count279
 \oldabovecaptionskip=\skip59
 \oldbelowcaptionskip=\skip60
 \captionGap=\skip61
 \TableDeadMargin=\skip62
 \FigureDeadMargin=\skip63
-\c@abovecaptionskipterm=\count278
-\c@belowcaptionskipterm=\count279
+\c@abovecaptionskipterm=\count280
+\c@belowcaptionskipterm=\count281
 \@minCaptionBoxWidth=\skip64
 \@minCaptionBoxWidthDefault=\skip65
 \@maxCaptionBoxWidth=\skip66
 \@maxCaptionBoxWidthDefault=\skip67
-\c@promptTablesFlag=\count280
-\c@promptFiguresFlag=\count281
+\c@promptTablesFlag=\count282
+\c@promptFiguresFlag=\count283
 \DeadMargin=\skip68
 \@DataBoxWidth=\skip69
 \CaptionBoxWidth=\skip70
@@ -225,10 +225,10 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \@captionIDwidth=\skip73
 \@captionWidth=\skip74
 \@DataBoxSurplus=\skip75
-\c@lofInvocations=\count282
-\c@lofPrints=\count283
-\c@lotInvocations=\count284
-\c@lotPrints=\count285
+\c@lofInvocations=\count284
+\c@lofPrints=\count285
+\c@lotInvocations=\count286
+\c@lotPrints=\count287
 \hyper@shift=\skip76
 )
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -277,7 +277,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -318,13 +318,17 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen153
-\Hy@linkcounter=\count286
-\Hy@pagecounter=\count287
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
 )
 (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -332,17 +336,23 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count288
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
+\Hy@SavedSpaceFactor=\count290
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-LaTeX Info: Redefining \href on input line 4987.
-\c@Hy@tempcnt=\count289
-LaTeX Info: Redefining \url on input line 5076.
+Package hyperref Info: Bookmarks ON on input line 4445.
+LaTeX Info: Redefining \href on input line 4715.
+\c@Hy@tempcnt=\count291
+LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen154
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
@@ -352,40 +362,40 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count290
+\Fld@menulength=\count292
 \Field@Width=\dimen155
 \Fld@charsize=\dimen156
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
 
 (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count291
-\c@Item=\count292
-\c@Hfootnote=\count293
+\Hy@abspage=\count293
+\c@Item=\count294
+\c@Hfootnote=\count295
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count294
-\c@bookmark@seq@number=\count295
+\Fld@listcount=\count296
+\c@bookmark@seq@number=\count297
 
 (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -417,7 +427,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count296
+\c@float@type=\count298
 \float@exts=\toks25
 \float@box=\box66
 \@float@everytoks=\toks26
@@ -425,45 +435,44 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-12-03 L3 programming layer (loader) 
+Package: expl3 2021-02-18 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count297
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box68
 ))
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
-
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
-Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
+Package: siunitx 2021/03/27 v2.8c A comprehensive (SI) units package
 
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box69
 \l__siunitx_tmp_dim=\dimen157
-\l__siunitx_tmp_int=\count298
-\l__siunitx_number_mantissa_length_int=\count299
-\l__siunitx_number_uncert_length_int=\count300
-\l__siunitx_round_int=\count301
-\l__siunitx_process_decimal_int=\count302
-\l__siunitx_process_uncertainty_int=\count303
-\l__siunitx_process_fixed_int=\count304
-\l__siunitx_process_integer_min_int=\count305
-\l__siunitx_process_precision_int=\count306
-\l__siunitx_group_min_int=\count307
+\l__siunitx_tmp_int=\count300
+\l__siunitx_number_mantissa_length_int=\count301
+\l__siunitx_number_uncert_length_int=\count302
+\l__siunitx_round_int=\count303
+\l__siunitx_process_decimal_int=\count304
+\l__siunitx_process_uncertainty_int=\count305
+\l__siunitx_process_fixed_int=\count306
+\l__siunitx_process_integer_min_int=\count307
+\l__siunitx_process_precision_int=\count308
+\l__siunitx_group_min_int=\count309
 \l__siunitx_angle_marker_box=\box70
 \l__siunitx_angle_unit_box=\box71
 \l__siunitx_angle_marker_dim=\dimen158
 \l__siunitx_angle_unit_dim=\dimen159
-\l__siunitx_unit_int=\count308
-\l__siunitx_unit_denominator_int=\count309
-\l__siunitx_unit_numerator_int=\count310
-\l__siunitx_unit_prefix_int=\count311
-\l__siunitx_unit_prefix_base_int=\count312
-\l__siunitx_unit_prefix_gram_int=\count313
-\l__siunitx_number_product_int=\count314
+\l__siunitx_unit_int=\count310
+\l__siunitx_unit_denominator_int=\count311
+\l__siunitx_unit_numerator_int=\count312
+\l__siunitx_unit_prefix_int=\count313
+\l__siunitx_unit_prefix_base_int=\count314
+\l__siunitx_unit_prefix_gram_int=\count315
+\l__siunitx_number_product_int=\count316
 \c__siunitx_one_fill_skip=\skip80
 \l__siunitx_table_unit_align_skip=\skip81
 \l__siunitx_table_exponent_dim=\dimen160
@@ -511,14 +520,14 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count315
-\c@continuedfloat=\count316
+\c@caption@flags=\count317
+\c@continuedfloat=\count318
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 ) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count317
-\c@subtable=\count318
+\c@subfigure=\count319
+\c@subtable=\count320
 )
 (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
@@ -533,6 +542,8 @@ Class revtex4-1 Info: cite was not loaded (OK!) on input line 63.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 63.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 63.
 (./bayesian_model_selection.aux)
+\openout1 = `bayesian_model_selection.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
@@ -549,19 +560,21 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
+\scratchcounter=\count321
 \scratchdimen=\dimen176
 \scratchbox=\box76
-\nofMPsegments=\count320
-\nofMParguments=\count321
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count322
+\MPscratchCnt=\count324
 \MPscratchDim=\dimen177
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -583,7 +596,7 @@ e
 Package hyperref Info: Link coloring OFF on input line 63.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -591,7 +604,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count325
+\c@section@level=\count327
 )
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
@@ -599,6 +612,8 @@ LaTeX Info: Redefining \nameref on input line 63.
 
 (./bayesian_model_selection.out) (./bayesian_model_selection.out)
 \@outlinefile=\write4
+\openout4 = `bayesian_model_selection.out'.
+
 
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
@@ -610,6 +625,8 @@ Dictionary: translator-basic-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 63.
+\openout3 = `bayesian_model_selectionNotes.bib'.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -628,30 +645,30 @@ Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 <figs//beta_dist.pdf, id=240, 496.3343pt x 297.28844pt>
 File: figs//beta_dist.pdf Graphic file (type pdf)
 <use figs//beta_dist.pdf>
-Package pdftex.def Info: figs//beta_dist.pdf  used on input line 232.
+Package pdftex.def Info: figs//beta_dist.pdf  used on input line 235.
 (pdftex.def)             Requested size: 246.0pt x 147.34648pt.
 <figs//coin_marp_m1.pdf, id=245, 520.34402pt x 346.89601pt>
 File: figs//coin_marp_m1.pdf Graphic file (type pdf)
 <use figs//coin_marp_m1.pdf>
-Package pdftex.def Info: figs//coin_marp_m1.pdf  used on input line 257.
+Package pdftex.def Info: figs//coin_marp_m1.pdf  used on input line 260.
 (pdftex.def)             Requested size: 221.3985pt x 147.60088pt.
 <figs//coin_marp_m2.pdf, id=246, 520.34402pt x 346.89601pt>
 File: figs//coin_marp_m2.pdf Graphic file (type pdf)
 <use figs//coin_marp_m2.pdf>
-Package pdftex.def Info: figs//coin_marp_m2.pdf  used on input line 261.
+Package pdftex.def Info: figs//coin_marp_m2.pdf  used on input line 264.
 (pdftex.def)             Requested size: 221.3985pt x 147.60088pt.
 <figs//HDI_sigma_07.pdf, id=254, 1199.61615pt x 556.19911pt>
 File: figs//HDI_sigma_07.pdf Graphic file (type pdf)
 <use figs//HDI_sigma_07.pdf>
-Package pdftex.def Info: figs//HDI_sigma_07.pdf  used on input line 276.
+Package pdftex.def Info: figs//HDI_sigma_07.pdf  used on input line 279.
 (pdftex.def)             Requested size: 510.0pt x 236.46211pt.
  [4 <./figs//beta_dist.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 279.
+ on input line 282.
 
 
-Overfull \hbox (2.19884pt too wide) in paragraph at lines 284--293
+Overfull \hbox (2.19884pt too wide) in paragraph at lines 287--296
 []$[]$ 
  []
 
@@ -660,17 +677,17 @@ Overfull \hbox (2.19884pt too wide) in paragraph at lines 284--293
 File: figs//SDDR_linear vs. squared_sigma_07a+.pdf Graphic file (type pdf)
 <use figs//SDDR_linear vs. squared_sigma_07a+.pdf>
 Package pdftex.def Info: figs//SDDR_linear vs. squared_sigma_07a+.pdf  used on 
-input line 299.
+input line 302.
 (pdftex.def)             Requested size: 221.3985pt x 117.516pt.
 <figs//SDDR_squared vs. cubic_sigma_07a+.pdf, id=299, 806.29233pt x 427.9827pt>
 
 File: figs//SDDR_squared vs. cubic_sigma_07a+.pdf Graphic file (type pdf)
 <use figs//SDDR_squared vs. cubic_sigma_07a+.pdf>
 Package pdftex.def Info: figs//SDDR_squared vs. cubic_sigma_07a+.pdf  used on i
-nput line 300.
+nput line 303.
 (pdftex.def)             Requested size: 221.3985pt x 117.516pt.
 
-Overfull \hbox (13.10112pt too wide) in paragraph at lines 307--316
+Overfull \hbox (13.10112pt too wide) in paragraph at lines 310--319
 []$[]$ 
  []
 
@@ -692,7 +709,7 @@ a+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 <figs//_sigma_07acomplexity.pdf, id=515, 743.16708pt x 346.48824pt>
 File: figs//_sigma_07acomplexity.pdf Graphic file (type pdf)
 <use figs//_sigma_07acomplexity.pdf>
-Package pdftex.def Info: figs//_sigma_07acomplexity.pdf  used on input line 324
+Package pdftex.def Info: figs//_sigma_07acomplexity.pdf  used on input line 327
 .
 (pdftex.def)             Requested size: 246.0pt x 114.6904pt.
  [6 <./figs//HDI_sigma_07.pdf> <./figs//_sigma_07acomplexity.pdf
@@ -755,16 +772,16 @@ URL []$\OT1/cmtt/m/n/9 https : / / en .
 ) [7] (./bayesian_model_selection.aux)
 Package rerunfilecheck Info: File `bayesian_model_selection.out' has not change
 d.
-(rerunfilecheck)             Checksum: 3B0F01D500596C88D5396C345E803ED0;1870.
+(rerunfilecheck)             Checksum: CC38E6B98B92700EEBBBB80EFBBB6818;4355.
  ) 
 Here is how much of TeX's memory you used:
- 12965 strings out of 479383
- 225648 string characters out of 5875831
- 560104 words of memory out of 5000000
- 29772 multiletter control sequences out of 15000+600000
+ 15624 strings out of 478994
+ 261380 string characters out of 5864752
+ 586431 words of memory out of 5000000
+ 32795 multiletter control sequences out of 15000+600000
  420978 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,16n,85p,1309b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,16n,88p,1309b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -789,7 +806,7 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1
 s/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bayesian_model_selection.pdf (7 pages, 480984 bytes).
+Output written on bayesian_model_selection.pdf (7 pages, 481233 bytes).
 PDF statistics:
  778 PDF objects out of 1000 (max. 8388607)
  512 compressed objects within 6 object streams
